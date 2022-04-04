@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Some Generic Project](README.md)
-* [reference](reference.md)
+* [reference page](reference-page.md)
 
 ## 1 Analysis <a href="#analysis" id="analysis"></a>
 
