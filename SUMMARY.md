@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Some Generic Project](README.md)
+  * [reference page](readme/reference-page.md)
+* [reference](reference.md)
 
 ## 1 Analysis <a href="#analysis" id="analysis"></a>
 
@@ -28,4 +30,3 @@
 * [4.1 Evaluation of Success Criteria](4-evaluation/4.1-evaluation-of-success-criteria.md)
 * [4.2 Evaluation of Usability Features](4-evaluation/4.2-evaluation-of-usability-features.md)
 * [4.3 Maintenance and Future Development](4-evaluation/4.3-maintenance-and-future-development.md)
-* [reference page](evaluation/reference-page.md)
