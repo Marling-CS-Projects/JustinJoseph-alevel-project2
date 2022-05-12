@@ -14,3 +14,6 @@ benefits of playing video games
 
 Adair, C. (2021). _11 Positive Effects of Video Games_. \[online] Game Quitters. Available at: https://gamequitters.com/positive-effects-of-video-games/.
 
+isfe  key fact&#x20;
+
+{% embed url="https://www.isfe.eu/wp-content/uploads/2020/08/ISFE-final-1.pdf" %}
