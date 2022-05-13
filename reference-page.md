@@ -17,3 +17,7 @@ Adair, C. (2021). _11 Positive Effects of Video Games_. \[online] Game Quitters.
 isfe  key fact&#x20;
 
 {% embed url="https://www.isfe.eu/wp-content/uploads/2020/08/ISFE-final-1.pdf" %}
+
+
+
+Business of Apps. (2020). _Among Us Revenue and Usage Statistics (2020)_. \[online] Available at: https://www.businessofapps.com/data/among-us-statistics/.
