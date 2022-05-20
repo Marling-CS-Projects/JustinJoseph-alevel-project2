@@ -21,7 +21,7 @@
 | Feature description | Some reason it's a good fit in this project |
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="features i won " %}
 
 
 | Feature             | Justification                               |
