@@ -1,5 +1,37 @@
 # 1.3 Research
 
+## game 3&#x20;
+
+### overview&#x20;
+
+
+
+### Aspect 1 (of 2-4 aspects per solution?)
+
+
+
+### Features&#x20;
+
+{% tabs %}
+{% tab title="features i will include " %}
+
+
+| Feature             | Justification                               |
+| ------------------- | ------------------------------------------- |
+| Feature description | Some reason it's a good fit in this project |
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+
+| Feature             | Justification                               |
+| ------------------- | ------------------------------------------- |
+| Feature description | Some reason it's a good fit in this project |
+{% endtab %}
+{% endtabs %}
+
+
+
 ## shadow blade +&#x20;
 
 ![](<../../.gitbook/assets/image (4).png>)
@@ -42,7 +74,7 @@ A more detailed description of some aspect of this solution
 ### Features&#x20;
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="features i wi" %}
 
 
 | Feature             | Justification                               |
@@ -50,7 +82,7 @@ A more detailed description of some aspect of this solution
 | Feature description | Some reason it's a good fit in this project |
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="features i won" %}
 
 
 | Feature             | Justification                               |
@@ -58,7 +90,3 @@ A more detailed description of some aspect of this solution
 | Feature description | Some reason it's a good fit in this project |
 {% endtab %}
 {% endtabs %}
-
-| Feature             | Justification                               |
-| ------------------- | ------------------------------------------- |
-| Feature description | Some reason it's a good fit in this project |
