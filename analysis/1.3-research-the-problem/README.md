@@ -2,7 +2,7 @@
 
 ## shadow blade +&#x20;
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4).png>)
 
 ### Overview
 
@@ -30,3 +30,13 @@ A more detailed description of some aspect of this solution
 | Feature description | Reason it's beyond the scope/not suitable for this project |
 {% endtab %}
 {% endtabs %}
+
+## super Mario 2d&#x20;
+
+### Overview
+
+### Aspect 1 (of 2-4 aspects per solution?)
+
+
+
+### Features&#x20;
