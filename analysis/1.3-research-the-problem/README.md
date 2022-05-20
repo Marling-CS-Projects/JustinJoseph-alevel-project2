@@ -40,3 +40,25 @@ A more detailed description of some aspect of this solution
 
 
 ### Features&#x20;
+
+{% tabs %}
+{% tab title="First Tab" %}
+
+
+| Feature             | Justification                               |
+| ------------------- | ------------------------------------------- |
+| Feature description | Some reason it's a good fit in this project |
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+
+| Feature             | Justification                               |
+| ------------------- | ------------------------------------------- |
+| Feature description | Some reason it's a good fit in this project |
+{% endtab %}
+{% endtabs %}
+
+| Feature             | Justification                               |
+| ------------------- | ------------------------------------------- |
+| Feature description | Some reason it's a good fit in this project |
