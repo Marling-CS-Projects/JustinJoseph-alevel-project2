@@ -6,8 +6,8 @@
 
 \[describe the cycle]
 
-* [x] set the game development enviroment
-* [x] be able to control the character via the keyboard&#x20;
+* [ ] set the game development environment
+* [ ] be able to control the character via the keyboard&#x20;
 *
 
 ### Usability Features
