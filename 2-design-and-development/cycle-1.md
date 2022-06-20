@@ -8,7 +8,7 @@
 
 * [ ] set the game development environment
 * [ ] be able to control the character via the keyboard&#x20;
-*
+* [ ] &#x20;set up the platforms with a background
 
 ### Usability Features
 
