@@ -16,7 +16,7 @@
 
 | Variable Name | Use                   |
 | ------------- | --------------------- |
-| foo           | does something useful |
+|               | does something useful |
 
 ### Pseudocode
 
