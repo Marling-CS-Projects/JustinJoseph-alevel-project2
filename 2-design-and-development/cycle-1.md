@@ -4,7 +4,7 @@
 
 ### Objectives
 
-\[describe the cycle]
+For my first cycle, I aim to set up the code environment that will be used throughout the project with  HTML so that my game can be played on a browser. With my second objective, I aim to insert a shape or object and be able to move the object via a keyboard without issue.&#x20;
 
 * [ ] set the game development environment
 * [ ] be able to control the character via the keyboard&#x20;
