@@ -4,7 +4,7 @@
 
 ### Objectives
 
-\[describe the cycle]
+In this cycle, I aim to set up my project in visual studio code. With the other aspects of the objectives, I aim to make the player to be able to move the character with the keyboard in this cycle&#x20;
 
 * [ ] set the game development environment
 * [ ] be able to control the character via the keyboard&#x20;
