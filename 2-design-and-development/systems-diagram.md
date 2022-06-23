@@ -2,7 +2,7 @@
 
 ## Systems Diagram
 
-![](<../.gitbook/assets/System Diagram.jpg>)
+![](../.gitbook/assets/System%20Diagram.jpg)
 
 This diagram shows the different parts of the game that I will focus on creating. I have split each section into smaller sub-sections. Throughout the development stage, I will pick one or two of these sections to focus on at a time to gradually build up and piece together the game. I have broken the project down this way as it roughly corresponds to the success criteria.
 
@@ -16,7 +16,7 @@ Users can achieve the goal with completeness and accuracy. To do this, I will ma
 
 #### Aims
 
-* Create a clear goal to reach to determine the end of a level
+* the player should be able to reach the end of the level without issues&#x20;
 * Create a clear goal for any multiplayer modes
 
 ### Efficiency
