@@ -21,17 +21,3 @@ isfe  key fact&#x20;
 numbers of gamers in the world : [https://www.statista.com/statistics/293304/number-video-gamers/#:\~:text=Number%20of%20video%20gamers%20worldwide%202021%2C%20by%20region\&text=In%20total%2C%20there%20were%20an,billion%20gamers%20across%20the%20globe.](https://www.statista.com/statistics/293304/number-video-gamers/)
 
 Business of Apps. (2020). _Among Us Revenue and Usage Statistics (2020)_. \[online] Available at: https://www.businessofapps.com/data/among-us-statistics/.
-
-
-
-
-
-### 1.6 hardware and software  requirements
-
-code.visualstudio.com. (n.d.). _Requirements for Visual Studio Code_. \[online] Available at: https://code.visualstudio.com/docs/supporting/requirements#:\~:text=Visual%20Studio%20Code%20is%20a \[Accessed 15 Jun. 2022].
-
-{% embed url="https://support.google.com/chrome/a/answer/7100626?hl=en" %}
-
-{% embed url="https://www.mozilla.org/en-US/firefox/102.0/system-requirements/" %}
-
-{% embed url="https://www.opera.com/download/requirements" %}
