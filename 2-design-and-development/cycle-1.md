@@ -42,17 +42,7 @@ add([
 	area(),
 ])
 
-
-// add a kaboom on mouse click
-onClick(() => {
-	addKaboom(mousePos())
-})
-
-// burp on "b"
-onKeyPress("b", burp)
-
 // level 
-
 const level = addLevel([
 	// Design the level layout with symbols
 	"@                        ",
