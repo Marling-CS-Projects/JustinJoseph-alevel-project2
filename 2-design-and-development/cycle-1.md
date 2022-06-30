@@ -4,13 +4,15 @@
 
 ### Objectives
 
-For my first cycle, I aim to set up the code environment that will be used throughout the project with  HTML so that my game can be played on a browser. With my second objective, I aim to insert a shape or object and be able to move the object via a keyboard without issue.&#x20;
+For my first cycle, I aim to set up the code environment that will be used throughout the project with  HTML so that my game can be played on a browser. With my second objective, I aim to insert a shape or object and be able to move the object via a keyboard without issue. &#x20;
 
-* [ ] set the game development environment
+* [x] set the game development environment
 * [ ] be able to control the character via the keyboard&#x20;
-* [ ] &#x20;set up the platforms with a background
+* [x] &#x20;set up the platforms&#x20;
 
 ### Usability Features
+
+
 
 ### Key Variables
 
@@ -21,9 +23,62 @@ For my first cycle, I aim to set up the code environment that will be used throu
 ### Pseudocode
 
 ```
-procedure do_something
-    
-end procedure
+kaboom({
+  background: [134, 135, 247],
+  width: 1000,
+  height: 240,
+  scale: 2,
+});
+
+// load assets
+loadPedit("ground", "sprites/ground.pedit");
+loadPedit("main guy", "sprites/main guy.pedit");
+
+// add a character to screen
+add([
+	// list of components
+	sprite("main guy"),
+	pos(100, 40),
+	area(),
+])
+
+
+// add a kaboom on mouse click
+onClick(() => {
+	addKaboom(mousePos())
+})
+
+// burp on "b"
+onKeyPress("b", burp)
+
+// level 
+
+const level = addLevel([
+	// Design the level layout with symbols
+	"@                        ",
+	"===================",
+], {
+	// The size of each grid
+	width: 64,
+	height: 64,
+	// The position of the top left block
+	pos: vec2(100, 200),
+	
+  // Define what each symbol means (in components)
+	"=": () => [
+		sprite("ground"),
+		area(),
+		solid(),
+		origin("bot"),
+	],
+	"@": () => [
+		sprite("main guy"),
+		area(),
+		body(),
+		origin("bot"),
+		"player",
+	],
+})
 ```
 
 ## Development
