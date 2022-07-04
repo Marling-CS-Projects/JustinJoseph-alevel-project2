@@ -14,13 +14,14 @@ For my first cycle, I aim to set up the code environment that will be used throu
 
 ### Usability Features
 
-
+the controls - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intension of keeping it simple &#x20;
 
 ### Key Variables
 
-| Variable Name | Use                   |
-| ------------- | --------------------- |
-|               | does something useful |
+| Variable Name | Use                                                                   |
+| ------------- | --------------------------------------------------------------------- |
+|               |                                                                       |
+| speed         | it provides that value which depend on how fast the character moves . |
 
 ### Pseudocode
 
@@ -87,9 +88,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions  | What I expect                                                                    | What actually happens                                            | Pass/Fail |
-| ---- | ------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------- |
-| 1    | movement      | when I press "a" the player moves left and when I press d the player move right  | when i press the controls the player disappears of the screen .  | Fail      |
-| 2    | Press buttons | Something happens                                                                | As expected                                                      | Pass      |
+| Test | Instructions | What I expect                                                                    | What actually happens                                            | Pass/Fail |
+| ---- | ------------ | -------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------- |
+| 1    | movement     | when I press "a" the player moves left and when I press d the player move right  | when i press the controls the player disappears of the screen .  | Fail      |
+| 2    |              | Something happens                                                                | As expected                                                      | Pass      |
 
 ### Evidence
