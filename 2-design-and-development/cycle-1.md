@@ -9,7 +9,7 @@
 For my first cycle, I aim to set up the code environment that will be used throughout the project with  HTML so that my game can be played on a browser. With my second objective, I aim to insert a shape or object and be able to move the object via a keyboard without issue. &#x20;
 
 * [x] set the game development environment
-* [ ] be able to control the character via the keyboard&#x20;
+* [x] be able to control the character via the keyboard&#x20;
 * [x] &#x20;set up the platforms&#x20;
 
 ### Usability Features
@@ -26,51 +26,79 @@ the controls - to enable my game to be intuitive for the player , they will be p
 ### Pseudocode
 
 ```
-kaboom({
-  background: [134, 135, 247],
-  width: 1000,
-  height: 240,
-  scale: 2,
-});
+import kaboom from "kaboom"
+
+// initialize context
+kaboom()
+
 
 // load assets
 loadPedit("ground", "sprites/ground.pedit");
-loadPedit("main guy", "sprites/main guy.pedit");
+loadPedit("goro", "sprites/goro.pedit");
+loadSprite("background", "sprites/background.png");
 
-// add a character to screen
-add([
-	// list of components
-	sprite("main guy"),
-	pos(100, 40),
+// background 
+  add([
+    sprite("background", {width: width(), height: height()})
+  ]);
+
+//level
+const map = [
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '                       ',
+  '  =====================',
+]
+// componets of the game 
+const levelcfg = {
+  width:32,
+  height:32,
+  
+  "=": () => [
+	sprite("ground"),
 	area(),
+	solid(),
+	origin("bot"),
+	],
+ 
+}
+
+addLevel(map,levelcfg)
+// adding player 
+
+const player = add([
+  sprite('goro'),
+  pos(30,0),
+  body(),
+  area(),
 ])
 
-// level 
-const level = addLevel([
-	// Design the level layout with symbols
-	"@                        ",
-	"===================",
-], {
-	// The size of each grid
-	width: 64,
-	height: 64,
-	// The position of the top left block
-	pos: vec2(100, 200),
-	
-  // Define what each symbol means (in components)
-	"=": () => [
-		sprite("ground"),
-		area(),
-		solid(),
-		origin("bot"),
-	],
-	"@": () => [
-		sprite("main guy"),
-		area(),
-		body(),
-		origin("bot"),
-		"player",
-	],
+//movement 
+
+const move_speed = 500
+
+keyDown('left',()=> {
+ player.move(-move_speed,0) 
+})
+
+keyDown('right',()=> {
+ player.move(move_speed,0) 
+})
+
+const Jump_force = 500
+
+keyPress('space', () => {
+ if(player.grounded())
+ player.jump(Jump_force)
 })
 ```
 
@@ -88,9 +116,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect                                                                    | What actually happens                                            | Pass/Fail |
-| ---- | ------------ | -------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------- |
-| 1    | movement     | when I press "a" the player moves left and when I press d the player move right  | when i press the controls the player disappears of the screen .  | Fail      |
-| 2    |              | Something happens                                                                | As expected                                                      | Pass      |
+| Test | Instructions           | What I expect                                                                                                                               | What actually happens                                                                                                                    | Pass/Fail |
+| ---- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | movement               | when I press "a" the player moves left and when I press d the player move right                                                             | when i press the controls the player disappears of the screen .                                                                          | Fail      |
+| 2    | movement (second  try) | when I press "a" the player moves left and when I press d the player move right .lastly when "space" is pressed the character  should jump  | when i press "a" the character moves left. when i press"d " the character move right. Finally when i press "space" the character  jumps. | Pass      |
 
 ### Evidence
