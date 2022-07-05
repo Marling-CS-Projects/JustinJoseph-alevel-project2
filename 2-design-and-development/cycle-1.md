@@ -18,10 +18,11 @@ the controls - to enable my game to be intuitive for the player , they will be p
 
 ### Key Variables
 
-| Variable Name | Use                                                                   |
-| ------------- | --------------------------------------------------------------------- |
-|               |                                                                       |
-| speed         | it provides that value which depend on how fast the character moves . |
+| Variable Name           | Use                                                                                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| controls ( a, d, space) | this controls the movement of the character by moving left , right and jump                                                                             |
+| player                  |  the use of this variable is to add the player to the game whilst providing the player with a body which the components of the game can interact with.  |
+| speed                   | it provides that value which depend on how fast the character moves .                                                                                   |
 
 ### Pseudocode
 
@@ -108,7 +109,7 @@ keyPress('space', () => {
 
 ### Challenges
 
-Description of challenges
+
 
 ## Testing
 
