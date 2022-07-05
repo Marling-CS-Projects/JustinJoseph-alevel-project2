@@ -120,5 +120,10 @@ Evidence for testing
 | ---- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | 1    | movement               | when I press "a" the player moves left and when I press d the player move right                                                             | when i press the controls the player disappears of the screen .                                                                          | Fail      |
 | 2    | movement (second  try) | when I press "a" the player moves left and when I press d the player move right .lastly when "space" is pressed the character  should jump  | when i press "a" the character moves left. when i press"d " the character move right. Finally when i press "space" the character  jumps. | Pass      |
+| 3    | platform               | the player should be able to stand, move and jump on the platform without falling through it .                                              | the character was succesful and was able to stand and move on the platfrom                                                               | pass      |
 
 ### Evidence
+
+
+
+![](<../.gitbook/assets/image (8).png>)
