@@ -107,9 +107,11 @@ keyPress('space', () => {
 
 ### Outcome
 
+After fixing issues with the movement of the character&#x20;
+
 ### Challenges
 
-
+The challenges of this cycle was setting up a movement feature for the first character. In my first attempt my code failed ; I figured out that i had over complicated the code i  used and instead i changed to the code to be more simpler. After which the character was able to move left , right and up with out hindrances. &#x20;
 
 ## Testing
 

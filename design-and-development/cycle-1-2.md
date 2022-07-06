@@ -8,8 +8,8 @@
 
 
 
-* [x] add a stop watch
-* [x] obstacles ( pits ,traps and spikes )
+* [x] add coin system&#x20;
+* [x] scrolling camera&#x20;
 
 ### Usability Features
 
