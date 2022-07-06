@@ -8,8 +8,9 @@
 
 
 
-* [x] add coin system&#x20;
-* [x] scrolling camera&#x20;
+* [x] add a bots&#x20;
+
+
 
 ### Usability Features
 

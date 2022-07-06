@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 3
+# 2.2.1 Cycle 6
 
 ##
 
@@ -8,8 +8,9 @@
 
 
 
-* [x] add a stop watch
-* [x] obstacles ( pits ,traps and spikes )
+* [x] add a moving platforms  &#x20;
+
+
 
 ### Usability Features
 

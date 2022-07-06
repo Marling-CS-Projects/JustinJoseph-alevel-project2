@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 3
+# 2.2.1 Cycle 5
 
 ##
 
@@ -8,8 +8,10 @@
 
 
 
-* [x] add a stop watch
-* [x] obstacles ( pits ,traps and spikes )
+* [x] add a additional player
+* [x] have a split screen mode &#x20;
+
+
 
 ### Usability Features
 
