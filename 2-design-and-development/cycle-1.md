@@ -14,7 +14,7 @@ For my first cycle, I aim to set up the code environment that will be used throu
 
 ### Usability Features
 
-the controls - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intension of keeping it simple &#x20;
+movement - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intension of keeping it simple &#x20;
 
 ### Key Variables
 
@@ -111,7 +111,7 @@ After fixing issues with the movement of the character&#x20;
 
 ### Challenges
 
-The challenges of this cycle was setting up a movement feature for the first character. In my first attempt my code failed ; I figured out that i had over complicated the code i  used and instead i changed to the code to be more simpler. After which the character was able to move left , right and up with out hindrances. &#x20;
+The challenges of this cycle was setting up a movement feature for the first character. In my first attempt my code failed; I figured out that i had over complicated the code i used and instead i changed to the code to be more simpler. After which the character was able to move left , right and up with out hindrances. &#x20;
 
 ## Testing
 
