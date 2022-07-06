@@ -8,7 +8,7 @@
 
 
 
-* [x] add a moving platforms  &#x20;
+* [ ] add a moving platforms  &#x20;
 
 
 

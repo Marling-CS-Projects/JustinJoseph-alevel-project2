@@ -8,8 +8,8 @@
 
 
 
-* [x] add a additional player
-* [x] have a split screen mode &#x20;
+* [ ] add a additional player
+* [ ] have a split screen mode &#x20;
 
 
 
