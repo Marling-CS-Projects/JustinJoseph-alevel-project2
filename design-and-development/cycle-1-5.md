@@ -9,6 +9,7 @@
 
 
 * [ ] add a moving platforms  &#x20;
+* [ ] adding menu
 
 
 
