@@ -6,10 +6,10 @@
 
 ### Objectives
 
+In this cycle, I aim to create a coin system such that in the process of playing the game the user collects coin which is stored and displayed in the corner of the screen for that level likewise the overall coins collected through the levels will also be displayed on the home screen/menu. The second aim I have is to add a screen scrolling camera feature which will follow the character through the levels. &#x20;
 
-
-* [x] add coin system&#x20;
-* [x] scrolling camera&#x20;
+* [ ] add coin system&#x20;
+* [ ] scrolling camera&#x20;
 
 ### Usability Features
 
