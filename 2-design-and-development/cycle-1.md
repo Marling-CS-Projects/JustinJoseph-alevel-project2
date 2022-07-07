@@ -6,7 +6,7 @@
 
 ### Objectives
 
-For my first cycle, I aim to set up the code environment that will be used throughout the project with  HTML so that my game can be played on a browser. With my second objective, I aim to insert a shape or object and be able to move the object via a keyboard without issue. &#x20;
+For my first cycle, i aim to set up the basics of my project before addtioanl features. For this the first object would be to create a coding environment such as visual studio code along with a github repository to back up my work. This is followed by creating  a simple platform level which would be used for all of my tests of the components I would be using ( this initial level would evolve into a actual level which would be a proper game level&#x20;
 
 * [x] set the game development environment
 * [x] be able to control the character via the keyboard&#x20;
@@ -14,7 +14,7 @@ For my first cycle, I aim to set up the code environment that will be used throu
 
 ### Usability Features
 
-the controls - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intension of keeping it simple &#x20;
+movement - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intension of keeping it simple &#x20;
 
 ### Key Variables
 
@@ -107,9 +107,11 @@ keyPress('space', () => {
 
 ### Outcome
 
+After fixing issues with the movement of the character&#x20;
+
 ### Challenges
 
-
+The challenges of this cycle was setting up a movement feature for the first character. In my first attempt my code failed; I figured out that i had over complicated the code i used and instead i changed to the code to be more simpler. After which the character was able to move left , right and up with out hindrances. &#x20;
 
 ## Testing
 
@@ -117,11 +119,11 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions           | What I expect                                                                                                                               | What actually happens                                                                                                                    | Pass/Fail |
-| ---- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | movement               | when I press "a" the player moves left and when I press d the player move right                                                             | when i press the controls the player disappears of the screen .                                                                          | Fail      |
-| 2    | movement (second  try) | when I press "a" the player moves left and when I press d the player move right .lastly when "space" is pressed the character  should jump  | when i press "a" the character moves left. when i press"d " the character move right. Finally when i press "space" the character  jumps. | Pass      |
-| 3    | platform               | the player should be able to stand, move and jump on the platform without falling through it .                                              | the character was succesful and was able to stand and move on the platfrom                                                               | pass      |
+| Test | Instructions           | What I expect                                                                                                                               | What actually happens                                                                                                                     | Pass/Fail |
+| ---- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | movement               | when I press "a" the player moves left and when I press d the player move right                                                             | when i press the controls the player disappears of the screen .                                                                           | Fail      |
+| 2    | movement (second  try) | when I press "a" the player moves left and when I press d the player move right .lastly when "space" is pressed the character  should jump  | when i press "a" the character moves left. when i press "d " the character move right. Finally when i press "space" the character  jumps. | Pass      |
+| 3    | platform               | the player should be able to stand, move and jump on the platform without falling through it .                                              | the character was successful and was able to stand and move on the platform                                                               | pass      |
 
 ### Evidence
 
