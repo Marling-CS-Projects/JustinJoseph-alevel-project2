@@ -6,7 +6,7 @@
 
 ### Objectives
 
-For my first cycle, i aim to set up the basics of my project before addtioanl features. For this the first object would be to create a coding environment such as visual studio code along with a github repository to back up my work. This is followed by creating  a simple platform level which would be used for all of my tests of the components I would be using ( this initial level would evolve into a actual level which would be a proper game level&#x20;
+For my first cycle, i aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as visual studio code along with a Github repository to back up my work. This is followed by creating a simple platform level which would be used for all of my tests of the components I would be using ( this initial level would evolve into an actual level which would be a proper game level. Lastly, is to add a character with the ability to move via the use of a keyboard as the input . The use of the keyboard is more beneficial for the environment the user will interact the game with ( the browser ) compared to touch on a smartphone. &#x20;
 
 * [x] set the game development environment
 * [x] be able to control the character via the keyboard&#x20;
@@ -14,7 +14,7 @@ For my first cycle, i aim to set up the basics of my project before addtioanl fe
 
 ### Usability Features
 
-movement - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intension of keeping it simple &#x20;
+movement - to enable my game to be intuitive for the player , they will be provide with a minimal amount of controls to move characters around. with the intention of keeping it simple &#x20;
 
 ### Key Variables
 
