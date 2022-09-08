@@ -8,8 +8,8 @@
 
 
 
-* [x] add coin system&#x20;
-* [x] scrolling camera&#x20;
+* [ ] add a stop watch
+* [ ] obstacles ( pits ,traps and spikes )
 
 ### Usability Features
 
@@ -41,9 +41,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
+| Test | Instructions     | What I expect                                                                                                                                                 | What actually happens | Pass/Fail |
+| ---- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | --------- |
+| 1    | added my spikes  | the spikes will function in a manner where when the user going in contact with  the spikes the player will take damage which will lead ot death if the plaer  | i sucessful add       | Fail      |
+| 2    |                  |                                                                                                                                                               |                       | Pass      |
 
 ### Evidence

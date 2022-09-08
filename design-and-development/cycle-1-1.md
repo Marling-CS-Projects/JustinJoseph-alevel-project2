@@ -44,6 +44,6 @@ Evidence for testing
 | Test | Instructions | What I expect                                                                                          | What actually happens                                                                                                                        | Pass/Fail |
 | ---- | ------------ | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | 1    | the camera   | when i move the pleyer left , right , up and down the background should follow them in that direction  | the back ground fllows the player left and right however it does not follow them up or down when the play go to the platform below or above  | Fail      |
-| 2    | the coin     | when the coin is added it will over above the ground and be in scale in respect to the of the map      | i added the coin to my game however it was scaled to big in respect to the background                                                        | Pass      |
+| 2    |              |                                                                                                        |                                                                                                                                              | Pass      |
 
 ### Evidence
