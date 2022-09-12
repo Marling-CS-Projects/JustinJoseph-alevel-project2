@@ -41,9 +41,10 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect                                                                                          | What actually happens                                                                                                                        | Pass/Fail |
-| ---- | ------------ | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | the camera   | when i move the pleyer left , right , up and down the background should follow them in that direction  | the back ground fllows the player left and right however it does not follow them up or down when the play go to the platform below or above  | Fail      |
-| 2    | the coin     | when the coin is added it will over above the ground and be in scale in respect to the of the map      | i added the coin to my game however it was scaled too big in respect to the background                                                       | fail      |
+| Test | Instructions | What I expect                                                                                          | What actually happens                                                                                                                                                                   | Pass/Fail |
+| ---- | ------------ | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | the camera   | when i move the pleyer left , right , up and down the background should follow them in that direction  | the back ground fllows the player left and right however it does not follow them up or down when the play go to the platform below or above                                             | Fail      |
+| 2    | the coin     | when the coin is added it will hover  above the ground and be in scale in respect to the of the map    | i added the coin to my game however it was scaled too big in respect to the background                                                                                                  | fail      |
+| 3    | the coin     | when the coin is added it will hover  above the ground and be in scale in respect to the of the map    | when i rewritten the code i added a  scale factor to the size of the coin and now the coin is the perfect size ratio to the background aswell that  the coin hovers above the platform  | pass      |
 
 ### Evidence
