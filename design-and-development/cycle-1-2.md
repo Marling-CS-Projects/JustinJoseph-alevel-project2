@@ -25,6 +25,18 @@ the objective of this cycle is to add a stop watch to the game where by the play
 ### Pseudocode
 
 ```
+ const timer = add([
+		text("stopwatch:  0 "),
+		pos(3, 86),
+		fixed(),
+    scale(0.50),
+		{ time: 0, },
+	])
+
+	timer.onUpdate(() => {
+		timer.time += dt()
+		timer.text = " stopwatch" + timer.time.toFixed(2)
+	})
 ```
 
 ## Development
@@ -33,7 +45,7 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Challenges
 
-Description of challenges
+one of the challenge that i faced during the implantation of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stop watch easily. I over came this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below other instrument that was displayed to the player &#x20;
 
 ## Testing
 
@@ -47,3 +59,7 @@ Evidence for testing
 | 2    | stop watch       | when the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop                                                                | the stopwatch worked as expected                                                                                                                      | Pass      |
 
 ### Evidence
+
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
