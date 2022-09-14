@@ -41,9 +41,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions     | What I expect                                                                                                                                                 | What actually happens | Pass/Fail |
-| ---- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | --------- |
-| 1    | added my spikes  | the spikes will function in a manner where when the user going in contact with  the spikes the player will take damage which will lead ot death if the plaer  | i sucessful add       | Fail      |
-| 2    |                  |                                                                                                                                                               |                       | Pass      |
+| Test | Instructions     | What I expect                                                                                                                                                                                                     | What actually happens                                                                                                                                 | Pass/Fail |
+| ---- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | added my spikes  | the spikes will function in a manner where when the user going in contact with  the spikes the player will take damage which will lead to death if the player comes in contact with it in more than one occasion  | the spikes are add successfully  however when the player comes in contact with the spikes the player does not take any damages to the players health  | Fail      |
+| 2    | stop watch       | when the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop                                                                | the stopwatch worked as expected                                                                                                                      | Pass      |
 
 ### Evidence
