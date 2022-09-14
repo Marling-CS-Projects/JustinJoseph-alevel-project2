@@ -8,8 +8,8 @@
 
 
 
-* [ ] add a stop watch
-* [ ] obstacles ( pits ,traps and spikes )
+* [ ] add a stopwatch
+* [ ] obstacles ( pits, traps, and spikes )
 
 ### Usability Features
 
