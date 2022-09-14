@@ -20,7 +20,7 @@ In this cycle, I aim to create a coin system such that in the process of playing
 | Variable Name | Use                                                                                                                          |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | coin          | when the player comes in contact with a  coin the coin itself will disappear and the score  will be added to the scoreboard  |
-|               |                                                                                                                              |
+|  pos          |                                                                                                                              |
 
 ### Pseudocode
 
