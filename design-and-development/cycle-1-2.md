@@ -6,9 +6,9 @@
 
 ### Objectives
 
+the objective of this cycle is to add a stop watch to the game where by the player can see how long it takes to complete the level as well as compete against themselves to improve the time taken to complete the level . Another objective to i will be completing this cycle is to add pits traps and spikes to the game in which if the player comes in contact with the any of these dangers the player will lose a health point or risk losing the game . &#x20;
 
-
-* [ ] add a stopwatch
+* [x] add a stopwatch
 * [ ] obstacles ( pits, traps, and spikes )
 
 ### Usability Features
@@ -19,7 +19,7 @@
 
 | Variable Name | Use |
 | ------------- | --- |
-|               |     |
+| timer         |     |
 |               |     |
 
 ### Pseudocode
