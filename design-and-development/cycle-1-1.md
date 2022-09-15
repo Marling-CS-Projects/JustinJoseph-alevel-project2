@@ -25,6 +25,21 @@ In this cycle, I aim to create a coin system such that in the process of playing
 ### Pseudocode
 
 ```
+
+	player.onCollide("coin", (c) => {
+		destroy(c)
+    score.value += 1
+    score.text = "score:" + score.value
+  })
+
+const score = add([
+  text("score: 0"),
+  pos(24,24),
+  { value : 0},
+  fixed(),
+  scale(0.50)
+])
+
 ```
 
 ## Development
@@ -37,7 +52,7 @@ Description of challenges
 
 ## Testing
 
-Evidence for testing
+E
 
 ### Tests
 
@@ -50,3 +65,9 @@ Evidence for testing
 | 5    | the coin     | when the player goes in contact with coins the coin should dissaplear and be add to the score board which the player can see whilst playing the game  | whent he player came in contact with the coins the coin are collected and added to the scroe board                                                                                      | pass      |
 
 ### Evidence
+
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>this images shows that the coin are place in the corrwect place and in the right postions </p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p><mark style="background-color:blue;"><strong>this images show that the player can collect the coins and it will be added to the score board on the top left</strong></mark> </p></figcaption></figure>
