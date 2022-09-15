@@ -68,6 +68,6 @@ E
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>this images shows that the coin are place in the corrwect place and in the right postions </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>this images shows that the coin are place in the corrwect place and in the right postions </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p><mark style="background-color:blue;"><strong>this images show that the player can collect the coins and it will be added to the score board on the top left</strong></mark> </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p><mark style="background-color:blue;"><strong>this images show that the player can collect the coins and it will be added to the score board on the top left</strong></mark> </p></figcaption></figure>

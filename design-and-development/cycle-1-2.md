@@ -19,7 +19,7 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 | Variable Name | Use |
 | ------------- | --- |
-| timer         |     |
+| timer ()      |     |
 |               |     |
 
 ### Pseudocode
@@ -45,7 +45,7 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Challenges
 
-one of the challenge that i faced during the implantation of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stop watch easily. I over came this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below other instrument that was displayed to the player &#x20;
+one of the challenges that i faced during the implantation of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stop watch easily. I over came this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below other instrument that was displayed to the player &#x20;
 
 ## Testing
 
@@ -62,4 +62,4 @@ Evidence for testing
 
 
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
