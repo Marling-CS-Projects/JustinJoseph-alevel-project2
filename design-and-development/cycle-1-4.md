@@ -8,7 +8,8 @@
 
 
 
-* [ ] adding another level
+* [ ] add a additional player
+* [ ] have a split screen mode &#x20;
 
 
 
