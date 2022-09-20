@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 5
+# Cycle 7
 
 ##
 
@@ -8,8 +8,8 @@
 
 
 
-* [ ] add a additional player
-* [ ] have a split screen mode &#x20;
+* [ ] add falling death   &#x20;
+* [ ] &#x20;add a death scene&#x20;
 
 
 
