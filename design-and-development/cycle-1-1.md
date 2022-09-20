@@ -48,7 +48,7 @@ const score = add([
 
 ### Challenges
 
-
+During this cycle, I face three different challenges. The first challenge i encountered was letting the player able to pick up the coin. i overcame this by making representing the coins as a nonfixed object which enabled the player to collect the coins. the second challenge i encountered was displaying the added coins to the game while the game was being played. I solved this issue by&#x20;
 
 ## Testing
 
