@@ -9,7 +9,7 @@
 the objective of this cycle is to add a stop watch to the game where by the player can see how long it takes to complete the level as well as compete against themselves to improve the time taken to complete the level . Another objective to i will be completing this cycle is to add pits traps and spikes to the game in which if the player comes in contact with the any of these dangers the player will lose a health point or risk losing the game . &#x20;
 
 * [x] add a stopwatch
-* [ ] obstacles ( pits, traps, and spikes )
+* [x] obstacles ( pits, traps, and spikes )
 
 ### Usability Features
 
@@ -17,10 +17,10 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-| timer ()      |     |
-|               |     |
+| Variable Name | Use                                                                                                                               |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| timer ()      | this variable is used to add the stopwatch function                                                                               |
+|   danger      | this variable is used in a way that if the player comes in contact with spikes or trap or a bot it will lead the player to death  |
 
 ### Pseudocode
 
@@ -45,11 +45,11 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Challenges
 
-one of the challenges that i faced during the implantation of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stop watch easily. I over came this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below other instrument that was displayed to the player &#x20;
+one of the challenges that i faced during the implantation of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below another  instrument that was displayed to the player &#x20;
 
 ## Testing
 
-Evidence for testing
+i test if the spike worked by  with a spike this resulted in the players death&#x20;
 
 ### Tests
 
