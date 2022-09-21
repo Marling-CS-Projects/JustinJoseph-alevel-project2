@@ -52,9 +52,11 @@ function patrol(speed = 60, dir = 1) {
 
 ### Outcome
 
+
+
 ### Challenges
 
-Description of challenges
+one of the challenges i have encountered it&#x20;
 
 ## Testing
 
@@ -68,3 +70,5 @@ Evidence for testing
 | 2    | the bot      | the bot should filps its bodys when it is changing directions  | the bot moves left and right but when it changes directions it does not the way to body of the is facing  | fail      |
 
 ### Evidence
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
