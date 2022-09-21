@@ -62,4 +62,4 @@ i test if the spike worked by  with a spike this resulted in the players death&#
 
 
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
