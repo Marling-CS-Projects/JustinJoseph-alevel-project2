@@ -46,6 +46,8 @@ const score = add([
 
 ### Outcome
 
+i have succesful added a coin scroe board to my game as well as succfully being able to move the camera around with the player&#x20;
+
 ### Challenges
 
 During this cycle, I face three different challenges. The first challenge i encountered was letting the player able to pick up the coin. i overcame this by making representing the coins as a nonfixed object which enabled the player to collect the coins. the second challenge i encountered was displaying the added coins to the game while the game was being played. I solved this issue by&#x20;
