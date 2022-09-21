@@ -4,7 +4,7 @@
 
 ## Design
 
-in this cycle, i aim to add a bot to my game. the function of this bot is to shoot at the player when they  as well as guard gates to the next level. I aim to add different types of bots with different abilities. &#x20;
+in this cycle, i aim to add a bot to my game. the function of this bot is to shoot at the player when they as well as guard gates to the next level. I aim to add different types of bots with different abilities. &#x20;
 
 ### Objectives
 
@@ -71,4 +71,4 @@ Evidence for testing
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
