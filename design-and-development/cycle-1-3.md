@@ -11,7 +11,7 @@ in this cycle, i aim to add a bot to my game. the function of this bot is to sho
 
 
 * [ ] add a bots&#x20;
-* [ ] make the bot move
+* [x] make the bot move
 
 
 
@@ -67,11 +67,11 @@ Evidence for testing
 
 | Test | Instructions | What I expect                                                  | What actually happens                                                                                     | Pass/Fail |
 | ---- | ------------ | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | the  bot     | the bot should move between two bondariys                      | the bot moves between the set bandoaryies                                                                 | pass      |
+| 1    | the  bot     | the bot should move between two boundaries                     | the bot moves between the set boundaries                                                                  | pass      |
 | 2    | the bot      | the bot should filps its bodys when it is changing directions  | the bot moves left and right but when it changes directions it does not the way to body of the is facing  | fail      |
 
 ### Evidence
 
 
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
