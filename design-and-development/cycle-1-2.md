@@ -43,13 +43,15 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Outcome
 
+The outcome of this cycle is that i have succesfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins  will be added to the scoreboard&#x20;
+
 ### Challenges
 
-one of the challenges that i faced during the implantation of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below another  instrument that was displayed to the player &#x20;
+one of the challenges that i faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below another  instrument that was displayed to the player &#x20;
 
 ## Testing
 
-i test if the spike worked by  with a spike this resulted in the players death&#x20;
+i test if the spike worked by with a spike this resulted in the players death&#x20;
 
 ### Tests
 
