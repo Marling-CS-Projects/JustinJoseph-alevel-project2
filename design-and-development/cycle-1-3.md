@@ -11,6 +11,7 @@ in this cycle, i aim to add a bot to my game. the function of this bot is to sho
 
 
 * [ ] add a bots&#x20;
+* [ ] make the bot move
 
 
 
@@ -71,4 +72,6 @@ Evidence for testing
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
