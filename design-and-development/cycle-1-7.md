@@ -1,4 +1,4 @@
-# Cycle 8 exit door
+# 2.2.1 Cycle 6
 
 ##
 
@@ -6,10 +6,10 @@
 
 ### Objectives
 
+in the cycle, i will be adding a moving platform in which the platform will move left and right in a given distance the aim of this to add to the player experience whilst playing my game. The other objective is to add a welcome menu to the game in which the player can start the game from add well as return them to it when they exit the game&#x20;
 
-
-* [ ] add a exit door    &#x20;
-* [ ] &#x20;
+* [ ] add a moving platforms  &#x20;
+* [ ] adding menu
 
 
 

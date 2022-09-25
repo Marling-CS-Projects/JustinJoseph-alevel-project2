@@ -20,10 +20,10 @@
 * [2.2.1 Cycle 2 coin and camera](design-and-development/cycle-1-1.md)
 * [2.2.1 Cycle 3 stopwatch and obstacles](design-and-development/cycle-1-2.md)
 * [2.2.1 Cycle 4 enemy](design-and-development/cycle-1-3.md)
-* [2.2.1 Cycle 5](design-and-development/cycle-1-4.md)
+* [Cycle 5 exit door](design-and-development/cycle-1-4.md)
 * [2.2.1 Cycle 6](design-and-development/cycle-1-5.md)
 * [Cycle 7 death and falling](design-and-development/cycle-1-6.md)
-* [Cycle 8 exit door](design-and-development/cycle-1-7.md)
+* [2.2.1 Cycle 8 moving platform and manu](design-and-development/cycle-1-7.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
