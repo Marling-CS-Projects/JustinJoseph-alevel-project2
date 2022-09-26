@@ -6,10 +6,12 @@
 
 ### Objectives
 
+the objective of this level is to add a exit door for the player . Onced the player has passed though the door the level is completed and if the player choses to they can be  taken to the level after which going though that door the level is fully completed .
+
+* [x] add a exit door
+* [x] takes the player to the next level     &#x20;
 
 
-* [x] add a exit door    &#x20;
-* [ ] &#x20;
 
 
 
@@ -26,8 +28,9 @@
 
 ### Pseudocode
 
-```
-```
+<pre><code><strong>if player collide with exit (
+</strong><strong> go to next level
+</strong><strong> )</strong></code></pre>
 
 ## Development
 
