@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 4
+# 2.2.1 Cycle 4 enemy
 
 ##
 
@@ -28,26 +28,24 @@ in this cycle, i aim to add a bot to my game. the function of this bot is to sho
 
 ### Pseudocode
 
-```
-function patrol(speed = 60, dir = 1) {
-
+<pre><code><strong>function ( speed , dir  ){
+</strong>
 	return {
 		id: "patrol",
 		require: [ "pos", "area", ],
 		add() {
-			this.on("collide", (obj, col) => {
+			when bot toches another object => {
 				if (col.isLeft() || col.isRight()) {
 					dir = -dir
 				}
 			})
 		},
 		update() {
-			this.move(speed * dir, 0)
+			the bot changes directions 
       
 		},
 	}
-}
-```
+}</code></pre>
 
 ## Development
 
@@ -71,6 +69,27 @@ Evidence for testing
 | 2    | the bot      | the bot should filps its bodys when it is changing directions  | the bot moves left and right but when it changes directions it does not the way to body of the is facing  | fail      |
 
 ### Evidence
+
+```
+function patrol(speed = 60, dir = 1) {
+
+	return {
+		id: "patrol",
+		require: [ "pos", "area", ],
+		add() {
+			this.on("collide", (obj, col) => {
+				if (col.isLeft() || col.isRight()) {
+					dir = -dir
+				}
+			})
+		},
+		update() {
+			this.move(speed * dir, 0)
+      
+		},
+	}
+}
+```
 
 
 

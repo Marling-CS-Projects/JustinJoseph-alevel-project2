@@ -46,9 +46,27 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
+| Test | Instructions                  | What I expect                                                                        | What actually happens  | Pass/Fail |
+| ---- | ----------------------------- | ------------------------------------------------------------------------------------ | ---------------------- | --------- |
+| 1    | the portal to the next level  | when the player goes throuh the portal the player should be taken to the next level  | does what is mentioned | pass      |
+| 2    |                               |                                                                                      |                        | Pass      |
 
 ### Evidence
+
+```
+    
+  player.onCollide("exit", () => {
+		go("win")
+  })
+```
+
+```
+  
+  "@": () => [
+	sprite("portal"),
+	area(),
+	solid(),  
+	origin("bot"),
+    "exit"
+	],
+```

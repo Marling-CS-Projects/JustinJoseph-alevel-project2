@@ -21,7 +21,7 @@
 * [2.2.1 Cycle 3 stopwatch and obstacles](design-and-development/cycle-1-2.md)
 * [2.2.1 Cycle 4 enemy](design-and-development/cycle-1-3.md)
 * [Cycle 5 exit door](design-and-development/cycle-1-4.md)
-* [2.2.1 Cycle 6](design-and-development/cycle-1-5.md)
+* [2.2.1 Cycle 6 adding another level](design-and-development/cycle-1-5.md)
 * [Cycle 7 death and falling](design-and-development/cycle-1-6.md)
 * [2.2.1 Cycle 8 moving platform and menu](design-and-development/cycle-1-7.md)
 
