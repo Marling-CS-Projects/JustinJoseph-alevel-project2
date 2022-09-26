@@ -8,7 +8,7 @@
 
 
 
-* [ ] add a exit door    &#x20;
+* [x] add a exit door    &#x20;
 * [ ] &#x20;
 
 
