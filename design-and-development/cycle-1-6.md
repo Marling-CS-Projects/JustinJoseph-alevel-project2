@@ -73,6 +73,14 @@ Evidence for testing
   })
 ```
 
-```
-// Some code
+```javascript
+
+ scene("lose", (time) => {
+  add([
+    text("lose ", { size: 24 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
 ```
