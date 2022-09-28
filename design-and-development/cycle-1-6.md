@@ -27,8 +27,8 @@
 ### Pseudocode
 
 ```
-// death 
-if player falls for 1000(
+// falling death 
+if player falls below 1000(
  death scene
  )
 ```
