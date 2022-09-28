@@ -28,14 +28,23 @@
 
 ```
 // death 
-if player fall for 1000(
+if player falls for 1000(
  death scene
  )
+```
+
+```
+if player dies (
+  display death scene
+  give the option to the player to play again 
+  )
 ```
 
 ## Development
 
 ### Outcome
+
+i have succssfully had falling death and a death scene to go with it&#x20;
 
 ### Challenges
 
