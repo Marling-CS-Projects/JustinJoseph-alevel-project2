@@ -1,4 +1,4 @@
-# Cycle 7
+# Cycle 7 death and falling
 
 ##
 
@@ -8,7 +8,7 @@
 
 
 
-* [ ] add falling death   &#x20;
+* [x] add falling death   &#x20;
 * [ ] &#x20;add a death scene&#x20;
 
 
@@ -27,6 +27,10 @@
 ### Pseudocode
 
 ```
+// death 
+if player fall for 1000(
+ death scene
+ )
 ```
 
 ## Development
@@ -49,3 +53,22 @@ Evidence for testing
 | 2    |              |               |                       | Pass      |
 
 ### Evidence
+
+```
+// death 
+ 	player.onUpdate(() => {
+		if (player.pos.y >= 2000) {
+			go("lose")
+		}
+	})
+
+  
+  player.onCollide("danger", () => {
+		go("lose")
+  })
+
+    
+  player.onCollide("exit", () => {
+		go("win")
+  })
+```
