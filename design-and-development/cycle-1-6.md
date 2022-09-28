@@ -54,7 +54,7 @@ Evidence for testing
 
 ### Evidence
 
-```
+```javascript
 // death 
  	player.onUpdate(() => {
 		if (player.pos.y >= 2000) {
@@ -71,4 +71,8 @@ Evidence for testing
   player.onCollide("exit", () => {
 		go("win")
   })
+```
+
+```
+// Some code
 ```
