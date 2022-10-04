@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 3
+# Cycle 3 stopwatch and obstacles
 
 ##
 
@@ -64,4 +64,4 @@ i test if the spike worked by with a spike this resulted in the players death&#x
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
