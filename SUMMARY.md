@@ -20,12 +20,12 @@
 * [Cycle 2 coin and camera](design-and-development/cycle-1-1.md)
 * [Cycle 3 stopwatch and obstacles](design-and-development/cycle-1-2.md)
 * [Cycle 4 stopwatch](design-and-development/cycle-1-3.md)
-* [Cycle 4 enemy](design-and-development/cycle-1-4.md)
-* [Cycle 5 exit door](design-and-development/cycle-1-5.md)
-* [Cycle 6 adding another level](design-and-development/cycle-1-6.md)
-* [cycle 7 death and falling](design-and-development/cycle-1-7.md)
-* [cycle 8 moving platform](design-and-development/cycle-1-8.md)
-* [Cycle 9 menu](design-and-development/cycle-1-9.md)
+* [Cycle 5 enemy](design-and-development/cycle-1-4.md)
+* [Cycle 6 exit door](design-and-development/cycle-1-5.md)
+* [Cycle 7 adding another level](design-and-development/cycle-1-6.md)
+* [cycle 8 death and falling](design-and-development/cycle-1-7.md)
+* [cycle 9 moving platform](design-and-development/cycle-1-8.md)
+* [Cycle 10 menu](design-and-development/cycle-1-9.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
