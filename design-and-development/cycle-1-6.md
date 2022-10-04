@@ -9,7 +9,7 @@
 
 
 * [x] add falling death   &#x20;
-* [ ] &#x20;add a death scene&#x20;
+* [x] &#x20;add a death scene&#x20;
 
 
 
