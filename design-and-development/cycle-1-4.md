@@ -1,17 +1,17 @@
-# Cycle 5 exit door
+# 2.2.1 Cycle 4 enemy
 
 ##
 
 ## Design
 
+in this cycle, i aim to add a bot to my game. the function of this bot is to shoot at the player when they as well as guard gates to the next level. I aim to add different types of bots with different abilities. &#x20;
+
 ### Objectives
 
-the objective of this level is to add a exit door for the player . Onced the player has passed though the door the level is completed and if the player choses to they can be  taken to the level after which going though that door the level is fully completed .
-
-* [x] add a exit door
-* [x] takes the player to the next level     &#x20;
 
 
+* [x] add a bots&#x20;
+* [x] make the bot move
 
 
 
@@ -28,17 +28,34 @@ the objective of this level is to add a exit door for the player . Onced the pla
 
 ### Pseudocode
 
-<pre><code><strong>if player collide with exit (
-</strong><strong> go to next level
-</strong><strong> )</strong></code></pre>
+<pre><code><strong>function ( speed , dir  ){
+</strong>
+	return {
+		id: "patrol",
+		require: [ "pos", "area", ],
+		add() {
+			when bot toches another object => {
+				if (col.isLeft() || col.isRight()) {
+					dir = -dir
+				}
+			})
+		},
+		update() {
+			the bot changes directions 
+      
+		},
+	}
+}</code></pre>
 
 ## Development
 
 ### Outcome
 
+
+
 ### Challenges
 
-Description of challenges
+one of the challenges i have encountered it&#x20;
 
 ## Testing
 
@@ -46,27 +63,34 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions                  | What I expect                                                                        | What actually happens  | Pass/Fail |
-| ---- | ----------------------------- | ------------------------------------------------------------------------------------ | ---------------------- | --------- |
-| 1    | the portal to the next level  | when the player goes throuh the portal the player should be taken to the next level  | does what is mentioned | pass      |
-| 2    |                               |                                                                                      |                        | Pass      |
+| Test | Instructions | What I expect                                                  | What actually happens                                                                                     | Pass/Fail |
+| ---- | ------------ | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | the  bot     | the bot should move between two boundaries                     | the bot moves between the set boundaries                                                                  | pass      |
+| 2    | the bot      | the bot should filps its bodys when it is changing directions  | the bot moves left and right but when it changes directions it does not the way to body of the is facing  | fail      |
 
 ### Evidence
 
 ```
-    
-  player.onCollide("exit", () => {
-		go("win")
-  })
+function patrol(speed = 60, dir = 1) {
+
+	return {
+		id: "patrol",
+		require: [ "pos", "area", ],
+		add() {
+			this.on("collide", (obj, col) => {
+				if (col.isLeft() || col.isRight()) {
+					dir = -dir
+				}
+			})
+		},
+		update() {
+			this.move(speed * dir, 0)
+      
+		},
+	}
+}
 ```
 
-```
-  
-  "@": () => [
-	sprite("portal"),
-	area(),
-	solid(),  
-	origin("bot"),
-    "exit"
-	],
-```
+
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

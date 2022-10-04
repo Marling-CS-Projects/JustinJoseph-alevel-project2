@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 8 moving platform
+# Cycle 7 death and falling
 
 ##
 
@@ -6,11 +6,10 @@
 
 ### Objectives
 
-in the cycle, i will be adding a moving platform in which the platform will move left and right in a given distance the aim of this to add to the player experience whilst playing my game. The other objective is to add a welcome menu to the game in which the player can start the game from add well as return them to it when they exit the game&#x20;
-
-* [x] add a moving platforms  &#x20;
 
 
+* [x] add falling death   &#x20;
+* [x] &#x20;add a death scene&#x20;
 
 
 
@@ -28,11 +27,24 @@ in the cycle, i will be adding a moving platform in which the platform will move
 ### Pseudocode
 
 ```
+// falling death 
+if player falls below 1000(
+ death scene
+ )
+```
+
+```
+if player dies (
+  display death scene
+  give the option to the player to play again 
+  )
 ```
 
 ## Development
 
 ### Outcome
+
+i have succssfully had falling death and a death scene to go with it&#x20;
 
 ### Challenges
 
@@ -50,3 +62,34 @@ Evidence for testing
 | 2    |              |               |                       | Pass      |
 
 ### Evidence
+
+```javascript
+// death 
+ 	player.onUpdate(() => {
+		if (player.pos.y >= 2000) {
+			go("lose")
+		}
+	})
+
+  
+  player.onCollide("danger", () => {
+		go("lose")
+  })
+
+    
+  player.onCollide("exit", () => {
+		go("win")
+  })
+```
+
+```javascript
+
+ scene("lose", (time) => {
+  add([
+    text("lose ", { size: 24 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+```

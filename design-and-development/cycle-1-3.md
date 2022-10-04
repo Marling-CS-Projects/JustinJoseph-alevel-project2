@@ -1,19 +1,15 @@
-# 2.2.1 Cycle 4 enemy
+# Cycle 4 stopwatch
 
 ##
 
 ## Design
 
-in this cycle, i aim to add a bot to my game. the function of this bot is to shoot at the player when they as well as guard gates to the next level. I aim to add different types of bots with different abilities. &#x20;
-
 ### Objectives
 
+the objective of this cycle is to add a stop watch to the game where by the player can see how long it takes to complete the level as well as compete against themselves to improve the time taken to complete the level . Another objective to i will be completing this cycle is to add pits traps and spikes to the game in which if the player comes in contact with the any of these dangers the player will lose a health point or risk losing the game . &#x20;
 
-
-* [x] add a bots&#x20;
-* [x] make the bot move
-
-
+* [x] add a stopwatch
+* [x] obstacles ( pits, traps, and spikes )
 
 ### Usability Features
 
@@ -21,76 +17,51 @@ in this cycle, i aim to add a bot to my game. the function of this bot is to sho
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-|               |     |
-|               |     |
+| Variable Name | Use                                                                                                                               |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| timer ()      | this variable is used to add the stopwatch function                                                                               |
+|   danger      | this variable is used in a way that if the player comes in contact with spikes or trap or a bot it will lead the player to death  |
 
 ### Pseudocode
 
-<pre><code><strong>function ( speed , dir  ){
-</strong>
-	return {
-		id: "patrol",
-		require: [ "pos", "area", ],
-		add() {
-			when bot toches another object => {
-				if (col.isLeft() || col.isRight()) {
-					dir = -dir
-				}
-			})
-		},
-		update() {
-			the bot changes directions 
-      
-		},
-	}
-}</code></pre>
+```
+ const timer = add([
+		text("stopwatch:  0 "),
+		pos(3, 86),
+		fixed(),
+    scale(0.50),
+		{ time: 0, },
+	])
+
+	timer.onUpdate(() => {
+		timer.time += dt()
+		timer.text = " stopwatch" + timer.time.toFixed(2)
+	})
+```
 
 ## Development
 
 ### Outcome
 
-
+The outcome of this cycle is that i have succesfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins  will be added to the scoreboard&#x20;
 
 ### Challenges
 
-one of the challenges i have encountered it&#x20;
+one of the challenges that i faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below another  instrument that was displayed to the player &#x20;
 
 ## Testing
 
-Evidence for testing
+i test if the spike worked by with a spike this resulted in the players death&#x20;
 
 ### Tests
 
-| Test | Instructions | What I expect                                                  | What actually happens                                                                                     | Pass/Fail |
-| ---- | ------------ | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | the  bot     | the bot should move between two boundaries                     | the bot moves between the set boundaries                                                                  | pass      |
-| 2    | the bot      | the bot should filps its bodys when it is changing directions  | the bot moves left and right but when it changes directions it does not the way to body of the is facing  | fail      |
+| Test | Instructions     | What I expect                                                                                                                                                                                                     | What actually happens                                                                                                                                 | Pass/Fail |
+| ---- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | added my spikes  | the spikes will function in a manner where when the user going in contact with  the spikes the player will take damage which will lead to death if the player comes in contact with it in more than one occasion  | the spikes are add successfully  however when the player comes in contact with the spikes the player does not take any damages to the players health  | Fail      |
+| 2    | stop watch       | when the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop                                                                | the stopwatch worked as expected                                                                                                                      | Pass      |
 
 ### Evidence
 
-```
-function patrol(speed = 60, dir = 1) {
-
-	return {
-		id: "patrol",
-		require: [ "pos", "area", ],
-		add() {
-			this.on("collide", (obj, col) => {
-				if (col.isLeft() || col.isRight()) {
-					dir = -dir
-				}
-			})
-		},
-		update() {
-			this.move(speed * dir, 0)
-      
-		},
-	}
-}
-```
 
 
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

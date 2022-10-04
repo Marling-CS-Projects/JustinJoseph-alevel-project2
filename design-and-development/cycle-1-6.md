@@ -1,4 +1,4 @@
-# Cycle 7 death and falling
+# 2.2.1 Cycle 5
 
 ##
 
@@ -8,8 +8,7 @@
 
 
 
-* [x] add falling death   &#x20;
-* [x] &#x20;add a death scene&#x20;
+* [ ] adding another level
 
 
 
@@ -27,24 +26,11 @@
 ### Pseudocode
 
 ```
-// falling death 
-if player falls below 1000(
- death scene
- )
-```
-
-```
-if player dies (
-  display death scene
-  give the option to the player to play again 
-  )
 ```
 
 ## Development
 
 ### Outcome
-
-i have succssfully had falling death and a death scene to go with it&#x20;
 
 ### Challenges
 
@@ -62,34 +48,3 @@ Evidence for testing
 | 2    |              |               |                       | Pass      |
 
 ### Evidence
-
-```javascript
-// death 
- 	player.onUpdate(() => {
-		if (player.pos.y >= 2000) {
-			go("lose")
-		}
-	})
-
-  
-  player.onCollide("danger", () => {
-		go("lose")
-  })
-
-    
-  player.onCollide("exit", () => {
-		go("win")
-  })
-```
-
-```javascript
-
- scene("lose", (time) => {
-  add([
-    text("lose ", { size: 24 }),
-    pos(vec2(500, 350)),
-    origin("center"),
-    color(255, 255, 255),
-    text
-  ]);
-```

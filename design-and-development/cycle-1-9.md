@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 8 moving platform
+# Copy of 2.2.1 Cycle 9 menu
 
 ##
 
@@ -6,11 +6,10 @@
 
 ### Objectives
 
-in the cycle, i will be adding a moving platform in which the platform will move left and right in a given distance the aim of this to add to the player experience whilst playing my game. The other objective is to add a welcome menu to the game in which the player can start the game from add well as return them to it when they exit the game&#x20;
+for this cycle i aim to add a pause button in where the player can pause the game at any time as well as quit the game or restart the game level . my second objective is to add a manu where the player loads into ; from which the player can start the game or go to another section and read the instruction on how to player the game&#x20;
 
-* [x] add a moving platforms  &#x20;
-
-
+* [ ] add a pause button in the game&#x20;
+* [ ] adding menu
 
 
 
