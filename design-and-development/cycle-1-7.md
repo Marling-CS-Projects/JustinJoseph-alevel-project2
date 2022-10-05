@@ -62,14 +62,13 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
+| Test | Instructions   | What I expect                                                                                                                           | What actually happens                                                                                                                                                      | Pass/Fail |
+| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | falling death  | when the player falls out side of the level the player should die and the death screen should show after a curtain distance of falling  |  when the player goes out of the level the player dies to with in a short  distance                                                                                        | Fail      |
+| 2    | falling death  | when the player falls out side of the level the player should die and the death screen should show after a curtain distance of falling  | when the player jumps of the level the player is dead when he goes below the base floor of the game as well as that the player will die if he falling for a long distance  | Pass      |
+| 3    | death scene    | when the player collides with a dangers object the death screen should appear                                                           | when the player dies the death screen appears                                                                                                                              | pass      |
 
 ### Evidence
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ```javascript
 // falling death 
@@ -106,3 +105,5 @@ Evidence for testing
   
 });
 ```
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
