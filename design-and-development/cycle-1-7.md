@@ -1,4 +1,4 @@
-# Cycle 7 death and falling
+# cycle 8 death and falling
 
 ##
 
@@ -6,7 +6,7 @@
 
 ### Objectives
 
-
+For the objective of this cycle, i aim to incporate a death scene to the game the way i see this to be implemneted is that is the player falles of the level ( outside the play able area ) or falles from a sifnifcant heigth it will resukt in the imade death of the player whcih makes the player restart the level to play&#x20;
 
 * [x] add falling death   &#x20;
 * [x] &#x20;add a death scene&#x20;
@@ -62,34 +62,3 @@ Evidence for testing
 | 2    |              |               |                       | Pass      |
 
 ### Evidence
-
-```javascript
-// death 
- 	player.onUpdate(() => {
-		if (player.pos.y >= 2000) {
-			go("lose")
-		}
-	})
-
-  
-  player.onCollide("danger", () => {
-		go("lose")
-  })
-
-    
-  player.onCollide("exit", () => {
-		go("win")
-  })
-```
-
-```javascript
-
- scene("lose", (time) => {
-  add([
-    text("lose ", { size: 24 }),
-    pos(vec2(500, 350)),
-    origin("center"),
-    color(255, 255, 255),
-    text
-  ]);
-```
