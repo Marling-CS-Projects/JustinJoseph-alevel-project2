@@ -6,7 +6,7 @@
 
 ### Objectives
 
-For the objective of this cycle, i aim to incporate a death scene to the game the way i see this to be implemneted is that is the player falles of the level ( outside the play able area ) or falles from a sifnifcant heigth it will resukt in the imade death of the player whcih makes the player restart the level to play&#x20;
+For the objective of this cycle, i aim to incporate a death scene to the game the way i see this to be implemneted is that is the player falles of the level ( outside the play able area ) or falles from a sifnifcant heigth it will result in the imaidate  death of the player which makes the player restart the level to play&#x20;
 
 * [x] add falling death   &#x20;
 * [x] &#x20;add a death scene&#x20;
