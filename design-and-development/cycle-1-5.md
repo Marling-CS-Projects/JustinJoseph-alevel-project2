@@ -1,4 +1,4 @@
-# Cycle 5 exit door
+# Cycle 6 exit door
 
 ##
 
@@ -9,7 +9,8 @@
 the objective of this level is to add a exit door for the player . Onced the player has passed though the door the level is completed and if the player choses to they can be  taken to the level after which going though that door the level is fully completed .
 
 * [x] add a exit door
-* [x] takes the player to the next level     &#x20;
+* [x] takes the player to the next level  &#x20;
+* [x] once the player has completed all of the levels the win scene will appear   &#x20;
 
 
 
@@ -53,20 +54,47 @@ Evidence for testing
 
 ### Evidence
 
+```javascript
+  "@": () => [
+    sprite("portal"),
+    area(),
+    solid(),
+    origin("bot"),
+    "exit"
+  ],
 ```
-    
+
+```javascript
   player.onCollide("exit", () => {
-		go("win")
+    go("win")
   })
 ```
 
+```javascript
+    scene("win", (time) => {
+      add([
+        text("win ", { size: 24 }),
+        pos(vec2(400, 200)),
+        origin("center"),
+        color(255, 255, 255),
+      ]);
+
+
+      add([
+        text("press enter to go back to the start menu ", {
+        size: 24}),
+        pos(vec2(500, 350)),
+        origin("center"),
+        color(255, 255, 255),
+        text
+      ]);
+
+      onKeyRelease("enter", () => {
+        go("start");
+      })
+    });
 ```
-  
-  "@": () => [
-	sprite("portal"),
-	area(),
-	solid(),  
-	origin("bot"),
-    "exit"
-	],
-```
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

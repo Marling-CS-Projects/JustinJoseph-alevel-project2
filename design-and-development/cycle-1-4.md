@@ -1,4 +1,4 @@
-# Cycle 4 enemy
+# Cycle 5 enemy
 
 ##
 
@@ -70,7 +70,7 @@ Evidence for testing
 
 ### Evidence
 
-```
+```javascript
 function patrol(speed = 60, dir = 1) {
 
 	return {

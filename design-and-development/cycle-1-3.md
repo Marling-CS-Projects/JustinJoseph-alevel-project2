@@ -63,6 +63,22 @@ i test if the spike worked by with a spike this resulted in the players death&#x
 
 ### Evidence
 
+```javascript
+  const timer = add([
+    text("stopwatch : 0 "),
+    pos(3, 86),
+    fixed(),
+    scale(0.50),
+    { time: 0 },
+  ])
 
+  timer.onUpdate(() => {
+    timer.time += dt()
+    timer.text = " stopwatch" + timer.time.toFixed(2)
+  })
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+the image above displays the use of stopwatch which is fully functional on the top left corner&#x20;

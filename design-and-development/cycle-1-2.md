@@ -61,6 +61,31 @@ i test if the spike worked by with a spike this resulted in the players death&#x
 
 ### Evidence
 
+```javascript
 
+  "a": () => [
+    sprite("acid"),
+    area(),
+    solid(),
+    mp(),
+    origin("bot"),
+    "danger"
+  ],
+  
+  "s": () => [
+    sprite("spikes"),
+    area(),
+    solid(),
+    origin("bot"),
+    pos(0, 28),
+    scale(1.5, 1.5),
+    "danger"
+  ],
+```
 
-<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+```javascript
+
+  player.onCollide("danger", () => {
+    go("lose")
+  })
+```

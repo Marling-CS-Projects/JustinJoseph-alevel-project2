@@ -56,3 +56,56 @@ Evidence for testing
 
 ### Evidence
 
+```javascript
+function mp(speed = 100, dis = 10, dir = 1) {
+
+  return {
+    id: "mp",
+    require: ["pos", "area",],
+    add() {
+      this.on("collide", (obj, col) => {
+        if (col.isLeft() || col.isRight()) {
+          dir = -dir
+        }
+      })
+    },
+    update() {
+      this.move(speed * dir, 0)
+
+    },
+  }
+}
+```
+
+```javascript
+  "j": () => [
+    sprite("platform3"),
+    area(),
+    solid(),
+    mp(),
+    origin("bot"),
+  ],
+```
+
+```javascript
+  "a": () => [
+    sprite("acid"),
+    area(),
+    solid(),
+    mp(),
+    origin("bot"),
+    "danger"
+  ],
+```
+
+```javascript
+  player.onCollide("danger", () => {
+    go("lose")
+  })
+```
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>the image above with the rectangular block represents the move platform </p></figcaption></figure>
+
+&#x20; &#x20;
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>the image above with the green rectangle with a black rim represent the acid bath </p></figcaption></figure>
