@@ -1,4 +1,4 @@
-# 2.2.1 Cycle 2
+# Cycle 2 coin and camera
 
 ##
 
@@ -79,6 +79,39 @@ During this cycle, I face three different challenges. The first challenge i enco
 
 
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>this images shows that the coin are place in the corrwect place and in the right postions </p></figcaption></figure>
+```javascript
+// coin 
+   
+  "c": () => [
+    sprite("coin"),
+    area(),
+    solid(),
+    origin("bot"),
+    pos(0,10),
+    scale(0.75,0.75),
+    "coin"
+  ],
+               
+   player.onCollide("coin", (c) => {
+      destroy(c)
+    score.value += 1
+    score.text = "score:" + score.value
+  })
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p><mark style="background-color:blue;"><strong>this images show that the player can collect the coins and it will be added to the score board on the top left</strong></mark> </p></figcaption></figure>
+const score = add([
+  text("score: 0"),
+  pos(24,24),
+  { value : 0},
+  fixed(),
+  scale(0.50)
+])
+
+```
+
+```javascript
+ // player camera code 
+ 
+player.onUpdate(() => {
+  camPos(player.pos);  
+})
+```
