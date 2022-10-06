@@ -18,7 +18,7 @@
 * [Design Frame](2-design-and-development/systems-diagram.md)
 * [Cycle 1 set up](2-design-and-development/cycle-1.md)
 * [Cycle 2 coin and camera](design-and-development/cycle-1-1.md)
-* [Cycle 3 stopwatch and obstacles](design-and-development/cycle-1-2.md)
+* [Cycle 3 obstacles](design-and-development/cycle-1-2.md)
 * [Cycle 4 stopwatch](design-and-development/cycle-1-3.md)
 * [Cycle 5 enemy](design-and-development/cycle-1-4.md)
 * [Cycle 6 exit door](design-and-development/cycle-1-5.md)
