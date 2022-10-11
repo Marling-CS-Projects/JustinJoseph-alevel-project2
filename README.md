@@ -4,7 +4,7 @@ description: Computer Science H446-03
 
 # Some Generic Project
 
-&#x20;my guy&#x20;
+&#x20;
 
 |                  |                 |
 | ---------------- | --------------- |
