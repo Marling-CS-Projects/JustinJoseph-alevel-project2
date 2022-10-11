@@ -10,8 +10,7 @@
 * [1.3 Research](analysis/1.3-research-the-problem.md)
 * [1.4a Features of Proposed Solution](1-analysis/1.4a-features-of-the-proposed-solution.md)
 * [1.4b Computational Methods](1-analysis/1.4b-computational-methods.md)
-* [1.5 Success Criteria](1-analysis/1.5-success-criteria.md)
-* [Copy of 1.5 Success Criteria](analysis/1.5-success-criteria-1.md)
+* [1.5 Success Criteria](analysis/1.5-success-criteria.md)
 * [1.6 Hardware and Software Requirements](1-analysis/1.6-hardware-and-software-requirements.md)
 
 ## 2 Design and Development <a href="#design-and-development" id="design-and-development"></a>
