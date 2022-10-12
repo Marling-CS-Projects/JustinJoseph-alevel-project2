@@ -16,26 +16,14 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                               |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| timer ()      | this variable is used to add the stopwatch function                                                                               |
-|   danger      | this variable is used in a way that if the player comes in contact with spikes or trap or a bot it will lead the player to death  |
+| Variable Name                            | Use                                                                                                                                            |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code>player.onCollide</code></pre> | this variable is used when the character comes in contact with any obstacles (such as spikes and traps) or anything that is tags as dangerous  |
+|                                          |                                                                                                                                                |
 
 ### Pseudocode
 
 ```
- const timer = add([
-		text("stopwatch:  0 "),
-		pos(3, 86),
-		fixed(),
-    scale(0.50),
-		{ time: 0, },
-	])
-
-	timer.onUpdate(() => {
-		timer.time += dt()
-		timer.text = " stopwatch" + timer.time.toFixed(2)
-	})
 ```
 
 ## Development

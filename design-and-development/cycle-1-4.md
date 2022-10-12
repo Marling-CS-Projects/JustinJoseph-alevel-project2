@@ -21,10 +21,10 @@ in this cycle, i aim to add a bot to my game. the function of this bot is to sho
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-|               |     |
-|               |     |
+| Variable Name | Use                           |
+| ------------- | ----------------------------- |
+| patrol        |  this functions name is used  |
+|               |                               |
 
 ### Pseudocode
 
