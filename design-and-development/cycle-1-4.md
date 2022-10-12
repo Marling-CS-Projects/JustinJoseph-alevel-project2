@@ -21,10 +21,11 @@ in this cycle, i aim to add a bot to my game. the function of this bot is to sho
 
 ### Key Variables
 
-| Variable Name | Use                           |
-| ------------- | ----------------------------- |
-| patrol        |  this functions name is used  |
-|               |                               |
+| Variable Name                   | Use                                                                                                                                                                                           |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code> patrol</code></pre> | this variable is used to store the actions ( the command ) of the enemy bot which is the movement of the enemy from left to right and what will happen is the player coilies with the player  |
+| this .move                      | this is the variable used to give the bot the speed and direction to going in left and right                                                                                                  |
+|                                 |                                                                                                                                                                                               |
 
 ### Pseudocode
 

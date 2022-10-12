@@ -22,10 +22,10 @@ the objective of this level is to add a exit door for the player . Onced the pla
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-|               |     |
-|               |     |
+| Variable Name | Use                                                                                                                                                                                        |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| win scene     | the variable is used to show the player the win scene if the player has reached the exit of the level                                                                                      |
+|  add          | this is to include objects, text and components to the game . in this case it is to add text and  position it on the screen for when the player win the level (by getting to the portal )  |
 
 ### Pseudocode
 
@@ -47,10 +47,10 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions                  | What I expect                                                                        | What actually happens  | Pass/Fail |
-| ---- | ----------------------------- | ------------------------------------------------------------------------------------ | ---------------------- | --------- |
-| 1    | the portal to the next level  | when the player goes throuh the portal the player should be taken to the next level  | does what is mentioned | pass      |
-| 2    |                               |                                                                                      |                        | Pass      |
+| Test | Instructions                  | What I expect                                                                         | What actually happens  | Pass/Fail |
+| ---- | ----------------------------- | ------------------------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | the portal to the next level  | when the player goes through the portal the player should be taken to the next level  | does what is mentioned | pass      |
+| 2    |                               |                                                                                       |                        | Pass      |
 
 ### Evidence
 
