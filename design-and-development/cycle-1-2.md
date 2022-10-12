@@ -19,7 +19,7 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 | Variable Name                            | Use                                                                                                                                            |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | <pre><code>player.onCollide</code></pre> | this variable is used when the character comes in contact with any obstacles (such as spikes and traps) or anything that is tags as dangerous  |
-|                                          |                                                                                                                                                |
+|   danger                                 | this variable is used in a way that if the player comes in contact with this variable name it will lead the player to death                    |
 
 ### Pseudocode
 

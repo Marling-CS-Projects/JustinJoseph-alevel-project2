@@ -18,10 +18,10 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                               |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| timer ()      | this variable is used to add the stopwatch function                                                                               |
-|   danger      | this variable is used in a way that if the player comes in contact with spikes or trap or a bot it will lead the player to death  |
+| Variable Name | Use                                                                                                                                                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| timer ()      | this variable is used to add the stopwatch function                                                                                                                 |
+| fixed         | this is to ensure that the displayed stopwatch counter does not move with the player or go out of frame but instead stays the same location through out the levels  |
 
 ### Pseudocode
 
@@ -44,7 +44,7 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Outcome
 
-The outcome of this cycle is that i have succesfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins  will be added to the scoreboard&#x20;
+The outcome of this cycle is that i have successfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins  will be added to the scoreboard&#x20;
 
 ### Challenges
 
