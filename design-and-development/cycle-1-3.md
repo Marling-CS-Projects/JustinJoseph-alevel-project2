@@ -79,6 +79,6 @@ i test if the spike worked by with a spike this resulted in the players death&#x
 
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 the image above displays the use of stopwatch which is fully functional on the top left corner&#x20;
