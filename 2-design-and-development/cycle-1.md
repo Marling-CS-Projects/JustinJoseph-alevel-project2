@@ -6,23 +6,23 @@
 
 ### Objectives
 
-For my first cycle, i aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as visual studio code along with a Github repository to back up my work. This is followed by creating a simple platform level that would be used for all of my tests of the components I would be using ( this initial level would evolve into an actual level which would be a proper game level. Lastly, is to add a character with the ability to move via the use of a keyboard as the input. The use of the keyboard is more beneficial for the environment the user will interact the game with ( the browser ) compared to touch on a smartphone. &#x20;
+For my first cycle, I aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as visual studio code along with a GitHhub repository to back up my work. This is followed by creating a simple platform level that would be used for all of my tests of the components I would be using (this initial level would evolve into an actual level which would be a proper game level). Lastly, is to add a character with the ability to move via the use of a keyboard as the input. The use of the keyboard is more beneficial for the environment the user will interact the game with (the browser) compared to touch on a smartphone. &#x20;
 
-* [x] set the game development environment
-* [x] be able to control the character via the keyboard&#x20;
-* [x] &#x20;set up the platforms&#x20;
+* [x] Set the game development environment
+* [x] Be able to control the character via the keyboard&#x20;
+* [x] Set up the platforms&#x20;
 
 ### Usability Features
 
-movement - to enable my game to be intuitive for the player, they will be provided with a minimal amount of controls to move characters around. with the intention of keeping it simple &#x20;
+Movement - to enable my game to be intuitive for the player, they will be provided with a minimal amount of controls to move characters around. with the intention of keeping it simple &#x20;
 
 ### Key Variables
 
-| Variable Name           | Use                                                                                                                                                     |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| controls ( a, d, space) | this controls the movement of the character by moving left , right and jump                                                                             |
-| player                  |  the use of this variable is to add the player to the game whilst providing the player with a body which the components of the game can interact with.  |
-| speed                   | it provides that value which depend on how fast the character moves .                                                                                   |
+| Variable Name          | Use                                                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Controls (a, d, space) | This controls the movement of the character by moving left, right, and to jump                                                                       |
+| Player                 | The use of this variable is to add the player to the game whilst providing the player with a body which the components of the game can interact with |
+| Speed                  | It provides a value which determines how fast a player moves                                                                                         |
 
 ### Pseudocode
 
@@ -111,7 +111,7 @@ After fixing issues with the movement of the character&#x20;
 
 ### Challenges
 
-The challenges of this cycle was setting up a movement feature for the first character. In my first attempt my code failed; I figured out that i had over complicated the code i used and instead i changed to the code to be more simpler. After which the character was able to move left , right and up with out hindrances. &#x20;
+The challenge of this cycle was setting up a movement feature for the first character. In my first attempt, my code failed; I figured out that I had over-complicated the code I used and instead I changed the code to be simpler. After which the character was able to move left, right, and up without hindrances. &#x20;
 
 ## Testing
 

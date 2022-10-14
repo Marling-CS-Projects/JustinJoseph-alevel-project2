@@ -1,4 +1,4 @@
-# 2.1 Design Frame
+# Design Frame
 
 ## Systems Diagram
 
@@ -8,20 +8,20 @@ This diagram shows the different parts of the game that I will focus on creating
 
 ## Usability Features
 
-Usability is an important aspect to my game as I want it to be accessible to all. There are 5 key points of usability to create the best user experience that I will be focusing on when developing my project. These are:
+Usability is an important aspect of my game as I want it to be accessible to all. There are 5 key points of usability to create the best user experience that I will be focusing on when developing my project. These are:
 
-### Effective
+### Effectiveness
 
 Users can achieve the goal with completeness and accuracy. To do this, I will make it easy for the players to realise that they need to reach a goal in order to complete a level. I will make this goal clear to see so there is no confusion over where the players need to go.
 
 #### Aims
 
-* the player should be able to reach the end of the level without issues&#x20;
+* The player should be able to reach the end of the level without issues&#x20;
 * Create a clear goal for any multiplayer modes
 
 ### Efficiency
 
-The speed and accuracy to which a user can complete the goal. To do this, I will create a menu system which is easy to navigate through in order for to find what you are looking for. The information which is more important can be found with less clicks.
+The speed and accuracy with which a user can complete the goal. To do this, I will create a menu system that is easy to navigate through in order to find what you are looking for. The information which is more important can be found with fewer clicks.
 
 #### Aims
 
@@ -30,13 +30,13 @@ The speed and accuracy to which a user can complete the goal. To do this, I will
 
 ### Engaging
 
-The solution is engaging for the user to use. To do this, I will create 5 levels and an online multiplayer mode to keep the players engaged and allow them to have fun while playing the game. Using vector style art will also make the game nicer to look at than blocks, so will draw more people in, keeping them engaged.
+The solution is engaging for the user to use. To do this, I will create 5 levels and an online multiplayer mode to keep the players engaged and allow them to have fun while playing the game. Using vector-style art will also make the game nicer to look at than blocks, so will draw more people in, keeping them engaged.
 
 #### Aims
 
 * Create a series of levels to work through
 * Create a multiplayer mode to play
-* Incorporate a style of game art the suits the game
+* Incorporate a style of game art that suits the game
 
 ### Error Tolerant
 
@@ -60,7 +60,7 @@ The solution should be easy to use and not be over complicated. To do this, I wi
 
 ### Pseudocode for game
 
-This is the basic layout of the object to store the details of the game. This will be what is rendered as it will inherit all important code for the scenes.
+This is the basic layout of the object to store the details of the game. This will be what is rendered as it will inherit all of the important code for the scenes.
 
 ```
 object Game
