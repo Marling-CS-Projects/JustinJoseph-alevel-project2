@@ -6,11 +6,11 @@
 
 ### Objectives
 
-the objective of this level is to add a exit door for the player . Onced the player has passed though the door the level is completed and if the player choses to they can be  taken to the level after which going though that door the level is fully completed .
+The objective of this level is to add an exit door for the player. Once the player has passed through the door the level is completed and if the player chooses to they can be taken to the level after which going through that door the level is fully completed.
 
-* [x] add a exit door
-* [x] takes the player to the next level  &#x20;
-* [x] once the player has completed all of the levels the win scene will appear   &#x20;
+* [x] Add an exit door
+* [x] Takes the player to the next level  &#x20;
+* [x] Once the player has completed all of the levels the win scene will appear   &#x20;
 
 
 
@@ -22,10 +22,10 @@ the objective of this level is to add a exit door for the player . Onced the pla
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                                                                                        |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| win scene     | the variable is used to show the player the win scene if the player has reached the exit of the level                                                                                      |
-|  add          | this is to include objects, text and components to the game . in this case it is to add text and  position it on the screen for when the player win the level (by getting to the portal )  |
+| Variable Name | Use                                                                                                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Win scene     | The variable is used to show the player the win scene if the player has reached the exit of the level                                                                                       |
+|  Add          | This is to include objects, text, and components of the game. In this case, it is to add text and  position it on the screen for when the player wins the level (by getting to the portal)  |
 
 ### Pseudocode
 
@@ -49,7 +49,7 @@ Evidence for testing
 
 | Test | Instructions                  | What I expect                                                                         | What actually happens  | Pass/Fail |
 | ---- | ----------------------------- | ------------------------------------------------------------------------------------- | ---------------------- | --------- |
-| 1    | the portal to the next level  | when the player goes through the portal the player should be taken to the next level  | does what is mentioned | pass      |
+| 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level  | Does what is mentioned | pass      |
 | 2    |                               |                                                                                       |                        | Pass      |
 
 ### Evidence

@@ -6,9 +6,9 @@
 
 ### Objectives
 
-the objective of this cycle is to add a stop watch to the game where by the player can see how long it takes to complete the level as well as compete against themselves to improve the time taken to complete the level . Another objective to i will be completing this cycle is to add pits traps and spikes to the game in which if the player comes in contact with the any of these dangers the player will lose a health point or risk losing the game . &#x20;
+The objective of this cycle is to add a stopwatch to the game whereby the player can see how long it takes to complete the level as well as compete against themselves to improve the time taken to complete the level. Another objective I will be completing this cycle is to add pits traps and spikes to the game in which if the player comes in contact with any of these dangers the player will lose a health point or risk losing the game. &#x20;
 
-* [x] add a stopwatch
+* [x] Add a stopwatch
 
 
 
@@ -18,10 +18,10 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                                                                 |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| timer ()      | this variable is used to add the stopwatch function                                                                                                                 |
-| fixed         | this is to ensure that the displayed stopwatch counter does not move with the player or go out of frame but instead stays the same location through out the levels  |
+| Variable Name | Use                                                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| timer ()      | This variable is used to add the stopwatch function                                                                                                                   |
+| fixed         | This is to ensure that the displayed stopwatch counter does not move with the player or go out of frame but instead stays in the same location throughout the levels  |
 
 ### Pseudocode
 
@@ -44,15 +44,15 @@ the objective of this cycle is to add a stop watch to the game where by the play
 
 ### Outcome
 
-The outcome of this cycle is that i have successfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins  will be added to the scoreboard&#x20;
+The outcome of this cycle is that I have successfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins will be added to the scoreboard.&#x20;
 
 ### Challenges
 
-one of the challenges that i faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below another  instrument that was displayed to the player &#x20;
+One of the challenges that I faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as placing the stopwatch below another instrument that was displayed to the player. &#x20;
 
 ## Testing
 
-i test if the spike worked by with a spike this resulted in the players death&#x20;
+I tested if the spike worked by colliding with a spike, this resulted in the player's death.&#x20;
 
 ### Tests
 

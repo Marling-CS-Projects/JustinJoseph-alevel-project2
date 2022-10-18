@@ -6,10 +6,10 @@
 
 ### Objectives
 
-for this cycle i aim to add a pause button in where the player can pause the game at any time as well as quit the game or restart the game level . my second objective is to add a manu where the player loads into ; from which the player can start the game or go to another section and read the instruction on how to player the game&#x20;
+For this cycle I aim to add a pause button in where the player can pause the game at any time as well as quit the game or restart the game level . my second objective is to add a menu where the player loads into; from which the player can start the game or go to another section and read the instruction on how to play the game&#x20;
 
-* [ ] add a pause button in the game&#x20;
-* [x] adding menu
+* [ ] Add a pause button in the game&#x20;
+* [x] Adding menu
 
 
 

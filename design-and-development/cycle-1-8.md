@@ -6,14 +6,14 @@
 
 ### Objectives
 
-For this cycle  i aim to add moving platforms to the game as my first priority. The function of the moving platform is to move a platform from left to right within a given space in the level, as part of the function of the moving platform the player will be able to step , run or jump on to the platform and be will able to get off it or jump from it to another platform.&#x20;
+For this cycle, I aim to add moving platforms to the game as my first priority. The function of the moving platform is to move a platform from left to right within a given space in the level, as part of the function of the moving platform the player will be able to step, run or jump onto the platform and will be able to get off it or jump from it to another platform.&#x20;
 
-Another objective for this cycle is to add a acid bath. The acid bath uses the same function as the moving platform but instead, if the player comes in contact with the acid bath it will result in the death of the player. By adding these components to the game i believe it add to gaming experience as it adds a scene of danger to game which the player will have to over come .&#x20;
+Another objective for this cycle is to add an acid bath. The acid bath uses the same function as the moving platform but instead, if the player comes in contact with the acid bath it will result in the death of the player. By adding these components to the game I believe it adds to the gaming experience as it adds a scene of danger to the game which the player will have to overcome.&#x20;
 
 
 
-* [x] add a moving platforms  &#x20;
-* [x] acid bath&#x20;
+* [x] Add moving platforms  &#x20;
+* [x] Acid bath&#x20;
 
 
 
@@ -27,8 +27,8 @@ Another objective for this cycle is to add a acid bath. The acid bath uses the s
 
 | Variable Name | Use                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| mp            |  the use of mp is to effect of for the uses of moving platforms left and right between a specific points                    |
-|  solid()      | by using this variable it enable the platform to be come a should object which can enable the player jump to it and off it  |
+| mp            | The use of mp is to affect the behaviour of moving platforms left and right between specific points.                        |
+|  solid()      | By using this variable it enables the platform to become a solid object which can enable the player to jump on and off it.  |
 
 ### Pseudocode
 
