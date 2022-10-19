@@ -119,11 +119,11 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions           | What I expect                                                                                                                               | What actually happens                                                                                                                     | Pass/Fail |
-| ---- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | movement               | when I press "a" the player moves left and when I press d the player move right                                                             | when i press the controls the player disappears of the screen .                                                                           | Fail      |
-| 2    | movement (second  try) | when I press "a" the player moves left and when I press d the player move right .lastly when "space" is pressed the character  should jump  | when i press "a" the character moves left. when i press "d " the character move right. Finally when i press "space" the character  jumps. | Pass      |
-| 3    | platform               | the player should be able to stand, move and jump on the platform without falling through it .                                              | the character was successful and was able to stand and move on the platform                                                               | pass      |
+| Test | Instructions           | What I expect                                                                                                                                  | What actually happens                                                                                                                      | Pass/Fail |
+| ---- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| 1    | Movement               | When I press "A" the player moves left and when I press "D" the player move right.                                                             | When I use the controls the player disappears from the screen.                                                                             | Fail      |
+| 2    | Movement (second  try) | when I press "A" the player moves left and when I press "D" the player move right. Also when "Spacebar" is pressed the character  should jump. | When I press "A" the character moves left. when i press "D" the character move right. Finally when i press "Spacebar" the character jumps. | Pass      |
+| 3    | Platform               | The player should be able to stand, move and jump on the platform without falling through it.                                                  | The character was able to stand and move on the platform                                                                                   | Pass      |
 
 ### Evidence
 

@@ -56,10 +56,10 @@ I tested if the spike worked by colliding with a spike, this resulted in the pla
 
 ### Tests
 
-| Test | Instructions     | What I expect                                                                                                                                                                                                     | What actually happens                                                                                                                                 | Pass/Fail |
-| ---- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | added my spikes  | the spikes will function in a manner where when the user going in contact with  the spikes the player will take damage which will lead to death if the player comes in contact with it in more than one occasion  | the spikes are add successfully  however when the player comes in contact with the spikes the player does not take any damages to the players health  | Fail      |
-| 2    | stop watch       | when the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop                                                                | the stopwatch worked as expected                                                                                                                      | Pass      |
+| Test | Instructions      | What I expect                                                                                                                                                                                                       | What actually happens                                                                                                                                      | Pass/Fail |
+| ---- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Added the spikes  | The spikes will function in a manner where when the player comes in contact with the spikes the player will take damage which will lead to death if the player comes in contact with it in more than one occasion.  | The spikes were added successfully  however when the player comes in contact with the spikes the player does not take any damages to the player's health.  | Fail      |
+| 2    | Stopwatch         | When the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop.                                                                 | The stopwatch worked as expected.                                                                                                                          | Pass      |
 
 ### Evidence
 
@@ -81,4 +81,4 @@ I tested if the spike worked by colliding with a spike, this resulted in the pla
 
 <figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
-the image above displays the use of stopwatch which is fully functional on the top left corner&#x20;
+The image above displays the use of a stopwatch which is fully functional in the top left corner.
