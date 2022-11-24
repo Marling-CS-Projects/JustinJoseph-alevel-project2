@@ -59,7 +59,7 @@ I have successfully added a coin scoreboard to my game as well as successfully b
 
 ### Challenges
 
-During this cycle, I face three different challenges. The first challenge I encountered was letting the player able to pick up the coin. I overcame this by making representing the coins as a nonfixed object which enabled the player to collect the coins. the second challenge I encountered was displaying the added coins to the game while the game was being played. I solved this issue by SCHTEREBGENIEING
+During this cycle, I face three different challenges. The first challenge I encountered was letting the player able to pick up the coin. I overcame this by making representing the coins as a nonfixed object which enabled the player to collect the coins. the second challenge I encountered was displaying the added coins to the game while the game was being played.&#x20;
 
 ## Testing
 
