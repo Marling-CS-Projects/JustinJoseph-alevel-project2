@@ -119,6 +119,8 @@ Evidence for testing
 
 ### Tests
 
+tests
+
 | Test | Instructions           | What I expect                                                                                                                                  | What actually happens                                                                                                                      | Pass/Fail |
 | ---- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
 | 1    | Movement               | When I press "A" the player moves left and when I press "D" the player move right.                                                             | When I use the controls the player disappears from the screen.                                                                             | Fail      |
