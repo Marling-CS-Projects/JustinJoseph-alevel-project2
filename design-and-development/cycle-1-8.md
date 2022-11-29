@@ -108,4 +108,4 @@ function mp(speed = 100, dis = 10, dir = 1) {
 
 &#x20; &#x20;
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>the image above with the green rectangle with a black rim represent the acid bath </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>the image above with the green rectangle with a black rim represent the acid bath </p></figcaption></figure>
