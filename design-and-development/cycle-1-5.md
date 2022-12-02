@@ -31,28 +31,14 @@ The objective of this level is to add an exit door for the player. Once the play
 
 <pre><code><strong>if player collide with exit (
 </strong><strong> go to next level
-</strong><strong> )</strong></code></pre>
+</strong><strong> )
+</strong></code></pre>
 
 ## Development
 
 ### Outcome
 
-### Challenges
-
-Description of challenges
-
-## Testing
-
-Evidence for testing
-
-### Tests
-
-| Test | Instructions                  | What I expect                                                                         | What actually happens  | Pass/Fail |
-| ---- | ----------------------------- | ------------------------------------------------------------------------------------- | ---------------------- | --------- |
-| 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level  | Does what is mentioned | pass      |
-| 2    |                               |                                                                                       |                        | Pass      |
-
-### Evidence
+The first stage of completing this objective was to create a exit door and then add the exit  to the game in the from of a sprite as shown below .
 
 ```javascript
   "@": () => [
@@ -64,14 +50,18 @@ Evidence for testing
   ],
 ```
 
+Once the exit was added to the game I wrote a code stating that when the player comes in contact with the exit the game should go to the win scene this is to the indicate to the player that they have completed the level and that player has the option to leave or continue in the game.
+
 ```javascript
   player.onCollide("exit", () => {
     go("win")
   })
 ```
 
+For the final objective of this cycle was to provide the game with a win scene as well as a return to start screen. This is evident in the code below when the player has completed the level the player will be greeted by a win scene. whilst coding for this scene the i had to adjust the position of the " you have win" text which i achieved by using the command "pos(vec2(400, 200))," to move/ adjust the opstion of the text in the X and Y direction. As well as change in the potioopn of the text i add a&#x20;
+
 ```javascript
-    scene("win", (time) => {
+    scene("you have win", (time) => {
       add([
         text("win ", { size: 24 }),
         pos(vec2(400, 200)),
@@ -94,6 +84,23 @@ Evidence for testing
       })
     });
 ```
+
+### Challenges
+
+Description of challenges
+
+## Testing
+
+Evidence for testing
+
+### Tests
+
+| Test | Instructions                  | What I expect                                                                         | What actually happens  | Pass/Fail |
+| ---- | ----------------------------- | ------------------------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level  | Does what is mentioned | pass      |
+| 2    |                               |                                                                                       |                        | Pass      |
+
+### Evidence
 
 <figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
