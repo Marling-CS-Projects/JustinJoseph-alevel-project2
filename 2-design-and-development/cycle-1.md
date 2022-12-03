@@ -107,7 +107,165 @@ keyPress('space', () => {
 
 ### Outcome
 
-After fixing issues with the movement of the character&#x20;
+To commence my project i first set the dimonedtions of my level this was done by steating the hgih of the game as well as widths of the game in pixcels&#x20;
+
+```javascript
+kaboom({
+  background: [135, 206, 235],
+  width: 1000,
+  height: 700,
+})
+
+// load assets
+loadPedit("ground", "sprites/ground.pedit");
+loadPedit("goro", "sprites/goro.pedit");
+loadSprite("background", "sprites/background.png");
+loadSprite("coin", "sprites/coin.png");
+loadPedit("spikes", "sprites/spikes.pedit");
+loadPedit("lose", "sprites/lose.pedit");
+loadPedit("platform", "sprites/platform.pedit");
+loadPedit("enemy", "sprites/enemy.pedit");
+loadPedit("spikesdown", "sprites/spikesdown.pedit");
+loadPedit("block", "sprites/block.pedit");
+loadPedit("platform1", "sprites/platform1.pedit");
+loadPedit("acid", "sprites/acid.pedit");
+loadSprite("portal", "sprites/portal.png");
+loadPedit("goro2", "sprites/goro2.pedit");
+loadPedit("platform3", "sprites/platform3.pedit");
+
+```
+
+
+
+```javascript
+const map = [
+  '                                                                         @      ',
+  '         ppp              ppp                pp                         ppppp',
+  '                                                                             ',
+  '                                                           ccc                 ',
+  '                                                          pppp                   ',
+  ' ppp            ppppp        j              ppp                               ',
+  '                                                                             ',
+  '                                                                             ',
+  '                     sccs             cscs                         ccssc           ',
+  '      pppp          ppppp           ppppp          a        ppppppppppppp   ',
+  '                                                                             ',
+  '                                                                             ',
+  '                                                   pppp                          ',
+  '                                                                             ',
+  '                                                          pppp                   ',
+  ' pppp                                                                        ',
+  '                                                                             ',
+  '                                                                             ',
+  '                cc               ss                  sss                ccc     ',
+  '             ppppp             ppppp                ppppp              pppp ',
+  '                                                                             ',
+  '                                                                              ',
+  '                       cs                   ss                                   ',
+  '   pppp               pppppp             pppppp              pppppp         ',
+  '                                                                              ',
+  '                                                                             ',
+  '                                                                             ',
+  '             pppppp           m                 ppppppp          pppp      ',
+  '                                                                             ',
+  '                                                                             ',
+  '                                                                             ',
+  '               s            e    s                             e          s   ',
+  '============================================================================',
+]
+
+
+const levelcfg = {
+  width: 32,
+  height: 40,
+
+```
+
+```javascript
+
+  "=": () => [
+    sprite("ground"),
+    area(),
+    solid(),
+    origin("bot"),
+  ],
+
+
+  "l": () => [
+    sprite("block"),
+    area(),
+    solid(),
+    origin("bot"),
+  ],
+
+  "b": () => [
+    sprite("background"),
+    area(),
+    scale(2),
+    width(32),
+    height(15),
+    pos(24, -240),
+  ],
+
+  "p": () => [
+    sprite("platform1"),
+    area(),
+    solid(),
+    origin("bot"),
+  ],
+
+  "m": () => [
+    sprite("platform"),
+    area(),
+    solid(),
+    mp(),
+    origin("bot"),
+  ],
+
+
+  "j": () => [
+    sprite("platform3"),
+    area(),
+    solid(),
+    mp(),
+    origin("bot"),
+
+  ],
+```
+
+```javascript
+  const player = add([
+    sprite('goro'),
+    pos(149, 1216),
+    body(),
+    area(),
+    scale(2),
+  ])
+```
+
+```javascript
+
+  const move_speed = 500
+  const BULLET_SPEED = 1200
+
+  keyDown('a', () => {
+    player.move(-move_speed, 0)
+    player.flipX(true)
+  })
+
+
+  keyDown('d', () => {
+    player.move(move_speed, 0)
+    player.flipX(false)
+  })
+
+  const Jump_force = 10
+
+  keyPress('space', () => {
+    player.doubleJump()
+  })
+
+```
 
 ### Challenges
 
