@@ -107,7 +107,9 @@ keyPress('space', () => {
 
 ### Outcome
 
-To commence my project i first set the dimonedtions of my level this was done by steating the hgih of the game as well as widths of the game in pixcels&#x20;
+
+
+To commence my project i first set the dimension of my game which meant that my game present to the player in a viewing frame of 1000 pixel width by 700 pixel height i found this was an appropriate frame size as it did not show much to the player thus enabling me to keep in line to my aspirations in 1.4a. Once I found the right game frame I proceeded to give my game a background colour to ensure my game was appealing.
 
 ```javascript
 kaboom({
@@ -115,21 +117,21 @@ kaboom({
   width: 1000,
   height: 700,
 })
+```
+
+After the game's dimensions and the background colour were created, I proceeded to create the essential assets ( also known as sprites) I would be using in the game; these mainly include the character , platform , the spikes and ground blocks for now. the designs of the asset was done in a retro as well as cartoons styles so the game does not become graphically inappropriate thus being able to stay in the claimed age range of pegi 12.
+
+```javascript
 
 // load assets
 loadPedit("ground", "sprites/ground.pedit");
 loadPedit("goro", "sprites/goro.pedit");
 loadSprite("background", "sprites/background.png");
-loadSprite("coin", "sprites/coin.png");
 loadPedit("spikes", "sprites/spikes.pedit");
-loadPedit("lose", "sprites/lose.pedit");
 loadPedit("platform", "sprites/platform.pedit");
-loadPedit("enemy", "sprites/enemy.pedit");
 loadPedit("spikesdown", "sprites/spikesdown.pedit");
 loadPedit("block", "sprites/block.pedit");
 loadPedit("platform1", "sprites/platform1.pedit");
-loadPedit("acid", "sprites/acid.pedit");
-loadSprite("portal", "sprites/portal.png");
 loadPedit("goro2", "sprites/goro2.pedit");
 loadPedit("platform3", "sprites/platform3.pedit");
 
@@ -279,11 +281,11 @@ Evidence for testing
 
 tests
 
-| Test | Instructions           | What I expect                                                                                                                                  | What actually happens                                                                                                                      | Pass/Fail |
-| ---- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| 1    | Movement               | When I press "A" the player moves left and when I press "D" the player move right.                                                             | When I use the controls the player disappears from the screen.                                                                             | Fail      |
-| 2    | Movement (second  try) | when I press "A" the player moves left and when I press "D" the player move right. Also when "Spacebar" is pressed the character  should jump. | When I press "A" the character moves left. when i press "D" the character move right. Finally when i press "Spacebar" the character jumps. | Pass      |
-| 3    | Platform               | The player should be able to stand, move and jump on the platform without falling through it.                                                  | The character was able to stand and move on the platform                                                                                   | Pass      |
+| Test | Instructions           | What I expect                                                                                                                                   | What actually happens                                                                                                                       | Pass/Fail |
+| ---- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Movement               | When I press "A" the player moves left and when I press "D" the player move right.                                                              | When I use the controls the player disappears from the screen.                                                                              | Fail      |
+| 2    | Movement (second  try) | when I press "A" the player moves left and when I press "D" the player move right. Also when "Space bar" is pressed the character  should jump. | When I press "A" the character moves left. when i press "D" the character move right. Finally when i press "Space bar" the character jumps. | Pass      |
+| 3    | Platform               | The player should be able to stand, move and jump on the platform without falling through it.                                                   | The character was able to stand and move on the platform                                                                                    | Pass      |
 
 ### Evidence
 

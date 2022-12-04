@@ -9,7 +9,7 @@
 The objective of this level is to add an exit door for the player. Once the player has passed through the door the level is completed and if the player chooses to they can be taken to the level after which going through that door the level is fully completed.
 
 * [x] Add an exit door
-* [ ] Takes the player to the next level  &#x20;
+* [x] Takes the player to the next level  &#x20;
 * [x] Once the player has completed all of the levels the win scene will appear   &#x20;
 
 
