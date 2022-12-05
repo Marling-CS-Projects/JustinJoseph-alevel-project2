@@ -138,7 +138,7 @@ loadPedit("platform3", "sprites/platform3.pedit
 
 Once I had completed creating the essential assets I need for the game for the early stage, I turned my attention to designing the level. For my convenience and to increase the productive/ efficiency the program in use to code my game (kaboom) allow programmers to assign variable name to the assets, this enabled me to assign variables for the game the game. For example, in the ground the "=" symbol, the platform was given "p" the spikes were given "s”. However, I decided not to give the main character a variable name this was because by adding the player as a separate asset to the game it will make it easier to manipulate the player.
 
-I desgined the level in a large space this was to achive one of the sucess cretira in 1.4a (" to enblae  the player to explere the level)
+
 
 ```javascript
 const map = [
@@ -275,12 +275,6 @@ const levelcfg = {
 The challenge of this cycle was setting up a movement feature for the first character. In my first attempt, my code failed; I figured out that I had over-complicated the code I used and instead I changed the code to be simpler. After which the character was able to move left, right, and up without hindrances. &#x20;
 
 ## Testing
-
-Evidence for testing
-
-### Tests
-
-tests
 
 | Test | Instructions           | What I expect                                                                                                                                   | What actually happens                                                                                                                       | Pass/Fail |
 | ---- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
