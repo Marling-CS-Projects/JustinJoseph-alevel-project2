@@ -6,9 +6,10 @@
 
 ### Objectives
 
-For this cycle I aim to add a pause button in where the player can pause the game at any time as well as quit the game or restart the game level . my second objective is to add a menu where the player loads into; from which the player can start the game or go to another section and read the instruction on how to play the game&#x20;
+For this cycle i aim to add a main menu where the player will load into in order to start the game. The menu will have two option, a option  to start the game or an option that tells the player how to play the game.&#x20;
 
-* [ ] Add a pause button in the game&#x20;
+
+
 * [x] Adding menu
 
 
@@ -33,7 +34,86 @@ For this cycle I aim to add a pause button in where the player can pause the gam
 
 ### Outcome
 
-### Challenges
+```javascript
+scene("start", () => {
+
+  
+
+
+  add([
+    text("Click HERE to start!", { size: 24 }),
+    pos(vec2(400, 200)),
+    origin("center"),
+    area(),
+    "Start"
+  ]);
+
+
+  add([
+    text("How to play HERE", { size: 24 }),
+    pos(vec2(400, 300)),
+    origin("center"),
+    area(),
+    "Start01"
+  ]);
+
+
+  onClick("Start01", () => {
+    go("tr")
+  })
+
+  onClick("Start", () => {
+    go("game")
+  })
+
+});
+
+   
+```
+
+```javascript
+  scene("tr", (time) => {
+      add([
+        text("Controls:", { size: 24 }),
+        pos(vec2(200, 100)),
+        origin("center"),
+        color(255, 255, 255),
+        text
+      ]);
+
+       add([
+        text(" A = Move Left \n D = Move Right \n   Spacebar = Jump/Double jump   ", { size: 24 }),
+        pos(vec2(260, 200)),
+        origin("center"),
+        color(255, 255, 255),
+        text
+        ]); 
+       
+       add([
+        text("Find the portal and enter it. \n Hint: get to the top!", { size: 24 }),
+        pos(vec2(360, 300)),
+        origin("center"),
+        color(255, 255, 255),
+        text
+        
+      ]);
+
+      add([
+       text("Press HERE to exit", { size: 24 }),
+       pos(vec2(360, 550)),
+       origin("center"),
+      area(),
+       "main"
+       ]);
+
+
+    
+    onClick("main", () => {
+     go("start")
+    })
+    
+    });
+```
 
 Description of challenges
 
@@ -49,7 +129,3 @@ Evidence for testing
 | 2    |              |               |                       | Pass      |
 
 ### Evidence
-
-```javascript
-// Some code
-```
