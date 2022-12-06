@@ -21,11 +21,12 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
 
 ### Key Variables
 
-| Variable Name                   | Use                                                                                                                                                                                          |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <pre><code> patrol</code></pre> | This variable is used to store the actions (the command) of the enemy bot which is the movement of the enemy from left to right and what will happen if the player collides with the player. |
-| this .move                      | This is the variable used to give the bot the speed and direction to going in left and right.                                                                                                |
-|                                 |                                                                                                                                                                                              |
+| Variable Name                    | Use                                                                                                                                                                                          |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <pre><code> patrol
+</code></pre> | This variable is used to store the actions (the command) of the enemy bot which is the movement of the enemy from left to right and what will happen if the player collides with the player. |
+| this .move                       | This is the variable used to give the bot the speed and direction to going in left and right.                                                                                                |
+|                                  |                                                                                                                                                                                              |
 
 ### Pseudocode
 
@@ -46,7 +47,8 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
       
 		},
 	}
-}</code></pre>
+}
+</code></pre>
 
 ## Development
 
