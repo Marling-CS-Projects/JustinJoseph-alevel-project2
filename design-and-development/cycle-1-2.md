@@ -49,7 +49,7 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 &#x20;Adding a functional obstcle was the main object, to ensure that i save time i proceed to draw a simple design of the  spikes, i look at other exampkes i want to make sure that the spikes were recominable .
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (9).png>)
 
 ![](<../.gitbook/assets/image (12).png>)
 
