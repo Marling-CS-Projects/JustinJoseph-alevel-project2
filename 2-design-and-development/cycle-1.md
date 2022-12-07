@@ -119,7 +119,7 @@ kaboom({
 })
 ```
 
-After the game's dimensions and the background colour were created, I proceeded to create the essential assets ( also known as sprites) I would be using in the game; these mainly include the character , platform , the spikes and ground blocks for now. the designs of the asset was done in a retro as well as cartoons styles so the game does not become graphically inappropriate thus being able to stay in the claimed age range of pegi 12.
+After the game's dimensions and the background colour were created, I proceeded to create the essential assets ( also known as sprites) I would be using in the game; these mainly include the character , platform ground blocks for now. the designs of the asset was done in a retro as well as cartoons styles so the game does not become graphically inappropriate thus being able to stay in the claimed age range of pegi 12.
 
 ```javascript
 
@@ -127,9 +127,7 @@ After the game's dimensions and the background colour were created, I proceeded 
 loadPedit("ground", "sprites/ground.pedit");
 loadPedit("goro", "sprites/goro.pedit");
 loadSprite("background", "sprites/background.png");
-loadPedit("spikes", "sprites/spikes.pedit");
 loadPedit("platform", "sprites/platform.pedit");
-loadPedit("spikesdown", "sprites/spikesdown.pedit");
 loadPedit("block", "sprites/block.pedit");
 loadPedit("platform1", "sprites/platform1.pedit");
 loadPedit("goro2", "sprites/goro2.pedit");

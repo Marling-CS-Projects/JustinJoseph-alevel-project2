@@ -6,11 +6,13 @@
 
 ### Objectives
 
-For this cycle i aim to add a main menu where the player will load into in order to start the game. The menu will have two option, a option  to start the game or an option that tells the player how to play the game.&#x20;
+For this cycle i aim to add a main menu where the player will load into in order to start the game. The menu will have two option, a option  to start the game or an option that tells the player how to play the game by using clicking on the menu option.
 
 
 
-* [x] Adding menu
+* [x] create a menu seen for the player to see
+* [x] give the player the option between staring the game or to see how the control and the objective of the game&#x20;
+* [x] give the player the abllity to clicking and select the option wish to use&#x20;
 
 
 
