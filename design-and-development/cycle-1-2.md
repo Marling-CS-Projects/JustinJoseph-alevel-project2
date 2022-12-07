@@ -8,9 +8,9 @@
 
 The objective of this cycle is to add obstacles to the game, this is to provide the player with challenges that they have to overcome to complete the level.&#x20;
 
-* [x] create the sprite image for the obstacles  ( the spikes , pits and traps )
-* [x] add the obstacle to the game and place the obstacles places in the map
-* [x] add a functionally of death when the player coming contact with the obstacles&#x20;
+* [x] Create the sprite image for the obstacles (the spikes, pits and traps)
+* [x] Add the obstacle to the game and place the obstacles places in the map
+* [x] Add a functionally of death when the player coming contact with the obstacles&#x20;
 
 ### Usability Features
 
@@ -47,7 +47,7 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 ### Outcome
 
-&#x20;Adding a functional obstcle was the main object, to ensure that i save time i proceed to draw a simple design of the  spikes, i look at other exampkes i want to make sure that the spikes were recominable .
+Adding a functional obstacle was the main outcome, to ensure that I save time I proceeded to draw a simple design of the spikes, I looked at other examples to provide myself with inspiration as I wanted to make sure that the spikes were recognizable.
 
 ![](<../.gitbook/assets/image (9).png>)
 

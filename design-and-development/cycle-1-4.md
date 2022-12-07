@@ -10,7 +10,7 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
 
 
 
-* [x] Add a bots&#x20;
+* [x] Add bots&#x20;
 * [x] Make the bots move
 
 
