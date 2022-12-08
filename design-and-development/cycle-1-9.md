@@ -129,9 +129,11 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
+| Test | Instructions                                                          | What I expect                                                                                                                                                                       | What actually happens                                                                                                                                                   | Pass/Fail |
+| ---- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    |  running the code                                                     | when running the code the game should load the player in the menu screen and provide the options play the game and how to player the game and allow the player to click the options | the code as ran as expected                                                                                                                                             | pass      |
+| 2    | test if the game take to player to the intend option                  | when the player click on a option on the start menu the player should be taken to intended option                                                                                   | when the player clicks a opotion it takes the player ot the wrong intneded place e.g when the player click " to play" the menu take the playe to how to play the game"  | fail      |
+| 3    | test if the game take to player to the intend option (second attempt) | when the player click on a option on the start menu the player should be taken to intended option                                                                                   | the player got the intended destination when the a option is clicked. I manged to fix the issue by changing the scene that was being used                               | pass      |
+| 4    |                                                                       |                                                                                                                                                                                     |                                                                                                                                                                         |           |
 
 ### Evidence

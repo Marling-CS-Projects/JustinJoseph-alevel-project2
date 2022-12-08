@@ -56,22 +56,21 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
 
 
 
-### Challenges
+To start off my development cycle I first created an enemy that the player can see and interact with. This persuaded me to keep my draw for my enemy simple with the intension of keeping pegi 12  as I was very keen to integrate the enemy and make it functional&#x20;
 
-One of the challenges I have encountered is&#x20;
+![](<../.gitbook/assets/image (10).png>)
 
-## Testing
 
-Evidence for testing
 
-### Tests
+Once the drawing for the enemy was created I uploaded it onto kaboom.js and added the image file address to the game code and gave it a tag id of " enemy" . This is what is done throughout the development cycle to refer when coding the enemy.
 
-| Test | Instructions | What I expect                                                | What actually happens                                                                                    | Pass/Fail |
-| ---- | ------------ | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | The  bot     | The bot should move between two boundaries                   | The bot moves between the set boundaries                                                                 | pass      |
-| 2    | The bot      | The bot should filp its body when it is changing directions  | The bot moves left and right but when it changes directions it does not move the way the body is facing  | fail      |
+```javascript
+loadPedit("enemy", "sprites/enemy.pedit");
+```
 
-### Evidence
+To give my enemy a purpose  to the game to proceed to add&#x20;
+
+
 
 ```javascript
 function patrol(speed = 60, dir = 1) {
@@ -93,6 +92,40 @@ function patrol(speed = 60, dir = 1) {
 	}
 }
 ```
+
+
+
+```javascript
+
+  "e": () => [
+    sprite("enemy"),
+    area(),
+    origin("bot"),
+    body(),
+    scale(3.5),
+    patrol(),
+    "danger",
+  ],
+```
+
+
+
+### Challenges
+
+One of the challenges I have encountered is&#x20;
+
+### Evidence
+
+## Testing
+
+Evidence for testing
+
+### Tests
+
+| Test | Instructions | What I expect                                                | What actually happens                                                                                    | Pass/Fail |
+| ---- | ------------ | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | The  bot     | The bot should move between two boundaries                   | The bot moves between the set boundaries                                                                 | pass      |
+| 2    | The bot      | The bot should filp its body when it is changing directions  | The bot moves left and right but when it changes directions it does not move the way the body is facing  | fail      |
 
 
 
