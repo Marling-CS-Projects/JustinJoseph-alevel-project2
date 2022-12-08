@@ -36,6 +36,8 @@ For this cycle I aim to add a main menu where the player will load into in order
 
 ### Outcome
 
+To start the off my development cycle i proceed to create  a scene for my menu with a welcoming title and two option, to start the game or a option on how to play the game. Once i created the welcoming menu i went on to branching the manu out such that if the player clicks start it take will the player directly to the game and if the play click the other option the player is taken to another scene with instruction on how to the play the game ( this is shown with the code below). To add simplity to the menu all of the titles and option is done in large fount to make it easy to read.
+
 ```javascript
 scene("start", () => {
 
@@ -72,6 +74,8 @@ scene("start", () => {
 
    
 ```
+
+Once I had created the main menu, I proceeded to create a scene for the second option ("how to play the game"). Since i was limited to the size of the game frame i aim to keep the objective of the game and the control simple to understand ( this is shown in the image below ). whilst testing the code to see any issues, i encountered issues with the  size of the text present during the game being run as well as the text being misaglihted. I resolve this issues by adding a sizing function ("size: 24 ") to the code that is repenziedning the text whilst for the misaligning issue i proceed to add a position function (''pos(vec2(200, 100)),") that enabled me to control where the text is positioning with x and y coordinates. Finally I added back to the exit button enabling the player to go back to the main menu form the how to play scene , clicking upon on the exit button was an improvement over the previous method of refreshing the page.
 
 ```javascript
   scene("tr", (time) => {
