@@ -6,7 +6,7 @@
 
 ### Objectives
 
-For my first cycle, I aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as visual studio code along with a GitHhub repository to back up my work. This is followed by creating a simple platform level that would be used for all of my tests of the components I would be using (this initial level would evolve into an actual level which would be a proper game level). Lastly, is to add a character with the ability to move via the use of a keyboard as the input. The use of the keyboard is more beneficial for the environment the user will interact the game with (the browser) compared to touch on a smartphone. &#x20;
+For my first cycle, I aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as kaboom.js along with a GitHhub repository to back up my work. This is followed by creating a simple platform level that would be used for all of my tests of the components I would be using (this initial level would evolve into an actual level which would be a proper game level). Lastly, is to add a character with the ability to move via the use of a keyboard as the input. The use of the keyboard is more beneficial for the environment the user will interact the game with (the browser) compared to touch on a smartphone. &#x20;
 
 * [x] Set the game development environment
 * [x] Be able to control the character via the keyboard&#x20;
@@ -134,9 +134,7 @@ loadPedit("goro2", "sprites/goro2.pedit");
 loadPedit("platform3", "sprites/platform3.pedit
 ```
 
-Once I had completed creating the essential assets I need for the game for the early stage, I turned my attention to designing the level. For my convenience and to increase the productive/ efficiency the program in use to code my game (kaboom) allow programmers to assign variable name to the assets, this enabled me to assign variables for the game the game. For example, in the ground the "=" symbol, the platform was given "p" the spikes were given "s”. However, I decided not to give the main character a variable name this was because by adding the player as a separate asset to the game it will make it easier to manipulate the player.
-
-
+Once I had completed creating the essential assets I need for the game for the early stage, I turned my attention to designing the level. For my convenience and to increase the productive/ efficiency the program in use to code my game (kaboom) allow programmers to assign variable name to the assets, this enabled me to assign variables for the game the game. For example, in the ground the "=" symbol, the platform was given "p" the spikes were given "s”.However, I decided not to give the main character a variable name this was because by adding the player as a separate asset to the game it will make it easier to manipulate the player. When designing for the level i created the level in way that it was large enough that the player got time to explore the game and over come the obstacles so that the player does not complete the level to quickly but and not overly large that the player will be frustrated with the game.
 
 ```javascript
 const map = [
@@ -182,6 +180,8 @@ const levelcfg = {
 
 ```
 
+As mentioned above, the program I am using to create my game enables me to add components to the game in a simple manner. this is has been displayed below in which that kaboom allow me to add the components i want into the game such as the ground , block and platforms.  after which i can add the relevant information to give the components of the game it roles an example of this would be the ground i have given have assigned it the variable "=" as well as making the ground a solid object which allow the player to stand and move around on it after which i gave it a area in which it can operate in, this is to prevent the component interfering with other aspects of the game. This method enabled me to streamline the coding process for adding components which in turn save time that I can use to add functions to the game.
+
 ```javascript
 
   "=": () => [
@@ -209,20 +209,11 @@ const levelcfg = {
   ],
 
   "p": () => [
-    sprite("platform1"),
-    area(),
-    solid(),
-    origin("bot"),
-  ],
-
-  "m": () => [
     sprite("platform"),
     area(),
     solid(),
-    mp(),
     origin("bot"),
   ],
-
 
   "j": () => [
     sprite("platform3"),
@@ -234,6 +225,17 @@ const levelcfg = {
   ],
 ```
 
+Once the revenant component was added to the game for the early stage development i proceed to turn my attention to adding the character to the game. This was done in three stages , with the first stage being designed the character, to save time and to ensure that the game met the pegi 12 criteria i designed the character in a retro and cartoonish style as shown in the image below.
+
+
+
+Once the first stage was complete I added the image file address ( with assets file being stored in the game) to the game. additional i provide the file with a tag name "goro" this is to make it simple for me to refer to the file tough out development phase
+
+\
+
+
+The final stage was to add the character into the game itself. This was done by giving the character two main functions which enable the character to be noticed by the game, one function was the body() function. This function allows the player to interact with other components of the game ( such as the ground platform , spikes and etc ) by being able to interact with other components the player can take damage as well as collect assets that can be added to the scoreboard. The second main function was the area() function that enabled the character to have a designated hit box area , this means that there will be a designated boundary in which the components of the game can take action on the player if the boundary overlapped with the components of the game . The last addition to the character that enabled it to be fully functional was the pos(149, 1216), and scale (2) variables. By adding the variable the pos(149, 1216) it enables to set the potion of the character use (x,y) coordinates on where the character starts in the level as well as subsequent levels. Furthermore the scale() variable enables me to set a size to the character by scale up or down, by doing so it allows me to make the character proportional to the game and not to be over size which will hinder the user gaming experience.
+
 ```javascript
   const player = add([
     sprite('goro'),
@@ -244,10 +246,12 @@ const levelcfg = {
   ])
 ```
 
+For my final objetvie of this cycles was to give the player the abilty to move in all deirction as well as give the charater the abbity to jump. I started to  code this function with a move\_speed thisis the name of the funaion i would be useing to reffer to the speed of the chareter during the creation of this function, i set the speed of the charcter to 250. However i later discovedr during testin this was too slow the movement of the character ,which later on i  change the move\_speed to 500 this proved suffenti speed for the move of the chater. ONce the speed of the chacter was determed i  also desined to add a jumping force to my game which enable me to give my charcter the right force that alow the player to jump of  soild objetic ( like at a platfrom or the ground)&#x20;
+
 ```javascript
 
   const move_speed = 500
-  const BULLET_SPEED = 1200
+  
 
   keyDown('a', () => {
     player.move(-move_speed, 0)
@@ -282,6 +286,3 @@ The challenge of this cycle was setting up a movement feature for the first char
 
 ### Evidence
 
-
-
-![](<../.gitbook/assets/image (8) (1).png>)

@@ -36,7 +36,7 @@ For this cycle I aim to add a main menu where the player will load into in order
 
 ### Outcome
 
-To start the off my development cycle i proceed to create  a scene for my menu with a welcoming title and two option, to start the game or a option on how to play the game. Once i created the welcoming menu i went on to branching the manu out such that if the player clicks start it take will the player directly to the game and if the play click the other option the player is taken to another scene with instruction on how to the play the game ( this is shown with the code below). To add simplity to the menu all of the titles and option is done in large fount to make it easy to read.
+To start the off my development cycle i proceed to create  a scene for my menu with a welcoming title and two options, to start the game or a option on how to play the game. Once i created the welcoming menu i went on to branching the options out such that if the player clicks start it take will the player directly to the game and if the play click the other option the player is taken to another scene with instruction on how to the play the game ( this is shown with the code below). To add simplity to the menu all of the titles and option is done in large fount to make it easy to read.
 
 ```javascript
 scene("start", () => {
