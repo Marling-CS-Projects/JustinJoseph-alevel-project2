@@ -44,7 +44,23 @@ The objective of this cycle is to add a stopwatch to the game whereby the player
 
 ### Outcome
 
-The outcome of this cycle is that I have successfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins will be added to the scoreboard.&#x20;
+```javascript
+  const timer = add([
+    text("stopwatch : 0 "),
+    pos(3, 86),
+    fixed(),
+    scale(0.50),
+    { time: 0 },
+  ])
+
+  timer.onUpdate(() => {
+    timer.time += dt()
+    timer.text = " stopwatch" + timer.time.toFixed(2)
+  })
+
+```
+
+&#x20;
 
 ### Challenges
 
@@ -62,22 +78,6 @@ I tested if the spike worked by colliding with a spike, this resulted in the pla
 | 2    | Stopwatch         | When the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop.                                                                 | The stopwatch worked as expected.                                                                                                                          | Pass      |
 
 ### Evidence
-
-```javascript
-  const timer = add([
-    text("stopwatch : 0 "),
-    pos(3, 86),
-    fixed(),
-    scale(0.50),
-    { time: 0 },
-  ])
-
-  timer.onUpdate(() => {
-    timer.time += dt()
-    timer.text = " stopwatch" + timer.time.toFixed(2)
-  })
-
-```
 
 <figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
