@@ -59,7 +59,7 @@ I have successfully added a coin scoreboard to my game as well as successfully b
 
 To begin my cycles development ot add to coin to the game i proceed to cretae a coin for my game however shilt liook for deisgn example i came acroos a coin the was already stored as a assect in kaboom.js , i opted to use the coin provied with in kaboom as it smple , regionsable by the player and kept in line with the theme was tryin to create.
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (4).png>)
 
 Once i found the coin that apporate for my game i add the coins file adress to the code of my game as well giving the tag "coin" for easy future refferent enablingme ot save time.
 
@@ -68,8 +68,6 @@ loadSprite("coin", "sprites/coin.png");
 ```
 
 After the reference for the coin was created i proceeded to give the coin it's defining properties . I first assigned the coin the variable letter "c" this enabled me to add the coin to a map at any location my choosing. Then after I used the reference coin to add the function sprite("coin") this is to  make sure that when the player is in the game they see the image of coins . Like mentioned in previous cycles i use the functions area() to give the coins a hit box which enable the player to collect the coin for when the each other hit box collided and i used the function solid(),  to ensure that player does not go through the coin out would being able to collect it and it can be recognized by the game as component of the game. the last the functions i used to add the coin to the game was pos(x,y) and scale(), the function pos(0) was use to position the the coin in relation how far should coins sit above the ground or platform and the scale() function was used to ensure the size of the coin was not too large or too small . These function being extremely useful after running the code to ensure that the coin added correctly, before these function was added the coin would  be over size in proportion to the game as well as that the coins was not positioned correctly by the game as it tended to be placed in the ground as supposed to above it , to ensure the at correct value used in the pos() and scale() was reached,  i incremented the value of them  until the correct position and size was reached.&#x20;
-
-
 
 ```
   "c": () => [
