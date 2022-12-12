@@ -180,7 +180,7 @@ const levelcfg = {
 
 ```
 
-As mentioned above, the program I am using to create my game enables me to add components to the game in a simple manner. this is has been displayed below in which that kaboom allow me to add the components i want into the game such as the ground , block and platforms.  after which i can add the relevant information to give the components of the game it roles an example of this would be the ground i have given have assigned it the variable "=" as well as making the ground a solid object which allow the player to stand and move around on it after which i gave it a area in which it can operate in, this is to prevent the component interfering with other aspects of the game. This method enabled me to streamline the coding process for adding components which in turn save time that I can use to add functions to the game.
+As mentioned above, the program I am using to create my game enables me to add components to the game in a simple manner. this  has been displayed below in which that kaboom allow me to add the components i want into the game such as the ground , block and platforms.  after which i can add the relevant information to give the components of the game it roles an example of this would be the ground i have given have assigned it the variable "=" as well as making the ground a solid object which allow the player to stand and move around on it after which i gave it a area in which it can operate in, this is to prevent the component interfering with other aspects of the game. This method enabled me to streamline the coding process for adding components which in turn save time that I can use to add functions to the game.
 
 ```javascript
 
@@ -225,7 +225,7 @@ As mentioned above, the program I am using to create my game enables me to add c
   ],
 ```
 
-Once the revenant component was added to the game for the early stage development i proceed to turn my attention to adding the character to the game. This was done in three stages , with the first stage being designed the character, to save time and to ensure that the game met the pegi 12 criteria i designed the character in a retro and cartoonish style as shown in the image below.
+Once the relevant component was added to the game for the early stage development i proceed to turn my attention to adding the character to the game. This was done in three stages , with the first stage being designing the character, to save time and to ensure that the game met the pegi 12 criteria i designed the character in a retro and cartoonish style as shown in the image below.
 
 
 
