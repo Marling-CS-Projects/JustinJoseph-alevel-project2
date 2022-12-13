@@ -1,4 +1,4 @@
-# cycle 8 death and falling
+# Cycle 8 death and falling
 
 ##
 
@@ -16,7 +16,7 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 * [x] Add falling death   &#x20;
 * [x] Add a death scene&#x20;
-* [x] &#x20;retunr to start menu
+* [x] &#x20;return to start menu
 
 
 
@@ -33,7 +33,9 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 ### Pseudocode
 
-```
+
+
+```javascript
 // falling death 
 if player falls below 1000(
  death scene
@@ -51,7 +53,50 @@ if player touches anything dangers'(
 
 ### Outcome
 
-The outcome of both of the objectives was a success as both objectives met all of the requirements that I set out for them at the start of the cycle. &#x20;
+The first objective of this cycles was to add a feature to the game in which that if the player fall out  of the game map or falls for too long the game should instantly end it self and give the player the option to start the game again. For this feature to work l used a If statement in which that the game will use the current position of the player in the Y coordinate direction `(player.pos.y)` and compare the value to an const value of 2000 . If the player falls below  the const value the game will end itself thus referring the player to end scene "`go("lose")`".
+
+```javascript
+// falling death 
+ 	player.onUpdate(() => {
+		if (player.pos.y >= 2000) {
+			go("lose")
+		}
+	}
+
+```
+
+If a player fails the game they raffered to lose scene other wise i found the game often crashes. To minimalism the time wasted for the player i aim to keep the lose scene simple and easy to use . This meant that i only need a few strings of text , one string of text to for the player acknowledge that the player had lose the game and another string of text to let them know how to restart the level.&#x20;
+
+To do this l create the scene with the variable name  "lose" this is the vaibel name that i would use to when the player dies from coillion with obsclte or the enemy or falling death. Aftere the scene was created i added the two bit of information need fist being the acknowledgement of death whcih was done with the code text("game over  ",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player ot read. This is in addtaion&#x20;
+
+```javascript
+  
+ scene("lose", (time) => {
+  add([
+    text("game over", { size: 24 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+
+  add([
+    text("press enter to go back to the start screen ", { size: 24 }),
+    pos(vec2(400, 200)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+
+});
+```
+
+```javascript
+
+  onKeyRelease("enter", () => {
+    go("start");
+  })
+```
 
 ### Challenges
 
@@ -70,41 +115,5 @@ Evidence for testing
 | 3    | Death scene    | When the player collides with a dangerous object, the death screen should appear.                                                       | When the player dies the death screen appears.                                                                                                                                     | Pass      |
 
 ### Evidence
-
-```javascript
-// falling death 
- 	player.onUpdate(() => {
-		if (player.pos.y >= 2000) {
-			go("lose")
-		}
-	})
-```
-
-```javascript
-  
- scene("lose", (time) => {
-  add([
-    text("you have died  ", { size: 24 }),
-    pos(vec2(500, 350)),
-    origin("center"),
-    color(255, 255, 255),
-    text
-  ]);
-
-  add([
-    text("press enter to go back to the start screen ", { size: 24 }),
-    pos(vec2(400, 200)),
-    origin("center"),
-    color(255, 255, 255),
-    text
-  ]);
-
-
-  onKeyRelease("enter", () => {
-    go("start");
-  })
-  
-});
-```
 
 <figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>

@@ -47,18 +47,20 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 ### Outcome
 
-Adding a functional obstacle was the main outcome, to ensure that I save time I proceeded to draw a simple design of the spikes, I looked at other examples to provide myself with inspiration as I wanted to make sure that the spikes were recognizable.
+The first tasks in order to complete this cycles was to draw a set of obstacles that the player can identify as dangerous object thus encouraging them to stay clear this lead me to draw the design for a spikes. With the use of the simple design it enabled me to save time and move on to adding the obstcle into the game.
 
 ![](<../.gitbook/assets/image (9).png>)
 
 ![](<../.gitbook/assets/image (12).png>)
 
-
+&#x20;Once the design of the obstacle was create i upload the obstcle in the kaboom.js and give the each obstcles a tag  which i use to reffer back through out the development process .
 
 ```
 loadPedit("spikes", "sprites/spikes.pedit");
 loadPedit("spikesdown", "sprites/spikesdown.pedit");
 ```
+
+From using my knowledge that l have gained from cycle 1 and 2 i decide to alter only certain aspects of the code that will give the obstacles its role this has enabled me to save a vast amount of time. The alteration i made was to the position of the obstacles to ensure that the obstacle sat in the correct place as well as creating a new category called "danger" this is for obstacles and any component of the game that can instant lead to the player staring the game again i would use this category as a reference though the development process.
 
 ```javascript
 
@@ -74,6 +76,8 @@ loadPedit("spikesdown", "sprites/spikesdown.pedit");
     "danger"
   ],
 ```
+
+The last function that was needed to complete this cycle is when the player comes in contact with the obstacles which results in game over for the player. For this to be achieved l started off with use of the function .oncollide ("danger") this meant that any player who comes in contact with a object in game categorized as danger (an example of this would be mentioned above with spikes) would referred to the go("lose") this will end the game subsequently displaying the game over scene giving the player the option the start the game again.
 
 ```javascript
 

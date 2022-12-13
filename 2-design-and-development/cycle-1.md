@@ -14,7 +14,7 @@ For my first cycle, I aim to set up the basics of my project before adding addit
 
 ### Usability Features
 
-Movement - to enable my game to be intuitive for the player, they will be provided with a minimal amount of controls to move characters around. with the intention of keeping it simple &#x20;
+Controls - the controls for the player will be done in a simple manner by have A for left ,D for right and the space bar for jump / double jump&#x20;
 
 ### Key Variables
 

@@ -8,13 +8,14 @@
 
 The objective of this cycle is to add a stopwatch to the game whereby the player can see how long it takes to complete the level as well as compete against themselves to improve the time taken to complete the level. Another objective I will be completing this cycle is to add pits traps and spikes to the game in which if the player comes in contact with any of these dangers the player will lose a health point or risk losing the game. &#x20;
 
-* [x] Add a stopwatch
+* [x] have a working stop watch that starts and ends at each level&#x20;
+* [x] be able to displace the stopwatch on the player screen during game play&#x20;
 
 
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20;stopwatch - The stop watch should be simple to read. Additionally the stop watch should not obstruct the player view of the game the stop watch will be in a corner to &#x20;
 
 ### Key Variables
 
