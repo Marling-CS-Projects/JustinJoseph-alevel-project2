@@ -75,7 +75,7 @@ scene("start", () => {
    
 ```
 
-Once I had created the main menu, I proceeded to create a scene for the second option ("how to play the game"). Since i was limited to the size of the game frame i aim to keep the objective of the game and the control simple to understand ( this is shown in the image below ). whilst testing the code to see any issues, i encountered issues with the  size of the text present during the game being run as well as the text being misaglihted. I resolve this issues by adding a sizing function ("size: 24 ") to the code that is repenziedning the text whilst for the misaligning issue i proceed to add a position function (''pos(vec2(200, 100)),") that enabled me to control where the text is positioning with x and y coordinates. Finally I added back to the exit button enabling the player to go back to the main menu form the how to play scene , clicking upon on the exit button was an improvement over the previous method of refreshing the page.
+Once I had created the main menu, I proceeded to create a scene for the second option ("how to play the game"). Since i was limited to the size of the game frame i aim to keep the objective of the game and the control simple to understand ( this is shown in the image below ). whilst testing the code to see any issues, i encountered issues with the  size of the text present during the game being run as well as the text being misaligned. I resolve this issues by adding a sizing function ("size: 24 ") to the code that is repenziedning the text whilst for the misalignment issue i proceed to add a position function (''pos(vec2(200, 100)),") that enabled me to control where the text is positioning with x and y coordinates. Finally I added back to the exit button enabling the player to go back to the main menu form the how to play scene , clicking upon on the exit button was an improvement over the previous method of refreshing the page.
 
 ```javascript
   scene("tr", (time) => {
@@ -121,11 +121,11 @@ Once I had created the main menu, I proceeded to create a scene for the second o
     });
 ```
 
-Description of challenges
+## Description of challenges
 
 ## Testing
 
-Evidence for testing
+
 
 ### Tests
 
