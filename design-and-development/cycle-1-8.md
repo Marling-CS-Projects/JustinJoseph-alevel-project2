@@ -1,4 +1,4 @@
-# cycle 9 moving platform
+# Cycle 9 moving platform
 
 ##
 
@@ -39,22 +39,7 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 
 ### Outcome
 
-### Challenges
 
-Description of challenges
-
-## Testing
-
-Evidence for testing
-
-### Tests
-
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
-
-### Evidence
 
 ```javascript
 function mp(speed = 100, dis = 10, dir = 1) {
@@ -103,6 +88,23 @@ function mp(speed = 100, dis = 10, dir = 1) {
     go("lose")
   })
 ```
+
+### Challenges
+
+Description of challenges
+
+## Testing
+
+Evidence for testing
+
+### Tests
+
+| Test | Instructions | What I expect | What actually happens | Pass/Fail |
+| ---- | ------------ | ------------- | --------------------- | --------- |
+| 1    |              |               |                       | Fail      |
+| 2    |              |               |                       | Pass      |
+
+### Evidence
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>the image above with the rectangular block represents the move platform </p></figcaption></figure>
 
