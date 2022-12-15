@@ -2,7 +2,7 @@
 
 ## Systems Diagram
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 This diagram shows the different parts of the game that I will focus on creating. I have split each section into smaller sub-sections. Throughout the development stage, I will pick one or two of these sections to focus on at a time to gradually build up and piece together the game. I have broken the project down this way as it roughly corresponds to the success criteria.
 
@@ -60,51 +60,68 @@ The solution should be easy to use and not be over complicated. To do this, I wi
 
 ### Pseudocode for game
 
-This is the basic layout of the object to store the details of the game. This will be what is rendered as it will inherit all of the important code for the scenes.
+This is the basic code of the object to store the details of the game. With the use of these components it would allow me to draw my initial sketch of the my first level and enable to add the character in
 
 ```
-object Game
-    type: Phaser
-    parent: id of HTML element
-    width: width
-    height: height
-    physics: set up for physics
-    scenes: add all menus, levels and other scenes
-end object
+import kaboom
 
-render Game to HTML web page
+background colour = "blue"
+set window size to (500,700)
+
+load in Character.pedit as "Character"
+load in ground.pedit as "ground"
+load in platform.pedit as "platform"
+load in Spikes.pedit as "Spikes"
+
+levelconfig = {
+    set width to 32
+    set height to 32
+
+    "=" set to sprite("Floor"){
+        area(),
+        origin("bottom")
+    }
+    
+    "s" set to sprite("Spike "){
+        area(),
+        origin("bottom")
+    }
+
+    "p" set to sprite("platform"){
+        area(),
+        origin("bottom")
+    }
+}
 ```
 
 ### Pseudocode for a level
 
-This shows the basic layout of code for a Phaser scene. It shows where each task will be executed.
+This shows the basic layout of code for a kacoom level and game scene.&#x20;
 
 ```
-class Level extends Phaser Scene
+const map = [
 
-    procedure preload
-        load all sprites and music
-    end procedure
-    
-    procedure create
-        start music
-        draw background
-        create players
-        create platforms
-        create puzzle elements
-        create enemies
-        create obstacles
-        create finishing position
-        create key bindings
-    end procedure
-    
-    procedure update
-        handle key presses
-        move player
-        move interactable objects
-        update animations
-        check if player at exit
-    end procedure
-    
-end class
+  '                                                                             ',
+  '                                                                             ',
+  '                cc               ss                  sss                ccc     ',
+  '             ppppp             ppppp                ppppp              pppp ',
+  '                                                                             ',
+  '                                                                              ',
+  '                       cs                   ss                                   ',
+  '   pppp               pppppp             pppppp              pppppp         ',
+  '                                                                              ',
+  '                                                                             ',
+  '                                                                             ',
+  '             pppppp           m                 ppppppp          pppp      ',
+  '                                                                             ',
+  '                                                                             ',
+  '                                                                             ',
+  '               s            e    s                             e          s   ',
+  '============================================================================',
+]
+
+
+const levelcfg = {
+  width: 32,
+  height: 40,
 ```

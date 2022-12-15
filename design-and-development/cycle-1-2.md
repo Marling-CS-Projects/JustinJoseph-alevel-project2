@@ -104,3 +104,5 @@ I test if the spike worked by with a spike this resulted in the player's death&#
 | 2    | Stopwatch         | When the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stopwatch will stop.                                                               | The stopwatch worked as expected.                                                                                                                       | Pass      |
 
 ### Evidence
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

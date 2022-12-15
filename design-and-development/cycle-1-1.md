@@ -59,7 +59,7 @@ I have successfully added a coin scoreboard to my game as well as successfully b
 
 To begin my cycles development ot add to coin to the game i proceed to cretae a coin for my game however shilt liook for deisgn example i came acroos a coin the was already stored as a assect in kaboom.js , i opted to use the coin provied with in kaboom as it smple , regionsable by the player and kept in line with the theme was tryin to create.
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (4).png>)
 
 Once i found the coin that apporate for my game i add the coins file adress to the code of my game as well giving the tag "coin" for easy future refferent enablingme ot save time.
 
