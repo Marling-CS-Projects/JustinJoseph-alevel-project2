@@ -68,7 +68,7 @@ Once the drawing for the enemy was created I uploaded it onto kaboom.js and adde
 loadPedit("enemy", "sprites/enemy.pedit");
 ```
 
-To give my enemy a purpose  to the game to proceed to add&#x20;
+Once the enemy was added to the game it was need for the enemy have a purpose in the game.&#x20;
 
 
 

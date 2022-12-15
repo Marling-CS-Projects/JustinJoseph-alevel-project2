@@ -99,10 +99,11 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
+| Test | Instructions | What I expect                                                         | What actually happens                                                                                                                                                                                                                                                                                                                                | Pass/Fail |
+| ---- | ------------ | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    |              | if the player comes in contact with the enemy, the player should die  | ran as expect, the player died when both the player and enemy collided                                                                                                                                                                                                                                                                               | Fail      |
+| 2    |              | the enemy should move only move around in the specific area           | this has passed to an extent. when the enemy was placed on the ground the enemy would move only in the specific area. However if the enemy is places on a platfrom or a place of elevastion the enemy would offent fall of the elevated place therefore i would consider it as a fail                                                                | fail      |
+|      |              | the enemy should move only move around in the specific area           | After relising the bug in the enemy i decide the go back to the code and see what was the issue . The two alteration i made to the enemy function was the distant that the enemy could travle as i discovered that it was far greater then the size of any platform ( this is where the emey will prodomaly will do its role). seconadly if posbble  |           |
 
 ### Evidence
 
