@@ -51,7 +51,7 @@ The first tasks in order to complete this cycles was to draw a set of obstacles 
 
 ![](<../.gitbook/assets/image (9) (3).png>)
 
-![](<../.gitbook/assets/image (12) (2).png>)
+![](<../.gitbook/assets/image (12).png>)
 
 &#x20;Once the design of the obstacle was create i upload the obstcle in the kaboom.js and give the each obstcles a tag  which i use to reffer back through out the development process .
 
@@ -103,4 +103,4 @@ I test if the spike worked by with a spike this resulted in the player's death&#
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>

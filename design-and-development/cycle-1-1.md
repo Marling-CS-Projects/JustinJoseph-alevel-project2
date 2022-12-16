@@ -134,4 +134,4 @@ During this cycle, I face two different challenges. The first challenge I encoun
 
 ### Evidence
 
-![](<../.gitbook/assets/image (21).png>)![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (21).png>)![](<../.gitbook/assets/image (11) (1).png>)
