@@ -68,12 +68,12 @@ Once the drawing for the enemy was created I uploaded it onto kaboom.js and adde
 loadPedit("enemy", "sprites/enemy.pedit");
 ```
 
-Once the enemy was added to the game it was need for the enemy have a purpose in the game.&#x20;
+Once the enemy was added to the game it was need for the enemy have a purpose in the game.  The function called patrols allow the enemy to move around in a set area  currently i have set the movement of the enemy only to left and right direction as this want i need in my game. this has been achieved with the two lines of code if (col.isLeft() || col.isRight()) { dir = -dir  to allows the enemy to move autonomously. with the subsequent line having the reference to the speed component.
 
 
 
 ```javascript
-function patrol(speed = 60, dir = 1) {
+function patrol(speed =75 , dir = 1) {
 
 	return {
 		id: "patrol",
@@ -93,7 +93,7 @@ function patrol(speed = 60, dir = 1) {
 }
 ```
 
-
+With the new feture developed i procced to incorporate everything together in a varible function that can be called upon when need . i used e as the funciton name with in that it contains the enemy spirte image that the pleyr would see when player the game , after whic i used the area() to give the enmey a hit box - this became very use as it is a way for the game to end it self when the player comes in contact with the enymy ( this is done whne both player and eneymer hitboxs overlap) , then after the scale function was used , this is because when the psite enmy was tested in the game i found it to be too big for the game and it suuroundings by hgive a scle of 3.5 it was proporshion to the game. then the new fucntion patrol() was add this alloed the enemy to move in the specified area by itslef with set boundary. Lastly since the the purpose of the enemy is to be a obstcles i used the danger tag and catgoized it as such.  By using the cagtoriation it has made the coding process more effeicient due to the fact any thing that falls under the danger tag means that the game will end itslef and the lose scene if the player comes in contact with it.&#x20;
 
 ```javascript
 
@@ -106,6 +106,10 @@ function patrol(speed = 60, dir = 1) {
     patrol(),
     "danger",
   ],
+  
+        player.onCollide("danger", () => {
+    go("lose")
+  }
 ```
 
 
