@@ -127,7 +127,7 @@ To complete this cycle the player should be able to go from one level to another
 
 ### Challenges
 
-
+There were no  challenges i faced when adding the additional level to the game.
 
 ## Testing
 

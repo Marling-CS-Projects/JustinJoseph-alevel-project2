@@ -97,7 +97,9 @@ For the final objective of this cycle was to provide the game with a win scene a
 
 ### Challenges
 
+there were no challenges to report in this cycle&#x20;
 
+there was a position issue with text ( press enter to go back to the start menu) , i resolved with this  by changing the value used in the function pos()
 
 ## Testing
 
@@ -109,7 +111,7 @@ Evidence for testing
 | ---- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | --------- |
 |      | run code                      | the portal should appear above the platform                                                                                                               | does what is mentioned | pass      |
 | 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level                                                                      | Does what is mentioned | pass      |
-| 2    | death scene                   | when the player dies in the game a death scene should appear  to let the player know they have died as well as give a option to go back to the start menu |                        | Pass      |
+| 2    | death scene                   | when the player dies in the game a death scene should appear  to let the player know they have died as well as give a option to go back to the start menu | runs as mentioned      | Pass      |
 
 ### Evidence
 

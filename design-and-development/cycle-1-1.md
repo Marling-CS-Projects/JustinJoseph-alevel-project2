@@ -116,7 +116,7 @@ Originally i used my knowledge that i obtain from setting up the character movem
 
 ### Challenges
 
-During this cycle, I face three different challenges. The first challenge I encountered was letting the player able to pick up the coin. I overcame this by making representing the coins as a nonfixed object which enabled the player to collect the coins. the second challenge I encountered was displaying the added coins to the game while the game was being played.&#x20;
+During this cycle, I face two different challenges. The first challenge I encountered was letting the player able to pick up the coin. I overcame this by making representing the coins as a nonfixed object which enabled the player to collect the coins. the second challenge I encountered was when the coin present in the game they were to large . i solved this by adding the function scale() this allowed that control the size of the coins thus make the coins in proportion to the levels.&#x20;
 
 ## Testing
 

@@ -88,9 +88,7 @@ The last function that was needed to complete this cycle is when the player come
 
 ### Challenges
 
-One of the challenges that I faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as  placing the stopwatch below another  instrument that was displayed to the player &#x20;
-
-The outcome of this cycle is that I have successfully implemented the stopwatch as well as a coin system in which the players can collect the coins and the coins  will be added to the scoreboard&#x20;
+The first challenge I faced when adding the obstacle was that the player did not die when they come in contact with the obstacles . i overcame this by tagging the obstacles as " danger " this meant that any  player that comes in contact with a obstacles the game will end
 
 ## Testing
 
@@ -98,10 +96,10 @@ I test if the spike worked by with a spike this resulted in the player's death&#
 
 ### Tests
 
-| Test | Instructions      | What I expect                                                                                                                                                                                                    | What actually happens                                                                                                                                   | Pass/Fail |
-| ---- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Added the spikes  | The spikes will function in a manner where when the user comes in contact with the spikes the player will take damage which will lead to death if the player comes in contact with it in more than one occasion. | The spikes were added successfully however when the player comes in contact with the spikes the player does not take any damage to the players health.  | Fail      |
-| 2    | Stopwatch         | When the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stopwatch will stop.                                                               | The stopwatch worked as expected.                                                                                                                       | Pass      |
+| Test | Instructions                      | What I expect                                                                                                               | What actually happens                                                                                               | Pass/Fail |
+| ---- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Added the spikes                  | The spikes will function in a manner where when the user comes in contact with the spikes the player should fail the level  | The spikes were added successfully however when the player comes in contact with the spikes the player does not die | Fail      |
+| 2    | Added the spikes (second attempt) | The spikes will function in a manner where when the user comes in contact with the spikes the player should fails the level | After the some alteration to the code when the player comes in contact with the spikes the player fails the level   | pass      |
 
 ### Evidence
 
