@@ -10,14 +10,14 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
 
 
 
-* [x] Add bots&#x20;
-* [x] Make the bots move
+* [x] Add enemy&#x20;
+* [x] Make the enemy move
 
 
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20; the enemy should be big enough for the player to see and be able to avoid&#x20;
 
 ### Key Variables
 
@@ -132,4 +132,4 @@ Evidence for testing
 | 2    | movement run test               | after the basics of the enemy is established, i am now test if the enemy will move from in the designated area . such as a patrol of the area                       | the enemy moves around . However the enemy when placed on a platform the enemy falles if the platform                                                                                                    | fail      |
 | 3    | movement run test ( second try) | after the basics of the enemy is established, i am now test if the enemy will move from in the designated area in a specific pattern . such as a patrol of the area | After seen the failiure of the fisrt test i went back to the code and altered the distant that the enemy can travel once that was done the enemy can movie around on the platform with out falling of it | pass      |
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (4).png>)

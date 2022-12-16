@@ -18,7 +18,7 @@ The objective of this level is to add an exit door for the player. Once the play
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20; clear exit- the portal to the exit level should be easy to find by the player this can be done by make the portal big
 
 ### Key Variables
 
@@ -33,6 +33,30 @@ The objective of this level is to add an exit door for the player. Once the play
 </strong><strong> go to next level
 </strong><strong> )
 </strong></code></pre>
+
+```
+    scene("you have win", > {
+      add([
+        text("win ", ),
+        pos(x,y),
+        origin("center"),
+        color(white),
+      ]);
+
+
+      add([
+        text("press enter to go back to the start menu ", ),
+        pos((500, 350)),
+        origin("center"),
+        color(255, 255, 255),
+        text
+      ]);
+
+      when pressed("enter", () => {
+        go("start");
+      })
+    });
+```
 
 ## Development
 
@@ -117,5 +141,5 @@ Evidence for testing
 
 ![](<../.gitbook/assets/image (13).png>)
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (5).png>)
 

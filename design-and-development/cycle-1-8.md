@@ -12,8 +12,6 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 
 
-
-
 * [x] Add falling death   &#x20;
 * [x] Add a death scene&#x20;
 * [x] Return to start menu
@@ -22,7 +20,7 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20; death scene - the player should be able to understand when they have lost the game . it will be big , simple and easy to understand&#x20;
 
 ### Key Variables
 
@@ -118,4 +116,4 @@ Evidence for testing
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

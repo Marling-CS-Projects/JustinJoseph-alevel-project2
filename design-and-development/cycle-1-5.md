@@ -21,19 +21,21 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20;it will be simple enough for the player to operate&#x20;
+
+
 
 ### Key Variables
 
 | Variable Name | Use                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| mp            | this function provides the platfroms the ability to move between two point autonomously.                                    |
+| mp            | this function provides the platforms the ability to move between two point autonomously.                                    |
 |  solid()      | By using this variable it enables the platform to become a solid object which can enable the player to jump on and off it.  |
 
 ### Pseudocode
 
 ```
-function mp(speed = 100, dis = 10, dir = 1) {
+function mp(s, , dir = ) {
 
   return {
     id: "mp",

@@ -18,7 +18,7 @@ For this cycle I aim to add a main menu where the player will load into in order
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20;start screen - the main menu will be the first thing the player see when they load in to the game and thus should have a simple , easy to use and welcoming UI
 
 ### Key Variables
 

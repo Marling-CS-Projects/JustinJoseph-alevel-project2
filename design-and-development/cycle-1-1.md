@@ -13,7 +13,7 @@ In this cycle, I aim to create a coin system such that in the process of playing
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20; score board - the score board will be available on the game screen so that player can see how many coins they have collect as well has a way to movie them self to get more coins
 
 ### Key Variables
 

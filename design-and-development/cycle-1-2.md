@@ -14,7 +14,7 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 ### Usability Features
 
-&#x20;&#x20;
+&#x20; the obstacles will be bright and clear so that the players can avoid them
 
 ### Key Variables
 
@@ -51,7 +51,7 @@ The first tasks in order to complete this cycles was to draw a set of obstacles 
 
 ![](<../.gitbook/assets/image (9) (3).png>)
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (2).png>)
 
 &#x20;Once the design of the obstacle was create i upload the obstcle in the kaboom.js and give the each obstcles a tag  which i use to reffer back through out the development process .
 
