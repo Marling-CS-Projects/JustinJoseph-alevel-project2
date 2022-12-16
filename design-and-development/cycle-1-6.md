@@ -1,4 +1,4 @@
-# Cycle 7 adding another level
+# Cycle 7: Adding Another Level
 
 ##
 
@@ -69,7 +69,7 @@
 
 ### Outcome
 
-As i have already creted a fisrt sucessful first level i did not want to change the deisgn of the secon level too much this due to two reasons , with one being that it take up much valuable time that can be spend adding addtioal feature as well as refindin the game to better , and the second reason is i want the player to still be familar with the levels and have to same objetvi which is to find and get to the exit. However it does not mean that there has been no alteration for whilst keept the same desgin as the pervious platforms have been added as well as takenaway which would make the player find new creted way to get to the exit. In terms of adding platfrom is the  addtiaion of moving platforms as well as acid bath which can instanly damge the player. this is all in   conjustion with the use of more coins for the player to collect through out the level. finally the the change in the locaiton of the potal to keep the player more engaged as the player would already know the locaiton of the perious portal they have to spend time in oder to comeple the level. To save time  for me to code the game and for the bower to execute the code, i have the desgined  level in a way that i can use the vaible and comppent of the perious level ( talked about in set up cycle 1 )&#x20;
+As I have already created a successful first level I did not want to change the design of the second level too much this due to two reasons: with one being that it takes up too much valuable time that can be spent adding additional features as well as refining the game to improve it, and the second reason is I want the player to still be familiar with the levels and have to same objective which is to find and get to the exit. However it does not mean that there has been no alteration as it kept the same design as previous platforms have been added as well as taken away which would make the player find new creative way to get to the exit. In terms of adding platforms, and the addition of moving platforms as well as an acid bath which can instantly damage the player. This is all in   conjunction with the use of more coins for the player to collect through out the level. Finally, the change in the location of the portal to keep the player more engaged as the player would already know the location of the previous portal they have to spend time in order to complete the level. To save time for me to code the game and for the bower to execute the code, I have designed the  level in a way that I can use the variable and component of the previous level (talked about in Cycle 1: Setup)&#x20;
 
 ```javascript
    '                                                                            ',
@@ -110,7 +110,7 @@ As i have already creted a fisrt sucessful first level i did not want to change 
 
 
 
-For this to be consided a sucess the player should be able to go through the protal and start the subquent level ( which has been ahcieved). this was done in two step with the fisrt step being that each level has been assigned a level id to let the game know what level the player is on. It is to create a funciton thatt allow that the player to go the next level . This was done with the use of the command player.on collide , through the use of an if statemtn the levle id will increment by one. how ever if the player goes through a portol and there is no more levels for the player to go the win scene will be shown this is done with commnad go("win").&#x20;
+For this cycle to considered a success the player should be able to access the next level from within the game (the previous level), which it has. This was done with the following code:&#x20;
 
 ```javascript
   scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 })	

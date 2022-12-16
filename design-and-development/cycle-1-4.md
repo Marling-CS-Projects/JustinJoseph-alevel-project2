@@ -1,4 +1,4 @@
-# Cycle 5 enemy
+# Cycle 5: Enemy
 
 ##
 
@@ -56,19 +56,19 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
 
 
 
-To start off my development cycle I first created an enemy that the player can see and interact with. This persuaded me to keep my draw for my enemy simple with the intension of keeping pegi 12  as I was very keen to integrate the enemy and make it functional&#x20;
+To start off my development cycle I first created an enemy that the player can see and interact with. This persuaded me to keep my sprite for my enemy simple with the intention of keeping it PEGI 12 as I was very keen to integrate the enemy and make it functional.
 
 ![](<../.gitbook/assets/image (10).png>)
 
 
 
-Once the drawing for the enemy was created I uploaded it onto kaboom.js and added the image file address to the game code and gave it a tag id of " enemy" . This is what is done throughout the development cycle to refer when coding the enemy.
+Once the drawing for the enemy was created I uploaded it onto kaboom.js and added the image file address to the game code and gave it a tag id of "enemy". This is what is done throughout the development cycle to refer when coding the enemy.
 
 ```javascript
 loadPedit("enemy", "sprites/enemy.pedit");
 ```
 
-Once the enemy was added to the game it was need for the enemy have a purpose in the game.  The function called patrols allow the enemy to move around in a set area  currently i have set the movement of the enemy only to left and right direction as this want i need in my game. this has been achieved with the two lines of code if (col.isLeft() || col.isRight()) { dir = -dir  to allows the enemy to move autonomously. with the subsequent line having the reference to the speed component.
+Once the enemy was added to the game it was needed for the enemy have a purpose in the game.  The function called "patrols" allow the enemy to move around in a set area. Currently, I have set the movement of the enemy only to left and right direction as this is what is needed in my game. This has been achieved with the two lines of code if (col.isLeft() || col.isRight()) { dir = -dir  to allow the enemy to move autonomously. with the subsequent line having the reference to the speed component.
 
 
 
@@ -93,7 +93,7 @@ function patrol(speed =75 , dir = 1) {
 }
 ```
 
-With the new feture developed i procced to incorporate everything together in a varible function that can be called upon when need . i used e as the funciton name with in that it contains the enemy spirte image that the pleyr would see when player the game , after whic i used the area() to give the enmey a hit box - this became very use as it is a way for the game to end it self when the player comes in contact with the enymy ( this is done whne both player and eneymer hitboxs overlap) , then after the scale function was used , this is because when the psite enmy was tested in the game i found it to be too big for the game and it suuroundings by hgive a scle of 3.5 it was proporshion to the game. then the new fucntion patrol() was add this alloed the enemy to move in the specified area by itslef with set boundary. Lastly since the the purpose of the enemy is to be a obstcles i used the danger tag and catgoized it as such.  By using the cagtoriation it has made the coding process more effeicient due to the fact any thing that falls under the danger tag means that the game will end itslef and the lose scene if the player comes in contact with it.&#x20;
+With the new feature developed I proceeded to incorporate everything together in a variable function that can be called upon when needed. I used "e" as the function name, within that it contains the enemy sprite image that the player would see when player the game, after which I used the area() to give the enemy a hitbox - this became very useful as it is a way for the game to end itself when the player comes in contact with the enemy (this is done when both player and enemy hitboxes overlap), then after the scale function was used, this is because when the sprite enemy was tested in the game I found it to be too big for the game and its surroundings. By giving it a scale of 3.5 it was within the right proportions to the game. then the new function patrol() was added which allowed the enemy to move in the specified area by itself with a set boundary. Lastly, since the purpose of the enemy is to be an obstacle I used the danger tag and catergorised it as such. By using the categorisation it has made the coding process more efficient due to the fact anything that falls under the danger tag means that the game will end itself and the lose scene will appear if the player comes in contact with it.&#x20;
 
 ```javascript
 
@@ -129,7 +129,7 @@ Evidence for testing
 | Test | Instructions | What I expect                                                | What actually happens                                                                                    | Pass/Fail |
 | ---- | ------------ | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | --------- |
 | 1    | The  bot     | The bot should move between two boundaries                   | The bot moves between the set boundaries                                                                 | pass      |
-| 2    | The bot      | The bot should filp its body when it is changing directions  | The bot moves left and right but when it changes directions it does not move the way the body is facing  | fail      |
+| 2    | The bot      | The bot should flip its body when it is changing directions  | The bot moves left and right but when it changes directions it does not move the way the body is facing  | fail      |
 
 
 

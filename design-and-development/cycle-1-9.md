@@ -1,4 +1,4 @@
-# Cycle 10 menu
+# Cycle 10: Main Menu
 
 ##
 
@@ -36,7 +36,7 @@ For this cycle I aim to add a main menu where the player will load into in order
 
 ### Outcome
 
-To start the off my development cycle i proceed to create  a scene for my menu with a welcoming title and two options, to start the game or a option on how to play the game. Once i created the welcoming menu i went on to branching the options out such that if the player clicks start it take will the player directly to the game and if the play click the other option the player is taken to another scene with instruction on how to the play the game ( this is shown with the code below). To add simplity to the menu all of the titles and option is done in large fount to make it easy to read.
+To start off my development cycle I proceeded to create a scene for my menu with a welcoming title and two options, to start the game or an option on how to play the game. Once I created the welcoming menu I went on to branching the options out such that if the player clicks start it take will take the player directly to the game and if the player clicks the other option the player is taken to another scene with instructions on how to the play the game (this is shown with the code below). To add simplicity to the menu all of the titles and options are done in large font to make it easy to read.
 
 ```javascript
 scene("start", () => {
@@ -69,7 +69,7 @@ scene("start", () => {
  
 ```
 
-with the use of function on Click() it allow the play to use the mouse to click on the option  what will take then to the respective scene . i found this simple to use due the reason that when the player has loaded into the menu using there bower  they  are often still on a mouse by use the mouse until they are in the game it will provides convenience for the player&#x20;
+With the use of the function "on Click()" it allowed the player to use the mouse to click on the option that will take them to the respective scene.&#x20;
 
 ```
  onClick("Start01", () => {
@@ -82,7 +82,7 @@ with the use of function on Click() it allow the play to use the mouse to click 
 
 ```
 
-Once I had created the main menu, I proceeded to create a scene for the second option ("how to play the game"). Since i was limited to the size of the game frame i aim to keep the objective of the game and the control simple to understand ( this is shown in the image below ). whilst testing the code to see any issues, i encountered issues with the  size of the text that presented during the game being run as well as the text being misaligned. I resolve this issues by adding a sizing function ("size: 24 ") to the code that is resized the text whilst for the misalignment issue i proceed to add a position function (''pos(vec2(200, 100)),") this enabled me to control where the text is positioning with x and y coordinates. Finally I added back to the exit button enabling the player to go back to the main menu form the how to play scene , clicking upon on the exit button was an improvement over the previous method of refreshing the page.
+Once I had created the main menu, I proceeded to create a scene for the second option ("how to play the game"). Since I was limited to the size of the game frame I aimed to keep the objective of the game and the controls simple to understand (this is shown in the image below). Whilst testing the code to see any issues, I encountered issues with the size of the text that presented during the game being run as well as the text being misaligned. I resolved these issues by adding a sizing function ("size: 24 ") to the code that resized the text whilst for the misalignment issue I proceed to add a position function (''pos(vec2(200, 100)),") this enabled me to control where the text is positioning with x and y coordinates. Finally I added back to the exit button enabling the player to go back to the main menu form the how to play scene, clicking upon on the exit button was an improvement over the previous method of refreshing the page.
 
 ```javascript
   scene("rules", (time) => {
@@ -136,12 +136,12 @@ Once I had created the main menu, I proceeded to create a scene for the second o
 
 ### Tests
 
-| Test | Instructions                                                          | What I expect                                                                                                                                                                       | What actually happens                                                                                                                                                   | Pass/Fail |
-| ---- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    |  running the code                                                     | when running the code the game should load the player in the menu screen and provide the options play the game and how to player the game and allow the player to click the options | the code as ran as expected                                                                                                                                             | pass      |
-| 2    | test if the game take to player to the intend option                  | when the player click on a option on the start menu the player should be taken to intended option                                                                                   | when the player clicks a opotion it takes the player ot the wrong intneded place e.g when the player click " to play" the menu take the playe to how to play the game"  | fail      |
-| 3    | test if the game take to player to the intend option (second attempt) | when the player click on a option on the start menu the player should be taken to intended option                                                                                   | the player got the intended destination when the a option is clicked. I manged to fix the issue by changing the scene that was being used                               | pass      |
-| 4    |                                                                       |                                                                                                                                                                                     |                                                                                                                                                                         |           |
+| Test | Instructions                                                              | What I expect                                                                                                                                                                         | What actually happens                                                                                                                                                    | Pass/Fail |
+| ---- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| 1    |  Running the code                                                         | When running the code the game should load the player in the menu screen and provide the options "play the game" and "how to play the game" and allow the player to click the options | the code as ran as expected                                                                                                                                              | Pass      |
+| 2    | Test if the game takes the player to the intended option                  | When the player clicks on an option on the start menu the player should be taken to intended option                                                                                   | When the player clicks an option it takes the player to the wrong intended place e.g. when the player clicks "play" the menu takes the player to "how to play the game"  | Fail      |
+| 3    | Test if the game takes the player to the intended option (second attempt) | When the player clicks on an option on the start menu the player should be taken to intended option                                                                                   | The player got the intended destination when the correct option is clicked. I managed to fix the issue by changing the scene that was being used                         | Pass      |
+| 4    |                                                                           |                                                                                                                                                                                       |                                                                                                                                                                          |           |
 
 ### Evidence
 

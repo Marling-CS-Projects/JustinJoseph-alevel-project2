@@ -16,16 +16,16 @@
 ## 2 Design and Development <a href="#design-and-development" id="design-and-development"></a>
 
 * [Design Frame](2-design-and-development/systems-diagram.md)
-* [Cycle 1 set up](2-design-and-development/cycle-1.md)
-* [Cycle 2 coin and camera](design-and-development/cycle-1-1.md)
-* [Cycle 3 obstacles](design-and-development/cycle-1-2.md)
-* [Cycle 4 stopwatch](design-and-development/cycle-1-3.md)
-* [Cycle 5 enemy](design-and-development/cycle-1-4.md)
-* [Cycle 6 exit door](design-and-development/cycle-1-5.md)
-* [Cycle 7 adding another level](design-and-development/cycle-1-6.md)
-* [Cycle 8 death and falling](design-and-development/cycle-1-7.md)
-* [Cycle 9 moving platform](design-and-development/cycle-1-8.md)
-* [Cycle 10 menu](design-and-development/cycle-1-9.md)
+* [Cycle 1: Setup](2-design-and-development/cycle-1.md)
+* [Cycle 2: Coin and Camera](design-and-development/cycle-1-1.md)
+* [Cycle 3: Obstacles](design-and-development/cycle-1-2.md)
+* [Cycle 4: Stopwatch](design-and-development/cycle-1-3.md)
+* [Cycle 5: Enemy](design-and-development/cycle-1-4.md)
+* [Cycle 6: Exit Door](design-and-development/cycle-1-5.md)
+* [Cycle 7: Adding Another Level](design-and-development/cycle-1-6.md)
+* [Cycle 8: Death and Falling](design-and-development/cycle-1-7.md)
+* [Cycle 9: Moving Platform](design-and-development/cycle-1-8.md)
+* [Cycle 10: Main Menu](design-and-development/cycle-1-9.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
 
