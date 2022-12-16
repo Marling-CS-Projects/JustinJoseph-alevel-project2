@@ -21,7 +21,7 @@ The objective of this cycle is to add a stopwatch to the game whereby the player
 
 | Variable Name | Use                                                                                                                                                                   |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| timer ()      | This variable is used to add the stopwatch function                                                                                                                   |
+| stopwatch ()  | This variable is used to add the stopwatch function                                                                                                                   |
 | fixed         | This is to ensure that the displayed stopwatch counter does not move with the player or go out of frame but instead stays in the same location throughout the levels  |
 
 ### Pseudocode
@@ -45,22 +45,23 @@ The objective of this cycle is to add a stopwatch to the game whereby the player
 
 ### Outcome
 
-After succesfully&#x20;
+An overall outcome was that the stopwatch was succfulyly added to the game. i was able to do this with the knowleged i obtain from doing the coin system in cycle 2. I fisrt created a viable that will store the stopwatch time as it counted  it which i named stopwatch.time , whilst reaseaching  the way to add a stopwatch to my game i discored that kbaoom.js already as a stopwatch function build in which was under the function name dt() this made it simple and made it more effeicient for me due to the amount of time i saved . Once that stopwatch.time function was created i turned my attenction to presenting it to the player i done this by creating a viable called stopwatch. text this contain the string "stopwatch " and the perious mention stopwatch.time function&#x20;
 
 ```javascript
   stopwatch.onUpdate(() => {
     stopwatch.time += dt()
-    stopwatch.text = " stopwatch" + stopwatch.time.toFixed(2)
-  })
+    stopwatch.text = " stopwatch" + stopwatch.time.  })
 ```
 
+there is not much different between when adding the output read out function for the coins and the output read out for the stopwatch. the only only difference is that the inital value of stopwatch is 0 as well as the scale of the text being small then the text for the coin this was also do with the funciton scale() and lastly the postion of stopwatch is place above the coin  system this to prevent the player from being obstructed by the counting stopwatch.&#x20;
+
 ```javascript
-  const timer = add([
+  const stopwatch = add([
     text("stopwatch : 0 "),
     pos(3, 86),
     fixed(),
     scale(0.50),
-    { time: 0 },
+    { stopwatch: 0 },
   ])
 
 

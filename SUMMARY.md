@@ -22,9 +22,9 @@
 * [Cycle 4 stopwatch](design-and-development/cycle-1-3.md)
 * [Cycle 5 enemy](design-and-development/cycle-1-4.md)
 * [Cycle 6 exit door](design-and-development/cycle-1-5.md)
-* [Cycle 9 moving platform](design-and-development/cycle-1-8.md)
 * [Cycle 7 adding another level](design-and-development/cycle-1-6.md)
 * [Cycle 8 death and falling](design-and-development/cycle-1-7.md)
+* [Cycle 9 moving platform](design-and-development/cycle-1-8.md)
 * [Cycle 10 menu](design-and-development/cycle-1-9.md)
 
 ## 3 Testing <a href="#testing" id="testing"></a>
