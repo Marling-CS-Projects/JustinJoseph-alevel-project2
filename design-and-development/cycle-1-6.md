@@ -137,9 +137,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect | What actually happens | Pass/Fail |
-| ---- | ------------ | ------------- | --------------------- | --------- |
-| 1    |              |               |                       | Fail      |
-| 2    |              |               |                       | Pass      |
+| Test | Instructions                   | What I expect                                                                                 | What actually happens | Pass/Fail |
+| ---- | ------------------------------ | --------------------------------------------------------------------------------------------- | --------------------- | --------- |
+| 1    | run code                       | when the player runs the code the should be able to get to the exit with any errors           | runs as expected      | pass      |
+| 2    | portal test between two levels | when the player gets to the exit/ portal the portal should take the player to the exit level  | runs as expected      | Pass      |
 
 ### Evidence

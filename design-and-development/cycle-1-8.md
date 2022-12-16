@@ -27,7 +27,7 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 
 | Variable Name | Use                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| mp            | The use of mp is to affect the behaviour of moving platforms left and right between specific points.                        |
+| mp            | this function provides the platfroms the ability to move between two point autonomously.                                    |
 |  solid()      | By using this variable it enables the platform to become a solid object which can enable the player to jump on and off it.  |
 
 ### Pseudocode

@@ -1,4 +1,4 @@
-# Cycle 3 obstacles
+# Cycle 3: Obstacles
 
 ##
 
@@ -105,4 +105,4 @@ I test if the spike worked by with a spike this resulted in the player's death&#
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

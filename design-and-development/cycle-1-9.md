@@ -22,14 +22,38 @@ For this cycle I aim to add a main menu where the player will load into in order
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-|               |     |
-|               |     |
+| Variable Name                  | Use                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------- |
+| <pre><code>size:
+</code></pre> | the variable is used to control the size of the text when displayed to the player           |
+|  add()                         | this varible enable the newly created componet be added to the game and allow it function . |
 
 ### Pseudocode
 
 ```
+scene(
+
+  
+
+
+  add([
+    text("Click HERE to start!", { size}),
+    pos(vec2(400, 200)),
+    area
+    "Start"
+  ]);
+
+
+  add([
+    text("How to play HERE", { size}),
+    pos((400, 300)),
+    area
+    "Start01"
+  ]);
+
+
+ 
+});
 ```
 
 ## Development

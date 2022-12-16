@@ -1,4 +1,4 @@
-# Cycle 1 set up
+# Cycle 1: Setup
 
 ##
 
@@ -22,7 +22,7 @@ Controls - the controls for the player will be done in a simple manner by have A
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Controls (a, d, space) | This controls the movement of the character by moving left, right, and to jump                                                                       |
 | Player                 | The use of this variable is to add the player to the game whilst providing the player with a body which the components of the game can interact with |
-| Speed                  | It provides a value which determines how fast a player moves                                                                                         |
+| move\_speed            | It provides a value which determines how fast a player moves                                                                                         |
 
 ### Pseudocode
 
@@ -227,9 +227,13 @@ As mentioned above, the program I am using to create my game enables me to add c
 
 Once the relevant component was added to the game for the early stage development i proceed to turn my attention to adding the character to the game. This was done in three stages , with the first stage being designing the character, to save time and to ensure that the game met the pegi 12 criteria i designed the character in a retro and cartoonish style as shown in the image below.
 
-
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Once the first stage was complete I added the image file address ( with assets file being stored in the game) to the game. additional i provide the file with a tag name "goro" this is to make it simple for me to refer to the file tough out development phase
+
+```
+loadPedit("goro", "sprites/goro.pedit");
+```
 
 \
 
