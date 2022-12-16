@@ -40,7 +40,7 @@ The objective of this level is to add an exit door for the player. Once the play
 
 The first stage of completing this objective was to create a exit door and then add the exit  to the game in the from of a sprite as shown below .
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once it was added to the game i also imported its file address and provided the portal with a tag
 
@@ -112,6 +112,7 @@ Evidence for testing
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
+![](<../.gitbook/assets/image (13).png>)
 
-<figure><img src="../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
+![](<../.gitbook/assets/image (10).png>)
+

@@ -141,3 +141,5 @@ Evidence for testing
 | 2    | portal test between two levels | when the player gets to the exit/ portal the portal should take the player to the exit level  | runs as expected      | Pass      |
 
 ### Evidence
+
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>

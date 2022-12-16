@@ -134,6 +134,4 @@ During this cycle, I face three different challenges. The first challenge I enco
 
 ### Evidence
 
-
-
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../.gitbook/assets/image (21).png>)![](<../.gitbook/assets/image (11).png>)

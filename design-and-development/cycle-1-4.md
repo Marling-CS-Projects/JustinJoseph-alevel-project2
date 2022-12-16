@@ -58,7 +58,7 @@ In this cycle, I aim to add a bot to my game. The function of this bot is to sho
 
 To start off my development cycle I first created an enemy that the player can see and interact with. This persuaded me to keep my sprite for my enemy simple with the intention of keeping it PEGI 12 as I was very keen to integrate the enemy and make it functional.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (4).png>)
 
 
 
@@ -131,6 +131,4 @@ Evidence for testing
 | 1    | The  bot     | The bot should move between two boundaries                   | The bot moves between the set boundaries                                                                 | pass      |
 | 2    | The bot      | The bot should flip its body when it is changing directions  | The bot moves left and right but when it changes directions it does not move the way the body is facing  | fail      |
 
-
-
-<figure><img src="../.gitbook/assets/image (1) (3) (2).png" alt=""><figcaption></figcaption></figure>
+![](<../.gitbook/assets/image (8).png>)

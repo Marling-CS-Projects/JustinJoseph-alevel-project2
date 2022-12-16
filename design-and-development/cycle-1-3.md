@@ -87,5 +87,5 @@ I tested if the spike worked by colliding with a spike, this resulted in the pla
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../.gitbook/assets/image (25).png>)
 
