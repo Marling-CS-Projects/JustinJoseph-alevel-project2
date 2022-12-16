@@ -65,9 +65,9 @@ The first objective of this cycles was to add a feature to the game in which tha
 
 ```
 
-If a player fails the game they raffered to lose scene other wise i found the game often crashes. To minimalism the time wasted for the player i aim to keep the lose scene simple and easy to use . This meant that i only need a few strings of text , one string of text to for the player acknowledge that the player had lose the game and another string of text to let them know how to restart the level.&#x20;
+If a player fails the game they reffered to lose scene other wise i found the game often crashes. To minimalism the time wasted for the player i aim to keep the lose scene simple and easy to use . This meant that i only need a few strings of text , one string of text to for the player acknowledge that the player had lose the game and another string of text to let them know how to restart the level.&#x20;
 
-To do this l create the scene with the variable name  "lose" this is the vaibel name that i would use to when the player dies from coillion with obsclte or the enemy or falling death. Aftere the scene was created i added the two bit of information need fist being the acknowledgement of death whcih was done with the code text("game over  ",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player ot read. This is in addtaion&#x20;
+To do this l create the scene with the variable name  "lose" this is the vaibel name that i would use to when the player dies from coillion with obsclte or the enemy or falling death. Aftere the scene was created i added the two bit of information need fist being the acknowledgement of death whcih was done with the code text("game over  ",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player ot read. This is in addition to letting the player know how to get to back to main menu
 
 ```javascript
   
@@ -90,6 +90,8 @@ To do this l create the scene with the variable name  "lose" this is the vaibel 
 
 });
 ```
+
+To enable the player to get main menu i have Incorporated a click button&#x20;
 
 ```javascript
 
