@@ -72,7 +72,7 @@ there is not much different between when adding the output read out function for
 
 ### Challenges
 
-One of the challenges that I faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as placing the stopwatch below another instrument that was displayed to the player. &#x20;
+One of the challenges that I faced during the implant of the stopwatch is correctly positioning the stopwatch meter on the screen so that the player can see the stopwatch easily. I overcame this by adjusting the size of the font that was used and adjusting the positions of it as well as placing the stopwatch below another instrument that was displayed to the player. Additional one challenge i am still facing is one where there is no space between the word "stopwatch " and the counter .i still yet to see a fix to this solution i may be a simple fix.
 
 ## Testing
 
@@ -80,10 +80,10 @@ I tested if the spike worked by colliding with a spike, this resulted in the pla
 
 ### Tests
 
-| Test | Instructions      | What I expect                                                                                                                                                                                                       | What actually happens                                                                                                                                      | Pass/Fail |
-| ---- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Added the spikes  | The spikes will function in a manner where when the player comes in contact with the spikes the player will take damage which will lead to death if the player comes in contact with it in more than one occasion.  | The spikes were added successfully  however when the player comes in contact with the spikes the player does not take any damages to the player's health.  | Fail      |
-| 2    | Stopwatch         | When the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop.                                                                 | The stopwatch worked as expected.                                                                                                                          | Pass      |
+| Test | Instructions        | What I expect                                                                                                                                       | What actually happens                                                                                                | Pass/Fail |
+| ---- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | stopwatch appearing | when player start the game the stopwatch show appear in the designated location                                                                     | The stopwatch appears in the designated location however the when recording time it does not separated from the text | fail      |
+| 2    | Stopwatch working   | When the player starts the game the stopwatch will start and once the player has completed he game by finishing the level the stop watch will stop. | The stopwatch worked as expected.                                                                                    | Pass      |
 
 ### Evidence
 

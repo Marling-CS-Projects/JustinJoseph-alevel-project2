@@ -33,13 +33,31 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 ### Pseudocode
 
 ```
+function mp(speed = 100, dis = 10, dir = 1) {
+
+  return {
+    id: "mp",
+    require: ["pos", "area",],
+    add() {
+      this.on("collide", (obj, col) => {
+        if (col.isLeft() || col.isRight()) {
+          dir = -dir
+        }
+      })
+    },
+    update() {
+      this.move(speed * dir, 0)
+
+    },
+  }
+}
 ```
 
 ## Development
 
 ### Outcome
 
-Since the premise of the moving platform is to have platforms to move from left to right and back I decided to save time by using the same code that was used for the enemy cycles with the only alteration by that the speed with it moves and the distance as well. If you were to compare the two components you find that the moving platform has a fast speed, set at 100, to help the player to beat the clock that otherwise the player could find that by not using the moving platform they could complete the level faster. An additional feature that the enemy does not have is a distant component to the moving platform, this would limit the area the platform can cover to prevent the moving platform going of the game screen. This enabled me to create the moving platform function ("mp" for the variable name).&#x20;
+Since the premise of the moving platform is to have platforms to move from left to right and back I decided to save time by using the same code that was used for the enemy cycles with the only alteration by that the speed with it moves and the distance as well. If you were to compare the two components you find that the moving platform has a fast speed, set at 100, to help the player to beat the clock that otherwise the player could find that by not using the moving platform they could complete the level faster. An additional feature that the enemy does not have is a distance component to the moving platform, this would limit the area the platform can cover to prevent the moving platform going of the game screen. This enabled me to create the moving platform function ("mp" for the variable name).&#x20;
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>// mp = moving platfrom 
 </strong><strong>function mp(speed = 100, dis = 10, dir = 1) {
@@ -108,7 +126,9 @@ As part of the success criteria it was mentioned to have different types of obst
 
 ### Challenges
 
-Description of challenges
+When doing some testing, I realised that the moving platform was not able to get from one point to the other point; this was primarily due to a missing function. Once I realised what the issue was I added a distance ( dis ) to the mp function. This ultimately fixed the issue thus allowing the moving platform to make it to both set points.
+
+
 
 ## Testing
 
@@ -120,7 +140,7 @@ Evidence for testing
 
 | Test | Instructions          | What I expect                                                                                                                                    | What actually happens                                                                                                                                                                                                                                                                               | Pass/Fail |
 | ---- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Run code              | When the platforms move they should move from left to right and once they come in contact with the solid platform they should go the other way   | The platform works but not in the expected way. This is because when the platform moves from left to right it goes through the solid platfrom instead of bouncing back and going the way it came                                                                                                    | Fail      |
+| 1    | Run code              | When the platforms move they should move from left to right and once they come in contact with the solid platform they should go the other way   | The platform works but not in the expected way. This is because when the platform moves from left to right it goes through the solid platform instead of bouncing back and going the way it came                                                                                                    | Fail      |
 |      |                       | When the platform moves, they should move from left to right and once they come in contact with the solid platform, they should go the other way | After the first test failed I went into the code of the moving platform I found that I did not include the solid() function which allows the moving platform to be known as a solid. Once it was added, the platform goes left and right as expected                                                | Pass      |
 |      | Run code with player  | For this test, I wanted to see how the platform interacts with the player                                                                        | Through the test I found that there is bug with the platform. In which the player can make contact with the side of the moving platform as a substitute for the solid platform and the moving platform would think it had made contact with a solid platform.                                       | Fail      |
 |      | Run code with player  | For this test, I wanted to see how the platform interacts with the player                                                                        | When doing the last test I found a bug (mentioned in test 3). However whilst conducting other tests on the moving platform the result of it was fine as it allowed the player to jump on it as well move around on it with out causing any direct issue to the moving platform whilst in operation  | Pass      |
@@ -131,4 +151,4 @@ Evidence for testing
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/image (3).png>)
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

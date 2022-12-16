@@ -105,10 +105,11 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions                  | What I expect                                                                         | What actually happens  | Pass/Fail |
-| ---- | ----------------------------- | ------------------------------------------------------------------------------------- | ---------------------- | --------- |
-| 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level  | Does what is mentioned | pass      |
-| 2    |                               |                                                                                       |                        | Pass      |
+| Test | Instructions                  | What I expect                                                                                                                                             | What actually happens  | Pass/Fail |
+| ---- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | --------- |
+|      | run code                      | the portal should appear above the platform                                                                                                               | does what is mentioned | pass      |
+| 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level                                                                      | Does what is mentioned | pass      |
+| 2    | death scene                   | when the player dies in the game a death scene should appear  to let the player know they have died as well as give a option to go back to the start menu |                        | Pass      |
 
 ### Evidence
 

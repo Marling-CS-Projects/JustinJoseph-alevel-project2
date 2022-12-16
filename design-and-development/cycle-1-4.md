@@ -73,7 +73,7 @@ Once the enemy was added to the game it was needed for the enemy have a purpose 
 
 
 ```javascript
-function patrol(speed =75 , dir = 1) {
+function patrol(speed =75 ,dis= 16 , dir = 1) {
 
 	return {
 		id: "patrol",
@@ -116,7 +116,7 @@ With the new feature developed I proceeded to incorporate everything together in
 
 ### Challenges
 
-One of the challenges I have encountered is&#x20;
+One of the challenges I encountered whilst implementing the enemy into my game was that the enemy would fall off the platform whilst in testing . I overcame these challenges in two ways . One way was to shorten the distant the enemy travels this had worked successfully whilst the second was done in a create way in which i created on pixel block that would be place exactly where i want the enemy to stop and turn around however one floor i found this method was that the player would be affected by the small block when trying to jump onto the platform the block would run the risk of stop the player trying to get one  therefore i discontinued the second idea.&#x20;
 
 ### Evidence
 
@@ -126,9 +126,10 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions | What I expect                                                | What actually happens                                                                                    | Pass/Fail |
-| ---- | ------------ | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | The  bot     | The bot should move between two boundaries                   | The bot moves between the set boundaries                                                                 | pass      |
-| 2    | The bot      | The bot should flip its body when it is changing directions  | The bot moves left and right but when it changes directions it does not move the way the body is facing  | fail      |
+| Test | Instructions                    | What I expect                                                                                                                                                       | What actually happens                                                                                                                                                                                    | Pass/Fail |
+| ---- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | run the code                    | the to appear where it is placed on the map as well has eleimate the player if the player comes in contect with the enemy                                           | the player gets eliminated by the enemy when contact is made as well a the enemy appear on the selected location.                                                                                        | pass      |
+| 2    | movement run test               | after the basics of the enemy is established, i am now test if the enemy will move from in the designated area . such as a patrol of the area                       | the enemy moves around . However the enemy when placed on a platform the enemy falles if the platform                                                                                                    | fail      |
+| 3    | movement run test ( second try) | after the basics of the enemy is established, i am now test if the enemy will move from in the designated area in a specific pattern . such as a patrol of the area | After seen the failiure of the fisrt test i went back to the code and altered the distant that the enemy can travel once that was done the enemy can movie around on the platform with out falling of it | pass      |
 
 ![](<../.gitbook/assets/image (8).png>)

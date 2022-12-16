@@ -154,6 +154,8 @@ Once I had created the main menu, I proceeded to create a scene for the second o
 
 ## Description of challenges
 
+during the coding for the main menu i faced a challenge that was later resolved. This was when the player click on a option and the menu takes the player to the wrong scene . for example when clicking the " how to play here " it would take the player to the game it self and vice versa . I solved this by swapping the scene names this resulted  in the main menu functioning correctly. &#x20;
+
 ## Testing
 
 

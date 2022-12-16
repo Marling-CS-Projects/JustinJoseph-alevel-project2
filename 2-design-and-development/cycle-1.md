@@ -138,16 +138,16 @@ Once I had completed creating the essential assets I need for the game for the e
 
 ```javascript
 const map = [
-  '                                                                         @      ',
+  '                                                                              ',
   '         ppp              ppp                pp                         ppppp',
   '                                                                             ',
-  '                                                           ccc                 ',
+  '                                                                            ',
   '                                                          pppp                   ',
-  ' ppp            ppppp        j              ppp                               ',
+  ' ppp            ppppp                      ppp                               ',
   '                                                                             ',
   '                                                                             ',
-  '                     sccs             cscs                         ccssc           ',
-  '      pppp          ppppp           ppppp          a        ppppppppppppp   ',
+  '                                                                            ',
+  '      pppp          ppppp           ppppp                  ppppppppppppp   ',
   '                                                                             ',
   '                                                                             ',
   '                                                   pppp                          ',
@@ -156,20 +156,20 @@ const map = [
   ' pppp                                                                        ',
   '                                                                             ',
   '                                                                             ',
-  '                cc               ss                  sss                ccc     ',
+  '                                                                              ',
   '             ppppp             ppppp                ppppp              pppp ',
   '                                                                             ',
   '                                                                              ',
-  '                       cs                   ss                                   ',
+  '                                                                             ',
   '   pppp               pppppp             pppppp              pppppp         ',
   '                                                                              ',
   '                                                                             ',
   '                                                                             ',
-  '             pppppp           m                 ppppppp          pppp      ',
+  '             pppppp                            ppppppp          pppp      ',
   '                                                                             ',
   '                                                                             ',
   '                                                                             ',
-  '               s            e    s                             e          s   ',
+  '                                                                         ',
   '============================================================================',
 ]
 
@@ -290,5 +290,4 @@ The challenge of this cycle was setting up a movement feature for the first char
 
 ### Evidence
 
-![](<../.gitbook/assets/image (1).png>)
-
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

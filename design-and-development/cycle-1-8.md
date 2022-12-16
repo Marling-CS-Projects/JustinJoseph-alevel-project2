@@ -26,10 +26,10 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                                                                               |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2000          | This is a const variable that is used as a benchmark for the falling death feature in which if the player falls below 2000 the pixle  mark the lose scene is shown to the player  |
-|               |                                                                                                                                                                                   |
+| Variable Name | Use                                                                                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2000          | This is a const variable  is used as a benchmark for the falling death feature in which if the player falls below 2000 the pixles  mark the lose scene is shown to the player  |
+|               |                                                                                                                                                                                |
 
 ### Pseudocode
 
@@ -102,7 +102,7 @@ To enable the player to get main menu i have Incorporated a click button via the
 
 ### Challenges
 
-
+A small challenge I faced during the testing of the falling death feature was that the falling death was not timed correctly , in which that player could jump off a platform onto a lower platform of a short distance and they could die or the player could die after a long time if they jumped off the level . To solve this I change the const variable value in increments of 100 until I find the correct value that enables the player to die after going below the ground or falling for a long time.
 
 ## Testing
 
@@ -110,11 +110,11 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions   | What I expect                                                                                                                           | What actually happens                                                                                                                                                              | Pass/Fail |
-| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player strays too far away from the level, they will die after a short distance.                                                                                          | Fail      |
-| 2    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player jumps off the level, the player is dead when they go below the base floor of the game as well as that the player will die if they are falling for a long distance. | Pass      |
-| 3    | Death scene    | When the player collides with a dangerous object, the death screen should appear.                                                       | When the player dies the death screen appears.                                                                                                                                     | Pass      |
+| Test | Instructions   | What I expect                                                                                                                           | What actually happens                                                                                                                                                     | Pass/Fail |
+| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player strays too far away from the level, they will die after a short distance.                                                                                 | Fail      |
+| 2    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player jumps off the level, the player is dead when they go below the base floor of the game as well as that the player will die if they are falling for a long  | Pass      |
+| 3    | Death scene    | When the player collides with a dangerous object, the death screen should appear.                                                       | When the player dies the death screen appears.                                                                                                                            | Pass      |
 
 ### Evidence
 
