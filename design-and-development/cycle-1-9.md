@@ -140,4 +140,4 @@ Once I had created the main menu, I proceeded to create a scene for the second o
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/image (2).png>)
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

@@ -45,7 +45,14 @@ The objective of this cycle is to add a stopwatch to the game whereby the player
 
 ### Outcome
 
+After&#x20;
 
+```javascript
+  timer.onUpdate(() => {
+    timer.time += dt()
+    timer.text = " stopwatch" + timer.time.toFixed(2)
+  })
+```
 
 ```javascript
   const timer = add([
@@ -56,10 +63,7 @@ The objective of this cycle is to add a stopwatch to the game whereby the player
     { time: 0 },
   ])
 
-  timer.onUpdate(() => {
-    timer.time += dt()
-    timer.text = " stopwatch" + timer.time.toFixed(2)
-  })
+
 
 ```
 

@@ -1,4 +1,4 @@
-# Cycle 8 death and falling
+# Cycle 7 adding another level
 
 ##
 
@@ -6,17 +6,9 @@
 
 ### Objectives
 
-For the objective of this cycle, I aim to incorporate a falling death to the game. The way I want this to be implemented is that when the player falls off the level (outside the playable area) or falls from a significant height in the level it will result in the immediate death of the player which makes the player restart the level.
-
-Additionally, the second aim that I have for this cycle is to add a death scene to the game. The way I see the death scene to function within the game is when the player collides with a danger's object within the game (for example, spikes) falling from a height, as previously mentioned, the death scene should appear on the player's screen with one showing to the player that they have died and secondly giving the player the option to go back to the main menu and start again.  &#x20;
 
 
-
-
-
-* [x] Add falling death   &#x20;
-* [x] Add a death scene&#x20;
-* [x] &#x20;return to start menu
+* [x] Adding another level
 
 
 
@@ -33,74 +25,108 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 ### Pseudocode
 
-
-
-```javascript
-// falling death 
-if player falls below 1000(
- death scene
- )
-```
+&#x20;&#x20;
 
 ```
-if player touches anything dangers'(
-  display death scene
-  give the option to the player to play again 
-  )
+',
+   '                                                                            ',
+   '                                                                             ',
+   '                  m              m                           ccc                 ',
+   '                                                                             ',
+   ' ppp            ppppp        j              ppp                               ',
+   '                                                                             ',
+   '                                                                             ',
+   '                     sccs             cscs                         ccssc           ',
+   '      pppp          ppppp           ppppp          a                             ',
+   '                                                                             ',
+   '                                                                             ',
+   '             pppp                                      pppp                          ',
+   '                                                                             ',
+   '  s                                c  c  c                 pppp                   ',
+   ' pppp                            c   @  c                             ',
+   '                                  c  c c                                    ',
+   '    p                      j                                             p      ',
+  '                                                                              ',
+   '                cc               ss                  sss                ccc     ',
+   '             ppppp             ppppp                ppppp              pppp ',
+   '              s                                                               ',
+   '                                                                              ',
+   '                       cs                   ss                 e                 ',
+   '   pppp               pppppp             pppppp              pppppp         ',
+   '                                                                              ',
+   '                                                                             ',
+   '                                                   s                          ',
+   '             pppppp                            ppppppp          pppp      ',
+   '                            j                                                 ',
+   '                             j                                              ',
+   '                              j                                               ',
+   '                                                                     s   ',
+   '============================================================================',
+ ]
+
 ```
 
 ## Development
 
 ### Outcome
 
-The first objective of this cycles was to add a feature to the game in which that if the player fall out  of the game map or falls for too long the game should instantly end it self and give the player the option to start the game again. For this feature to work l used a If statement in which that the game will use the current position of the player in the Y coordinate direction `(player.pos.y)` and compare the value to an const value of 2000 . If the player falls below  the const value the game will end itself thus referring the player to end scene "`go("lose")`".
+As i have already creted a fisrt sucessful first level i did not want to change the deisgn of the secon level too much this due to two reasons , with one being that it take up much valuable time that can be spend adding addtioal feature as well as refindin the game to better , and the second reason is i want the player to still be familar with the levels and have to same objetvi which is to find and get to the exit. However it does not mean that there has been no alteration for whilst keept the same desgin as the pervious platforms have been added as well as takenaway which would make the player find new creted way to get to the exit. In terms of adding platfrom is the  addtiaion of moving platforms as well as acid bath which can instanly damge the player. this is all in   conjustion with the use of more coins for the player to collect through out the level. finally the the change in the locaiton of the potal to keep the player more engaged as the player would already know the locaiton of the perious portal they have to spend time in oder to comeple the level. To save time  for me to code the game and for the bower to execute the code, i have the desgined  level in a way that i can use the vaible and comppent of the perious level ( talked about in set up cycle 1 )&#x20;
 
 ```javascript
-// falling death 
- 	player.onUpdate(() => {
-		if (player.pos.y >= 2000) {
-			go("lose")
+   '                                                                            ',
+   '                                                                             ',
+   '                  m              m                           ccc                 ',
+   '                                                                             ',
+   ' ppp            ppppp        j              ppp                               ',
+   '                                                                             ',
+   '                                                                             ',
+   '                     sccs             cscs                         ccssc           ',
+   '      pppp          ppppp           ppppp          a                             ',
+   '                                                                             ',
+   '                                                                             ',
+   '             pppp                                      pppp                          ',
+   '                                                                             ',
+   '  s                                c  c  c                 pppp                   ',
+   ' pppp                            c   @  c                             ',
+   '                                  c  c c                                    ',
+   '    p                      j                                             p      ',
+  '                                                                              ',
+   '                cc               ss                  sss                ccc     ',
+   '             ppppp             ppppp                ppppp              pppp ',
+   '              s                                                               ',
+   '                                                                              ',
+   '                       cs                   ss                 e                 ',
+   '   pppp               pppppp             pppppp              pppppp         ',
+   '                                                                              ',
+   '                                                                             ',
+   '                                                   s                          ',
+   '             pppppp                            ppppppp          pppp      ',
+   '                       m                                                      ',
+   '                               m                                              ',
+   '                              m                                               ',
+   '                                                                     s   ',
+   '============================================================================',
+ ]
+```
+
+
+
+```javascript
+  	player.onCollide("exit", () => {
+		if (levelId + 1 < LEVELS.length) {
+			go("game", {
+				levelId: levelId + 1,
+				coins: coins,
+			})
+		} else {
+			go("win")
 		}
-	}
-
-```
-
-If a player fails the game they raffered to lose scene other wise i found the game often crashes. To minimalism the time wasted for the player i aim to keep the lose scene simple and easy to use . This meant that i only need a few strings of text , one string of text to for the player acknowledge that the player had lose the game and another string of text to let them know how to restart the level.&#x20;
-
-To do this l create the scene with the variable name  "lose" this is the vaibel name that i would use to when the player dies from coillion with obsclte or the enemy or falling death. Aftere the scene was created i added the two bit of information need fist being the acknowledgement of death whcih was done with the code text("game over  ",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player ot read. This is in addtaion&#x20;
-
-```javascript
-  
- scene("lose", (time) => {
-  add([
-    text("game over", { size: 24 }),
-    pos(vec2(500, 350)),
-    origin("center"),
-    color(255, 255, 255),
-    text
-  ]);
-
-  add([
-    text("press enter to go back to the start screen ", { size: 24 }),
-    pos(vec2(400, 200)),
-    origin("center"),
-    color(255, 255, 255),
-    text
-  ]);
-
-});
-```
-
-```javascript
-
-  onKeyRelease("enter", () => {
-    go("start");
-  })
+	})
 ```
 
 ### Challenges
 
-
+Description of challenges
 
 ## Testing
 
@@ -108,12 +134,9 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions   | What I expect                                                                                                                           | What actually happens                                                                                                                                                              | Pass/Fail |
-| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player strays too far away from the level, they will die after a short distance.                                                                                          | Fail      |
-| 2    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player jumps off the level, the player is dead when they go below the base floor of the game as well as that the player will die if they are falling for a long distance. | Pass      |
-| 3    | Death scene    | When the player collides with a dangerous object, the death screen should appear.                                                       | When the player dies the death screen appears.                                                                                                                                     | Pass      |
+| Test | Instructions | What I expect | What actually happens | Pass/Fail |
+| ---- | ------------ | ------------- | --------------------- | --------- |
+| 1    |              |               |                       | Fail      |
+| 2    |              |               |                       | Pass      |
 
 ### Evidence
-
-<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# Cycle 9 moving platform
+# Cycle 8 death and falling
 
 ##
 
@@ -6,16 +6,17 @@
 
 ### Objectives
 
-For this cycle, I aim to add moving platforms to the game as my first priority. The function of the moving platform is to move a platform from left to right within a given space in the level, as part of the function of the moving platform the player will be able to step, run or jump onto the platform and will be able to get off it or jump from it to another platform.&#x20;
+For the objective of this cycle, I aim to incorporate a falling death to the game. The way I want this to be implemented is that when the player falls off the level (outside the playable area) or falls from a significant height in the level it will result in the immediate death of the player which makes the player restart the level.
 
-Another objective for this cycle is to add an acid bath. The acid bath uses the same function as the moving platform but instead, if the player comes in contact with the acid bath it will result in the death of the player. By adding these components to the game I believe it adds to the gaming experience as it adds a scene of danger to the game which the player will have to overcome.&#x20;
-
-
-
-* [x] Add moving platforms  &#x20;
-* [x] Acid bath&#x20;
+Additionally, the second aim that I have for this cycle is to add a death scene to the game. The way I see the death scene to function within the game is when the player collides with a danger's object within the game (for example, spikes) falling from a height, as previously mentioned, the death scene should appear on the player's screen with one showing to the player that they have died and secondly giving the player the option to go back to the main menu and start again.  &#x20;
 
 
+
+
+
+* [x] Add falling death   &#x20;
+* [x] Add a death scene&#x20;
+* [x] &#x20;return to start menu
 
 
 
@@ -25,73 +26,81 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                         |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| mp            | The use of mp is to affect the behaviour of moving platforms left and right between specific points.                        |
-|  solid()      | By using this variable it enables the platform to become a solid object which can enable the player to jump on and off it.  |
+| Variable Name | Use |
+| ------------- | --- |
+|               |     |
+|               |     |
 
 ### Pseudocode
 
+
+
+```javascript
+// falling death 
+if player falls below 1000(
+ death scene
+ )
 ```
+
+```
+if player touches anything dangers'(
+  display death scene
+  give the option to the player to play again 
+  )
 ```
 
 ## Development
 
 ### Outcome
 
-
+The first objective of this cycles was to add a feature to the game in which that if the player fall out  of the game map or falls for too long the game should instantly end it self and give the player the option to start the game again. For this feature to work l used a If statement in which that the game will use the current position of the player in the Y coordinate direction `(player.pos.y)` and compare the value to an const value of 2000 . If the player falls below  the const value the game will end itself thus referring the player to end scene "`go("lose")`".
 
 ```javascript
-function mp(speed = 100, dis = 10, dir = 1) {
+// falling death 
+ 	player.onUpdate(() => {
+		if (player.pos.y >= 2000) {
+			go("lose")
+		}
+	}
 
-  return {
-    id: "mp",
-    require: ["pos", "area",],
-    add() {
-      this.on("collide", (obj, col) => {
-        if (col.isLeft() || col.isRight()) {
-          dir = -dir
-        }
-      })
-    },
-    update() {
-      this.move(speed * dir, 0)
+```
 
-    },
-  }
-}
+If a player fails the game they raffered to lose scene other wise i found the game often crashes. To minimalism the time wasted for the player i aim to keep the lose scene simple and easy to use . This meant that i only need a few strings of text , one string of text to for the player acknowledge that the player had lose the game and another string of text to let them know how to restart the level.&#x20;
+
+To do this l create the scene with the variable name  "lose" this is the vaibel name that i would use to when the player dies from coillion with obsclte or the enemy or falling death. Aftere the scene was created i added the two bit of information need fist being the acknowledgement of death whcih was done with the code text("game over  ",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player ot read. This is in addtaion&#x20;
+
+```javascript
+  
+ scene("lose", (time) => {
+  add([
+    text("game over", { size: 24 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+
+  add([
+    text("press enter to go back to the start screen ", { size: 24 }),
+    pos(vec2(400, 200)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+
+});
 ```
 
 ```javascript
-  "j": () => [
-    sprite("platform3"),
-    area(),
-    solid(),
-    mp(),
-    origin("bot"),
-  ],
-```
 
-```javascript
-  "a": () => [
-    sprite("acid"),
-    area(),
-    solid(),
-    mp(),
-    origin("bot"),
-    "danger"
-  ],
-```
-
-```javascript
-  player.onCollide("danger", () => {
-    go("lose")
+  onKeyRelease("enter", () => {
+    go("start");
   })
 ```
 
 ### Challenges
 
-Description of challenges
+
 
 ## Testing
 
@@ -99,19 +108,12 @@ Evidence for testing
 
 ### Tests
 
-### Tests
-
-| Test | Instructions          | What I expect                                                                                                                                   | What actually happens                                                                                                                                                                                                                                                                            | Pass/Fail |
-| ---- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| 1    | run code              | when the platform moves they should move from left to right  and once they come in contact with the sloid platfom they should go the other way  |  the platfrom works but not in the expect way. This is because when the platfrom moves from left to right it goes through the soild platfrom instead of bounsing back and going the way ti came.                                                                                                 | Fail      |
-|      |                       | when the platform moves they should move from left to right  and once they come in contact with the sloid platfom they should go the other way  | After the fisrt test failled i went into the code of the moving platfrom i found that i did not include the soild() function which allow the movies platfrom to be known as a solid .once it was add the platfrom goes left and right as expected                                                | pass      |
-|      | run code with player  | For this the i want to see how the platfrom interacts wtih the player                                                                           | through the test i found that there is bug with the platfrom. In which that the player can make contact with the side of the moving platfrom as a substitute for the solid platfrom and the moving platfrom would think it had made contact with a solid platfrom.                               | fail      |
-|      | run code with player  | For this the i want to see how the platfrom interacts wtih the player                                                                           | When doing the last test i found a bug ( mention in test 3). However whilst conducting other tests on the moving platfrom the rsult of it was fine as it allow the player to jump on it as well move around on it with out couseing any direct issue to the moving platfrom whilst in operation  | pass      |
+| Test | Instructions   | What I expect                                                                                                                           | What actually happens                                                                                                                                                              | Pass/Fail |
+| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player strays too far away from the level, they will die after a short distance.                                                                                          | Fail      |
+| 2    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player jumps off the level, the player is dead when they go below the base floor of the game as well as that the player will die if they are falling for a long distance. | Pass      |
+| 3    | Death scene    | When the player collides with a dangerous object, the death screen should appear.                                                       | When the player dies the death screen appears.                                                                                                                                     | Pass      |
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>the image above with the rectangular block represents the move platform </p></figcaption></figure>
-
-&#x20; &#x20;
-
-<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>the image above with the green rectangle with a black rim represent the acid bath </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
