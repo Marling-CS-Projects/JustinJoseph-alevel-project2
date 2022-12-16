@@ -17,10 +17,11 @@
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-|               |     |
-|               |     |
+| Variable Name                      | Use                                                                                                                                                                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <pre><code>go("win")
+</code></pre> | this allow the game to switch to the win scene once the player has completed all of the levels                                                                                                                                 |
+|  levelID                           | this variable is uses that assign each level with a id  ( a number ) so that when it comes time to go the next the  game can now by incrementing by one know what is the name of the level that the player should be going to  |
 
 ### Pseudocode
 

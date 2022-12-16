@@ -1,4 +1,4 @@
-# Cycle 6 exit door
+# Cycle 6: Exit Door
 
 ##
 
@@ -58,7 +58,7 @@ Once the exit was added to the game I wrote a code stating that when the player 
   })
 ```
 
-For the final objective of this cycle was to provide the game with a win scene as well as a return to start screen. This is evident in the code below when the player has completed the level the player will be greeted by a win scene. whilst coding for this scene the i had to adjust the position of the " you have win" text which i achieved by using the command "pos(vec2(400, 200))," to move/ adjust the opstion of the text in the X and Y direction. As well as change in the potioopn of the text i add a&#x20;
+For the final objective of this cycle was to provide the game with a win scene as well as a return to start screen. This is evident in the code below when the player has completed the level the player will be greeted by a win scene. whilst coding for this scene the i had to adjust the position of the " you have win" text which i achieved by using the command "pos(vec2(400, 200))," to move/ adjust the position of the text in the X and Y direction.&#x20;
 
 ```javascript
     scene("you have win", (time) => {

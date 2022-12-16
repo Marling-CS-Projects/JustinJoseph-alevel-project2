@@ -26,10 +26,10 @@ Additionally, the second aim that I have for this cycle is to add a death scene 
 
 ### Key Variables
 
-| Variable Name | Use |
-| ------------- | --- |
-|               |     |
-|               |     |
+| Variable Name | Use                                                                                                                                                                               |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2000          | This is a const variable that is used as a benchmark for the falling death feature in which if the player falls below 2000 the pixle  mark the lose scene is shown to the player  |
+|               |                                                                                                                                                                                   |
 
 ### Pseudocode
 
