@@ -1,4 +1,4 @@
-# Cycle 7: Adding Another Level
+# Cycle 7: Exit Door
 
 ##
 
@@ -6,10 +6,15 @@
 
 ### Objectives
 
+The objective of this level is to add an exit door for the player. Once the player has passed through the door the level is completed and if the player chooses to they can be taken to the level after which going through that door the level is fully completed.
+
+* [x] Add an exit door
+* [x] Takes the player to the next level  &#x20;
+* [x] Once the player has completed all of the levels the win scene will appear   &#x20;
 
 
-* [x] Adding another level
-* [x] player should be able to access this level through the portal
+
+
 
 ### Usability Features
 
@@ -17,119 +22,82 @@
 
 ### Key Variables
 
-| Variable Name                      | Use                                                                                                                                                                                                                            |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <pre><code>go("win")
-</code></pre> | this allow the game to switch to the win scene once the player has completed all of the levels                                                                                                                                 |
-|  levelID                           | this variable is uses that assign each level with a id  ( a number ) so that when it comes time to go the next the  game can now by incrementing by one know what is the name of the level that the player should be going to  |
+| Variable Name | Use                                                                                                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Win scene     | The variable is used to show the player the win scene if the player has reached the exit of the level                                                                                       |
+|  Add          | This is to include objects, text, and components of the game. In this case, it is to add text and  position it on the screen for when the player wins the level (by getting to the portal)  |
 
 ### Pseudocode
 
-&#x20;&#x20;
-
-```
-',
-   '                                                                            ',
-   '                                                                             ',
-   '                  m              m                           ccc                 ',
-   '                                                                             ',
-   ' ppp            ppppp        j              ppp                               ',
-   '                                                                             ',
-   '                                                                             ',
-   '                     sccs             cscs                         ccssc           ',
-   '      pppp          ppppp           ppppp          a                             ',
-   '                                                                             ',
-   '                                                                             ',
-   '             pppp                                      pppp                          ',
-   '                                                                             ',
-   '  s                                c  c  c                 pppp                   ',
-   ' pppp                            c   @  c                             ',
-   '                                  c  c c                                    ',
-   '    p                      j                                             p      ',
-  '                                                                              ',
-   '                cc               ss                  sss                ccc     ',
-   '             ppppp             ppppp                ppppp              pppp ',
-   '              s                                                               ',
-   '                                                                              ',
-   '                       cs                   ss                 e                 ',
-   '   pppp               pppppp             pppppp              pppppp         ',
-   '                                                                              ',
-   '                                                                             ',
-   '                                                   s                          ',
-   '             pppppp                            ppppppp          pppp      ',
-   '                            j                                                 ',
-   '                             j                                              ',
-   '                              j                                               ',
-   '                                                                     s   ',
-   '============================================================================',
- ]
-
-```
+<pre><code><strong>if player collide with exit (
+</strong><strong> go to next level
+</strong><strong> )
+</strong></code></pre>
 
 ## Development
 
 ### Outcome
 
-As I have already created a successful first level I did not want to change the design of the second level too much this due to two reasons: with one being that it takes up too much valuable time that can be spent adding additional features as well as refining the game to improve it, and the second reason is I want the player to still be familiar with the levels and have to same objective which is to find and get to the exit. However it does not mean that there has been no alteration as it kept the same design as previous platforms have been added as well as taken away which would make the player find new creative way to get to the exit. In terms of adding platforms, and the addition of moving platforms as well as an acid bath which can instantly damage the player. This is all in   conjunction with the use of more coins for the player to collect through out the level. Finally, the change in the location of the portal to keep the player more engaged as the player would already know the location of the previous portal they have to spend time in order to complete the level. To save time for me to code the game and for the bower to execute the code, I have designed the  level in a way that I can use the variable and component of the previous level (talked about in Cycle 1: Setup)&#x20;
+The first stage of completing this objective was to create a exit door and then add the exit  to the game in the from of a sprite as shown below .
 
-```javascript
-   '                                                                            ',
-   '                                                                             ',
-   '                  m              m                           ccc                 ',
-   '                                                                             ',
-   ' ppp            ppppp        j              ppp                               ',
-   '                                                                             ',
-   '                                                                             ',
-   '                     sccs             cscs                         ccssc           ',
-   '      pppp          ppppp           ppppp          a                             ',
-   '                                                                             ',
-   '                                                                             ',
-   '             pppp                                      pppp                          ',
-   '                                                                             ',
-   '  s                                c  c  c                 pppp                   ',
-   ' pppp                            c   @  c                             ',
-   '                                  c  c c                                    ',
-   '    p                      j                                             p      ',
-  '                                                                              ',
-   '                cc               ss                  sss                ccc     ',
-   '             ppppp             ppppp                ppppp              pppp ',
-   '              s                                                               ',
-   '                                                                              ',
-   '                       cs                   ss                 e                 ',
-   '   pppp               pppppp             pppppp              pppppp         ',
-   '                                                                              ',
-   '                                                                             ',
-   '                                                   s                          ',
-   '             pppppp                            ppppppp          pppp      ',
-   '                       m                                                      ',
-   '                               m                                              ',
-   '                              m                                               ',
-   '                                                                     s   ',
-   '============================================================================',
- ]
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+Once it was added to the game i also imported its file address and provided the portal with a tag
+
+```
+loadSprite("portal", "sprites/portal.png");
 ```
 
-
-
-For this cycle to considered a success the player should be able to access the next level from within the game (the previous level), which it has. This was done with the following code:&#x20;
+For the exit to be useful it has to be add to the level map. The portal uses the same properties as other component of the game but with the only mention able difference being that it has been categories with "exit" this will be come useful later during the development phase for the exit.&#x20;
 
 ```javascript
-  scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 })	
+  "@": () => [
+    sprite("portal"),
+    area(),
+    solid(),
+    origin("bot"),
+    "exit"
+  ],
+```
+
+Once the exit was added to the game I wrote a code stating that when the player comes in contact with the exit the game should go to the win scene this is to the indicate to the player that they have completed the level and that player has the option to leave or continue in the game.
+
+```javascript
   player.onCollide("exit", () => {
-		if (levelId + 1 < LEVELS.length) {
-			go("game", {
-				levelId: levelId + 1,
-				coins: coins,
-			})
-		} else {
-			go("win")
-		}
-	})
+    go("win")
+  })
+```
+
+For the final objective of this cycle was to provide the game with a win scene as well as a return to start screen. This is evident in the code below when the player has completed the level the player will be greeted by a win scene. whilst coding for this scene the i had to adjust the position of the " you have win" text which i achieved by using the command "pos(vec2(400, 200))," to move/ adjust the position of the text in the X and Y direction.&#x20;
+
+```javascript
+    scene("you have win", (time) => {
+      add([
+        text("win ", { size: 24 }),
+        pos(vec2(400, 200)),
+        origin("center"),
+        color(255, 255, 255),
+      ]);
+
+
+      add([
+        text("press enter to go back to the start menu ", {
+        size: 24}),
+        pos(vec2(500, 350)),
+        origin("center"),
+        color(255, 255, 255),
+        text
+      ]);
+
+      onKeyRelease("enter", () => {
+        go("start");
+      })
+    });
 ```
 
 ### Challenges
 
-Description of challenges
+
 
 ## Testing
 
@@ -137,9 +105,13 @@ Evidence for testing
 
 ### Tests
 
-| Test | Instructions                   | What I expect                                                                                 | What actually happens | Pass/Fail |
-| ---- | ------------------------------ | --------------------------------------------------------------------------------------------- | --------------------- | --------- |
-| 1    | run code                       | when the player runs the code the should be able to get to the exit with any errors           | runs as expected      | pass      |
-| 2    | portal test between two levels | when the player gets to the exit/ portal the portal should take the player to the exit level  | runs as expected      | Pass      |
+| Test | Instructions                  | What I expect                                                                         | What actually happens  | Pass/Fail |
+| ---- | ----------------------------- | ------------------------------------------------------------------------------------- | ---------------------- | --------- |
+| 1    | The portal to the next level  | When the player goes through the portal the player should be taken to the next level  | Does what is mentioned | pass      |
+| 2    |                               |                                                                                       |                        | Pass      |
 
 ### Evidence
+
+<figure><img src="../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# Cycle 9: Moving Platform
+# Cycle 8: Death and Falling
 
 ##
 
@@ -6,16 +6,17 @@
 
 ### Objectives
 
-For this cycle, I aim to add moving platforms to the game as my first priority. The function of the moving platform is to move a platform from left to right within a given space in the level, as part of the function of the moving platform the player will be able to step, run or jump onto the platform and will be able to get off it or jump from it to another platform.&#x20;
+For the objective of this cycle, I aim to incorporate a falling death to the game. The way I want this to be implemented is that when the player falls off the level (outside the playable area) or falls from a significant height in the level it will result in the immediate death of the player which makes the player restart the level.
 
-Another objective for this cycle is to add an acid bath. The acid bath uses the same function as the moving platform but instead, if the player comes in contact with the acid bath it will result in the death of the player. By adding these components to the game I believe it adds to the gaming experience as it adds a scene of danger to the game which the player will have to overcome.&#x20;
-
-
-
-* [x] Add moving platforms  &#x20;
-* [x] Acid bath&#x20;
+Additionally, the second aim that I have for this cycle is to add a death scene to the game. The way I see the death scene to function within the game is when the player collides with a danger's object within the game (for example, spikes) falling from a height, as previously mentioned, the death scene should appear on the player's screen with one showing to the player that they have died and secondly giving the player the option to go back to the main menu and start again.  &#x20;
 
 
+
+
+
+* [x] Add falling death   &#x20;
+* [x] Add a death scene&#x20;
+* [x] Return to start menu
 
 
 
@@ -25,90 +26,83 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 
 ### Key Variables
 
-| Variable Name | Use                                                                                                                         |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| mp            | this function provides the platfroms the ability to move between two point autonomously.                                    |
-|  solid()      | By using this variable it enables the platform to become a solid object which can enable the player to jump on and off it.  |
+| Variable Name | Use                                                                                                                                                                               |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2000          | This is a const variable that is used as a benchmark for the falling death feature in which if the player falls below 2000 the pixle  mark the lose scene is shown to the player  |
+|               |                                                                                                                                                                                   |
 
 ### Pseudocode
 
+
+
+```javascript
+// falling death 
+if player falls below 1000(
+ death scene
+ )
 ```
+
+```
+if player touches anything dangers'(
+  display death scene
+  give the option to the player to play again 
+  )
 ```
 
 ## Development
 
 ### Outcome
 
-Since the premise of the moving platform is to have platforms to move from left to right and back I decided to save time by using the same code that was used for the enemy cycles with the only alteration by that the speed with it moves and the distance aswell. If you were to compare the two components you find that the moving platform has a fast speed, set at 100, to help the player to beat the clock that otherwise the player could find that by not using the moving platform they could complete the level faster. An additional feature that the enemy does not have is a distant component to the moving platform, this would limit the area the platform can cover to prevent the moving platform going of the game screen. This enabled me to create the moving platform function ("mp" for the variable name).&#x20;
-
-<pre class="language-javascript"><code class="lang-javascript"><strong>// mp = moving platfrom 
-</strong><strong>function mp(speed = 100, dis = 10, dir = 1) {
-</strong>
-  return {
-    id: "mp",
-    require: ["pos", "area",],
-    add() {
-      this.on("collide", (obj, col) => {
-        if (col.isLeft() || col.isRight()) {
-          dir = -dir
-        }
-      })
-    },
-    update() {
-      this.move(speed * dir, 0)
-
-    },
-  }
-}
-</code></pre>
-
-Once the main alteration has been made to make it a moving platform function I proceeded to draw what the component would look like on the left it is a design to resemble an acid bath whilst on the right is the standard platform but made short, width-wise. The designs are made to be recognisable and keep in line with PEGI ratings of 12.&#x20;
-
-![](<../.gitbook/assets/image (15).png>) ![](<../.gitbook/assets/image (4) (2).png>)
-
-
-
-After the designs were created it was uploaded to kaboom and given an image address whilst I proceeded to give each component its own tag. Which would be to referred to throughout the cycle.
-
-```
-loadPedit("platform3", "sprites/platform3.pedit");
-loadPedit("acid", "sprites/acid.pedit");
-```
-
-This is the stage where both of the components take up their roles within the game. For the platform it was given that the variable name "j", as another letter for the platform was used up, and this enabled it to be easily differentiated from the other platform when it comes to adding it to the level. Once the component was given a variable name, the functions "area()" and "solid()" were given as mentioned in previous cycles. "area()" enables the platform to have a hitbox which allows the player to make contact with the platform whilst solid() enabled the player to stand on it without falling though. The last function that is needed to be talked about is the function called "mp()" after making the alteration to enemy code, this is mentioned above. In summary, it allows the platform to move from left to right and back when all incorporated together it has successfully worked, allowing the player to get from a point a to b when it is to far jump or double jump.
+The first objective of this cycles was to add a feature to the game in which that if the player fall out  of the game map or falls for too long the game should instantly end it self and give the player the option to start the game again. For this feature to work l used a If statement in which that the game will use the current position of the player in the Y coordinate direction `(player.pos.y)` and compare the value to a constant value of 2000. If the player falls below the constant value the game will end itself thus referring the player to end scene "`go("lose")`".
 
 ```javascript
-  "j": () => [
-    sprite("platform3"),
-    area(),
-    solid(),
-    mp(),
-    origin("bot"),
-  ],
+// falling death 
+ 	player.onUpdate(() => {
+		if (player.pos.y >= 2000) {
+			go("lose")
+		}
+	}
+
 ```
 
-As part of the success criteria it was mentioned to have different types of obstacle for the player to overcome. After seeing the potential of a moving platform, I decided to create an obstacle equivalent of that which led to the creation of the moving acid bath in which that if the player falls in or comes in contact with it, the player dies quickly. To be efficient I used the code I created for the moving platform (shown above) and proceeded to add to and alter the code. With two minor changed being that the variable has change from "j" to "a" (I found it appropriate for this as well as it not being used meaning that it was easy to identify what its role is). The second minor change being that I have added the acid bath in the danger category that is used for the obstacles in cycle 3 and the enemy in cycle 5. This managed to streamline the process, by using the tag "danger"  it allows the game to identify that when the player comes in contact with the acid bath the game should end thus allowing me to use the "player.Oncollide" to achieve this goal.&#x20;
+If a player fails the game they are redirected to "lose scene" otherwise i found the game often crashes. To minimalise the time wasted for the player I aim to keep the "lose scene" simple and easy to use. This meant that I only need a few strings of text, one string of text for the player to acknowledge that the player had lost the game and another string of text to let them know how to restart the level.&#x20;
+
+To do this l created the scene with the variable name  "lose" this is the variable name that I would use too, when the player dies from collision with obstacle or the enemy or falling death. After the scene was created I added the two bits of information needed first being the acknowledgement of death which was done with the code text("game over",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player to read.&#x20;
 
 ```javascript
-  "a": () => [
-    sprite("acid"),
-    area(),
-    solid(),
-    mp(),
-    origin("bot"),
-    "danger"
-  ],
   
-    player.onCollide("danger", () => {
-    go("lose")
+ scene("lose", (time) => {
+  add([
+    text("game over", { size: 24 }),
+    pos(vec2(500, 350)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+
+  add([
+    text("press enter to go back to the start screen ", { size: 24 }),
+    pos(vec2(400, 200)),
+    origin("center"),
+    color(255, 255, 255),
+    text
+  ]);
+
+});
+```
+
+To enable the player to get main menu i have Incorporated a click button via the use of a mouse that will take the player back to the main menu this is done with the command  go("start") with the vaible name start referring the name of the scene .&#x20;
+
+```javascript
+
+  onKeyRelease("enter", () => {
+    go("start");
   })
 ```
 
-
-
 ### Challenges
 
-Description of challenges
+
 
 ## Testing
 
@@ -116,19 +110,12 @@ Evidence for testing
 
 ### Tests
 
-### Tests
-
-| Test | Instructions          | What I expect                                                                                                                                    | What actually happens                                                                                                                                                                                                                                                                               | Pass/Fail |
-| ---- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1    | Run code              | When the platforms move they should move from left to right and once they come in contact with the solid platform they should go the other way   | The platform works but not in the expected way. This is because when the platform moves from left to right it goes through the solid platfrom instead of bouncing back and going the way it came                                                                                                    | Fail      |
-|      |                       | When the platform moves, they should move from left to right and once they come in contact with the solid platform, they should go the other way | After the first test failed I went into the code of the moving platform I found that I did not include the solid() function which allows the moving platform to be known as a solid. Once it was added, the platform goes left and right as expected                                                | Pass      |
-|      | Run code with player  | For this test, I wanted to see how the platform interacts with the player                                                                        | Through the test I found that there is bug with the platform. In which the player can make contact with the side of the moving platform as a substitute for the solid platform and the moving platform would think it had made contact with a solid platform.                                       | Fail      |
-|      | Run code with player  | For this test, I wanted to see how the platform interacts with the player                                                                        | When doing the last test I found a bug (mentioned in test 3). However whilst conducting other tests on the moving platform the result of it was fine as it allowed the player to jump on it as well move around on it with out causing any direct issue to the moving platform whilst in operation  | Pass      |
+| Test | Instructions   | What I expect                                                                                                                           | What actually happens                                                                                                                                                              | Pass/Fail |
+| ---- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player strays too far away from the level, they will die after a short distance.                                                                                          | Fail      |
+| 2    | Falling death  | When the player falls outside of the level the player should die and the death screen should show after a certain distance of falling.  | When the player jumps off the level, the player is dead when they go below the base floor of the game as well as that the player will die if they are falling for a long distance. | Pass      |
+| 3    | Death scene    | When the player collides with a dangerous object, the death screen should appear.                                                       | When the player dies the death screen appears.                                                                                                                                     | Pass      |
 
 ### Evidence
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>the image above with the rectangular block represents the move platform </p></figcaption></figure>
-
-&#x20; &#x20;
-
-<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>the image above with the green rectangle with a black rim represent the acid bath </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>

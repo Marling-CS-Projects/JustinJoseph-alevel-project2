@@ -1,4 +1,4 @@
-# Cycle 2 coin and camera
+# Cycle 2: Coin and Camera
 
 ##
 
@@ -57,11 +57,11 @@ I have successfully added a coin scoreboard to my game as well as successfully b
 
 ### Outcome
 
-To begin my cycles development ot add to coin to the game i proceed to cretae a coin for my game however shilt liook for deisgn example i came acroos a coin the was already stored as a assect in kaboom.js , i opted to use the coin provied with in kaboom as it smple , regionsable by the player and kept in line with the theme was tryin to create.
+To begin my cycles development to add to coin to the game i proceed to create a coin for my game however shilt liook for deisgn example i came acroos a coin the was already stored as a assect in kaboom.js , i opted to use the coin provied with in kaboom as it smple , regionsable by the player and kept in line with the theme was tryin to create.
 
 ![](<../.gitbook/assets/image (4) (4).png>)
 
-Once i found the coin that apporate for my game i add the coins file adress to the code of my game as well giving the tag "coin" for easy future refferent enablingme ot save time.
+Once i found the coin that appraorate for my game i add the coins file adress to the code of my game as well giving the tag "coin" for easy future refferent enablingme ot save time.
 
 ```
 loadSprite("coin", "sprites/coin.png");
@@ -81,7 +81,7 @@ After the reference for the coin was created i proceeded to give the coin it's d
   ],
 ```
 
-To complete the funciton befreo being displyer to the player  the cooleted coins has to bad added up and stored. this was done with with the variable called score.value as you can see when a player comes in contact with a coin the value that is stored in the variable is increment by +1 . Once this is done a second varibel called score.text is used this is where what player will soon come to see. in which that the text "score" is add  right next to it will be the last variable score.value. subsequently this mean that the player will the text score and then on the right of the number of point / coins they have accumulated whilst playing the game this will be shown in text form .&#x20;
+To complete the function before being displyer to the player  the cooleted coins has to bad added up and stored. this was done with with the variable called score.value as you can see when a player comes in contact with a coin the value that is stored in the variable is increment by +1 . Once this is done a second varibel called score.text is used this is where what player will soon come to see. in which that the text "score" is add  right next to it will be the last variable score.value. subsequently this mean that the player will the text score and then on the right of the number of point / coins they have accumulated whilst playing the game this will be shown in text form .&#x20;
 
 ```
   player.onCollide("coin", (c) => {
@@ -91,7 +91,7 @@ To complete the funciton befreo being displyer to the player  the cooleted coins
   })
 ```
 
-Lastly, is to display the score to the player. Since already i have created the score system for the coins it was a manner of add the variable name ( score) to a out display function. I did this by giving this function a const name of score which is the same variable name used in the cretedin the coin system that supports good coding practice. After which i used one of the two commands i created score.text = "score:" + score.value this is to tell the program (kaboom.) what to call upon in which essentially it is just running this line multiple times . Once the text appears on the player's screen it needs to be positioned , using the function pos(24,24) it allows me to move the text anywhere on the screen i choses to keep it in the corner of the screen this is to prevent the player from being distracted . when adding this coin function i had issue with the game registering the coin and adding it to the scoreboard later i discovered through research that i was required to set an initial value for the variable score.value , this was done this with code { value: 0 } , by having this line it meant that the game start the player will have 0 coin balance it is once they start collecting the coin it will increment and display it. Finally the two functions that were used to complete the coin system were fixed () which is used to keep the text in place instead of following the player around and secondly is scale (0.50) this function controlled the size of the text whilst in game . The aim was to have it big enough that it was readable whilst not too big that it obstructed the game view.
+Lastly, is to display the score to the player. Since already i have created the score system for the coins it was a manner of add the variable name ( score) to a out display function. I did this by giving this function a const name of score which is the same variable name used in the cretedin the coin system that supports good coding practice. After which i used one of the two commands i created score.text = "score:" + score.value this is to tell the program (kaboom.) what to call upon in which essentially it is just running this line multiple times . Once the text appears on the player's screen it needs to be positioned , using the function pos(24,24) it allows me to move the text anywhere on the screen i chose to keep it in the corner of the screen this is to prevent the player from being distracted . when adding this coin function i had issue with the game registering the coin and adding it to the scoreboard later i discovered through research that i was required to set an initial value for the variable score.value , this was done this with code { value: 0 } , by having this line it meant that the game start the player will have 0 coin balance it is once they start collecting the coin it will increment and display it. Finally the two functions that were used to complete the coin system were fixed () which is used to keep the text in place instead of following the player around and secondly is scale (0.50) this function controlled the size of the text whilst in game . The aim was to have it big enough that it was readable whilst not too big that it obstructed the game view.
 
 ```
 

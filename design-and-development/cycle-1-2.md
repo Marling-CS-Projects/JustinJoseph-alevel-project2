@@ -47,7 +47,7 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 ### Outcome
 
-The first tasks in order to complete this cycles was to draw a set of obstacles that the player can identify as dangerous object thus encouraging them to stay clear this lead me to draw the design for a spikes. With the use of the simple design it enabled me to save time and move on to adding the obstcle into the game.
+The first tasks in order to complete this cycles was to draw a set of obstacles that the player can identify as dangerous object thus encouraging them to stay clear this lead me to draw the design for a spikes. With the use of the simple design it enabled me to save time and move on to adding the obstacle into the game.
 
 ![](<../.gitbook/assets/image (9) (3).png>)
 

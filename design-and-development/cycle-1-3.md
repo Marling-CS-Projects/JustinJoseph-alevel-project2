@@ -45,7 +45,7 @@ Stopwatch - The stopwatch should be simple to read. Additionally the stop watch 
 
 ### Outcome
 
-An overall outcome was that the stopwatch was succfulyly added to the game. i was able to do this with the knowleged i obtain from doing the coin system in cycle 2. I fisrt created a viable that will store the stopwatch time as it counted  it which i named stopwatch.time , whilst reaseaching  the way to add a stopwatch to my game i discored that kbaoom.js already as a stopwatch function build in which was under the function name dt() this made it simple and made it more effeicient for me due to the amount of time i saved . Once that stopwatch.time function was created i turned my attenction to presenting it to the player i done this by creating a viable called stopwatch. text this contain the string "stopwatch " and the perious mention stopwatch.time function&#x20;
+An overall outcome was that the stopwatch was successfully added to the game. I was able to do this with the knowledge I obtained from doing the coin system in cycle 2. I first created a viable that will store the stopwatch time as it counted it which i named stopwatch.time , whilst researching the way to add a stopwatch to my game i discovered that kbaoom.js already as a stopwatch function build in which was under the function name dt() this made it simple and made it more efficient for me due to the amount of time i saved . Once that stopwatch.time function was created I turned my attention to presenting it to the player. I did this by creating a viable function called stopwatch. text this contain the string "stopwatch " and the previous mention stopwatch.time function
 
 ```javascript
   stopwatch.onUpdate(() => {
@@ -53,7 +53,7 @@ An overall outcome was that the stopwatch was succfulyly added to the game. i wa
     stopwatch.text = " stopwatch" + stopwatch.time.  })
 ```
 
-there is not much different between when adding the output read out function for the coins and the output read out for the stopwatch. the only only difference is that the inital value of stopwatch is 0 as well as the scale of the text being small then the text for the coin this was also do with the funciton scale() and lastly the postion of stopwatch is place above the coin  system this to prevent the player from being obstructed by the counting stopwatch.&#x20;
+there is not much different between when adding the output read out function for the coins and the output read out for the stopwatch. the only only difference is that the inital value of stopwatch is 0 as well as the scale of the text being small then the text for the coin this was also do with the funciton scale() and lastly the position of stopwatch is place above the coin  system this to prevent the player from being obstructed by the counting stopwatch.&#x20;
 
 ```javascript
   const stopwatch = add([
@@ -89,4 +89,3 @@ I tested if the spike worked by colliding with a spike, this resulted in the pla
 
 <figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-The image above displays the use of a stopwatch which is fully functional in the top left corner.
