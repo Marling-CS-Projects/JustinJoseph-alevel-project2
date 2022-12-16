@@ -64,7 +64,7 @@ Since the premise of the moving platform is to have platforms to move from left 
 
 Once the main alteration has been made to make it a moving platform function I proceeded to draw what the component would look like on the left it is a design to resemble an acid bath whilst on the right is the standard platform but made short, width-wise. The designs are made to be recognisable and keep in line with PEGI ratings of 12.&#x20;
 
-![](<../.gitbook/assets/image (15).png>) ![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (15).png>) ![](<../.gitbook/assets/image (4) (2).png>)
 
 
 
