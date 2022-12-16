@@ -45,12 +45,12 @@ The objective of this cycle is to add a stopwatch to the game whereby the player
 
 ### Outcome
 
-After&#x20;
+After succesfully&#x20;
 
 ```javascript
-  timer.onUpdate(() => {
-    timer.time += dt()
-    timer.text = " stopwatch" + timer.time.toFixed(2)
+  stopwatch.onUpdate(() => {
+    stopwatch.time += dt()
+    stopwatch.text = " stopwatch" + stopwatch.time.toFixed(2)
   })
 ```
 

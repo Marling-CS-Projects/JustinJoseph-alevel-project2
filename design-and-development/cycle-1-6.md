@@ -110,7 +110,7 @@ As i have already creted a fisrt sucessful first level i did not want to change 
 
 
 
-For this cycle to considered a success the player should be able to access the next level from with in the game ( the perious level ) , Which it has. This was done&#x20;
+For this to be consided a sucess the player should be able to go through the protal and start the subquent level ( which has been ahcieved). this was done in two step with the fisrt step being that each level has been assigned a level id to let the game know what level the player is on. It is to create a funciton thatt allow that the player to go the next level . This was done with the use of the command player.on collide , through the use of an if statemtn the levle id will increment by one. how ever if the player goes through a portol and there is no more levels for the player to go the win scene will be shown this is done with commnad go("win").&#x20;
 
 ```javascript
   scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 })	

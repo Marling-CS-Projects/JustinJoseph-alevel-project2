@@ -69,7 +69,7 @@ scene("start", () => {
  
 ```
 
-with the use of function on Click() it allow the play to use the mouse to click on the option  what will take then to the respective scene . i found this simple to use due the reason that when the player has loaded into the menu using there bower they are often still on a mouse bust use the mouse until the game it provides convenience to the player&#x20;
+with the use of function on Click() it allow the play to use the mouse to click on the option  what will take then to the respective scene . i found this simple to use due the reason that when the player has loaded into the menu using there bower  they  are often still on a mouse by use the mouse until they are in the game it will provides convenience for the player&#x20;
 
 ```
  onClick("Start01", () => {
