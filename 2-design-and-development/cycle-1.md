@@ -33,9 +33,12 @@ import kaboom from "kaboom"
 kaboom()
 
 
-// load assets
+// These are the images assets of the game. this is what the player will see  when playing the game 
+ // the is the ground images 
 loadPedit("ground", "sprites/ground.pedit");
+ // this is the image of the player 
 loadPedit("goro", "sprites/goro.pedit");
+ // this is the images of the background of the game 
 loadSprite("background", "sprites/background.png");
 
 // background 
@@ -74,7 +77,8 @@ const levelcfg = {
 }
 
 addLevel(map,levelcfg)
-// adding player 
+
+// adding the player to the game and it`s characteristic
 
 const player = add([
   sprite('goro'),
@@ -83,7 +87,7 @@ const player = add([
   area(),
 ])
 
-//movement 
+// players movement in the game 
 
 const move_speed = 500
 
@@ -113,17 +117,20 @@ To commence my project i first set the dimension of my game which meant that my 
 
 ```javascript
 kaboom({
+// the viarble background is to set the colour of the backgorund this is done in the number and uses the RGB color number
   background: [135, 206, 235],
+// the viarbles width and height to get the stage where the player can play in. to increase the size of the game in the x axes increase the width number value 
   width: 1000,
+// to incrase the game play size in the y direction increase the height value 
   height: 700,
-})
+
 ```
 
 After the game's dimensions and the background colour were created, I proceeded to create the essential assets ( also known as sprites) I would be using in the game; these mainly include the character , platform ground blocks for now. the designs of the asset was done in a retro as well as cartoons styles so the game does not become graphically inappropriate thus being able to stay in the claimed age range of pegi 12.
 
 ```javascript
 
-// load assets
+// these are the images used in the game that the player will see 
 loadPedit("ground", "sprites/ground.pedit");
 loadPedit("goro", "sprites/goro.pedit");
 loadSprite("background", "sprites/background.png");
@@ -137,6 +144,7 @@ loadPedit("platform3", "sprites/platform3.pedit
 Once I had completed creating the essential assets I need for the game for the early stage, I turned my attention to designing the level. For my convenience and to increase the productive/ efficiency the program in use to code my game (kaboom) allow programmers to assign variable name to the assets, this enabled me to assign variables for the game the game. For example, in the ground the "=" symbol, the platform was given "p" the spikes were given "s”.However, I decided not to give the main character a variable name this was because by adding the player as a separate asset to the game it will make it easier to manipulate the player. When designing for the level i created the level in way that it was large enough that the player got time to explore the game and over come the obstacles so that the player does not complete the level to quickly but and not overly large that the player will be frustrated with the game.
 
 ```javascript
+// this is the level map for the game 
 const map = [
   '                                                                              ',
   '         ppp              ppp                pp                         ppppp',
@@ -235,7 +243,6 @@ Once the first stage was complete I added the image file address ( with assets f
 loadPedit("goro", "sprites/goro.pedit");
 ```
 
-\
 
 
 The final stage was to add the character into the game itself. This was done by giving the character two main functions which enable the character to be noticed by the game, one function was the body() function. This function allows the player to interact with other components of the game ( such as the ground platform , spikes and etc ) by being able to interact with other components the player can take damage as well as collect assets that can be added to the scoreboard. The second main function was the area() function that enabled the character to have a designated hit box area , this means that there will be a designated boundary in which the components of the game can take action on the player if the boundary overlapped with the components of the game . The last addition to the character that enabled it to be fully functional was the pos(149, 1216), and scale (2) variables. By adding the variable the pos(149, 1216) it enables to set the potion of the character use (x,y) coordinates on where the character starts in the level as well as subsequent levels. Furthermore the scale() variable enables me to set a size to the character by scale up or down, by doing so it allows me to make the character proportional to the game and not to be over size which will hinder the user gaming experience.
