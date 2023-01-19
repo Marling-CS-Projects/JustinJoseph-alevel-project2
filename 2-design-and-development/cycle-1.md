@@ -191,7 +191,8 @@ const levelcfg = {
 As mentioned above, the program I am using to create my game enables me to add components to the game in a simple manner. this  has been displayed below in which that kaboom allow me to add the components i want into the game such as the ground , block and platforms.  after which i can add the relevant information to give the components of the game it roles an example of this would be the ground i have given have assigned it the variable "=" as well as making the ground a solid object which allow the player to stand and move around on it after which i gave it a area in which it can operate in, this is to prevent the component interfering with other aspects of the game. This method enabled me to streamline the coding process for adding components which in turn save time that I can use to add functions to the game.
 
 ```javascript
-
+// these are levels componets of the game that the player will see 
+// the "=" presents the ground
   "=": () => [
     sprite("ground"),
     area(),
@@ -207,6 +208,7 @@ As mentioned above, the program I am using to create my game enables me to add c
     origin("bot"),
   ],
 
+// this is the backgorund colour / images the will be used in the game 
   "b": () => [
     sprite("background"),
     area(),
@@ -216,13 +218,14 @@ As mentioned above, the program I am using to create my game enables me to add c
     pos(24, -240),
   ],
 
+// this is the code for the platform in the game showing its area and it is a solid object that plats can stand on
   "p": () => [
     sprite("platform"),
     area(),
     solid(),
     origin("bot"),
   ],
-
+//this is a platform of a different size
   "j": () => [
     sprite("platform3"),
     area(),
@@ -240,6 +243,7 @@ Once the relevant component was added to the game for the early stage developmen
 Once the first stage was complete I added the image file address ( with assets file being stored in the game) to the game. additional i provide the file with a tag name "goro" this is to make it simple for me to refer to the file tough out development phase
 
 ```
+// this is the code that will loade the players images into the game for the playerto see 
 loadPedit("goro", "sprites/goro.pedit");
 ```
 
@@ -248,7 +252,8 @@ loadPedit("goro", "sprites/goro.pedit");
 The final stage was to add the character into the game itself. This was done by giving the character two main functions which enable the character to be noticed by the game, one function was the body() function. This function allows the player to interact with other components of the game ( such as the ground platform , spikes and etc ) by being able to interact with other components the player can take damage as well as collect assets that can be added to the scoreboard. The second main function was the area() function that enabled the character to have a designated hit box area , this means that there will be a designated boundary in which the components of the game can take action on the player if the boundary overlapped with the components of the game . The last addition to the character that enabled it to be fully functional was the pos(149, 1216), and scale (2) variables. By adding the variable the pos(149, 1216) it enables to set the potion of the character use (x,y) coordinates on where the character starts in the level as well as subsequent levels. Furthermore the scale() variable enables me to set a size to the character by scale up or down, by doing so it allows me to make the character proportional to the game and not to be over size which will hinder the user gaming experience.
 
 ```javascript
-  const player = add([
+ // this is the code that give the player its ability, as well as it apperance  , the size and it`s starting postion in the gmae 
+   const player = add([
     sprite('goro'),
     pos(149, 1216),
     body(),
@@ -260,10 +265,9 @@ The final stage was to add the character into the game itself. This was done by 
 For my final objective of this cycle was to give the player the ability to move in all directions as well as give the character the ability to jump. I started to code this function with a move\_speed this is the name of the funcion i would be using to refer to the speed of the character during the creation of this function. I set the speed of the character to 250. However I later discovered during testing this was too slow the movement of the character ,which later on I changed the move\_speed to 500 this proved sufficient speed for the move of the character . Once the speed of the character was determined i also decided to add a jumping force to my game which enable me to give my character the right amount of force that allow the player to jump off solid object ( like at a platform or the ground) . I put this jumping force under the variable name called Jump\_force which i set to 10. Lastly was add the control using the function called KeyDown  with this function i  was able to give each control a corresponding letter on the keyboard for example i decide to go with "a" for left ,"d" for right and space for jump . To control the direction that the player going in i used the command called player.move() in the x,y components. since i have already set that Move\_ speed works only in the x direction by adding a minus at the front of the const variable  move\_speed it makes the player go to the left whilst keeping the const variable as it is, it would make it go to the right.&#x20;
 
 ```javascript
-
+// the varible " move_speed2 give the player it`s speed in the game 
   const move_speed = 500
   
-
   keyDown('a', () => {
     player.move(-move_speed, 0)
     player.flipX(true)
