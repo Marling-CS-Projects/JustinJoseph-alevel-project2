@@ -6,7 +6,7 @@
 
 ### Objectives
 
-For my first cycle, I aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as kaboom.js along with a GitHhub repository to back up my work. This is followed by creating a simple platform level that would be used for all of my tests of the components I would be using (this initial level would evolve into an actual level which would be a proper game level). Lastly, is to add a character with the ability to move via the use of a keyboard as the input. The use of the keyboard is more beneficial for the environment the user will interact the game with (the browser) compared to touch on a smartphone. &#x20;
+For my first cycle, I aim to set up the basics of my project before adding additional features. For this, the first object would be to create a coding environment such as kaboom.js along with a GitHub repository to back up my work. This is followed by creating a simple platform level that would be used for all of my tests of the components I would be using (this initial level would evolve into an actual level which would be a proper game level). Lastly, is to add a character with the ability to move via the use of a keyboard as the input. The use of the keyboard is more beneficial for the environment the user will interact the game with (the browser) compared to touch on a smartphone. &#x20;
 
 * [x] Set the game development environment
 * [x] Be able to control the character via the keyboard&#x20;
@@ -255,6 +255,8 @@ The final stage was to add the character into the game itself. This was done by 
  // this is the code that give the player its ability, as well as it apperance  , the size and it`s starting postion in the gmae 
    const player = add([
     sprite('goro'),
+// this provides character with the position on where it starts inthe game .
+// the first value "149" refers to the x direction in the game 
     pos(149, 1216),
     body(),
     area(),
@@ -265,20 +267,21 @@ The final stage was to add the character into the game itself. This was done by 
 For my final objective of this cycle was to give the player the ability to move in all directions as well as give the character the ability to jump. I started to code this function with a move\_speed this is the name of the funcion i would be using to refer to the speed of the character during the creation of this function. I set the speed of the character to 250. However I later discovered during testing this was too slow the movement of the character ,which later on I changed the move\_speed to 500 this proved sufficient speed for the move of the character . Once the speed of the character was determined i also decided to add a jumping force to my game which enable me to give my character the right amount of force that allow the player to jump off solid object ( like at a platform or the ground) . I put this jumping force under the variable name called Jump\_force which i set to 10. Lastly was add the control using the function called KeyDown  with this function i  was able to give each control a corresponding letter on the keyboard for example i decide to go with "a" for left ,"d" for right and space for jump . To control the direction that the player going in i used the command called player.move() in the x,y components. since i have already set that Move\_ speed works only in the x direction by adding a minus at the front of the const variable  move\_speed it makes the player go to the left whilst keeping the const variable as it is, it would make it go to the right.&#x20;
 
 ```javascript
-// the varible " move_speed2 give the player it`s speed in the game 
+// the varible " move_speed" give the player it`s speed in the game 
   const move_speed = 500
   
+//  this function gives the player the abilty to move left 
   keyDown('a', () => {
     player.move(-move_speed, 0)
     player.flipX(true)
   })
 
-
+// this function  gives the player the abilty to  move right 
   keyDown('d', () => {
     player.move(move_speed, 0)
     player.flipX(false)
   })
-
+// this is the forces the player will jumm with 
   const Jump_force = 10
 
   keyPress('space', () => {

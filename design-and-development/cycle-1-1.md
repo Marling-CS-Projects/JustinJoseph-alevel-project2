@@ -64,6 +64,7 @@ To begin my cycles development to add to coin to the game i proceed to create a 
 Once i found the coin that appraorate for my game i add the coins file adress to the code of my game as well giving the tag "coin" for easy future refferent enablingme ot save time.
 
 ```
+// this is the coin image that is used in the game 
 loadSprite("coin", "sprites/coin.png");
 ```
 
@@ -75,13 +76,14 @@ After the reference for the coin was created i proceeded to give the coin it's d
     area(),
     solid(),
     origin("bot"),
+  //
     pos(0, 10),
     scale(0.75, 0.75),
     "coin"
   ],
 ```
 
-To complete the function before being displyer to the player  the cooleted coins has to bad added up and stored. this was done with with the variable called score.value as you can see when a player comes in contact with a coin the value that is stored in the variable is increment by +1 . Once this is done a second varibel called score.text is used this is where what player will soon come to see. in which that the text "score" is add  right next to it will be the last variable score.value. subsequently this mean that the player will the text score and then on the right of the number of point / coins they have accumulated whilst playing the game this will be shown in text form .&#x20;
+To complete the function before being displayed to the player  the collected coins has to bad added up and stored. this was done with with the variable called score.value as you can see when a player comes in contact with a coin the value that is stored in the variable is increment by 1 . Once this is done a second variable called score.text is used this is where what player will soon come to see. in which that the text "score" is add  right next to it will be the last variable score.value. subsequently this mean that the player will the text score and then on the right of the number of point / coins they have accumulated whilst playing the game this will be shown in text form .&#x20;
 
 ```
   player.onCollide("coin", (c) => {
@@ -91,7 +93,7 @@ To complete the function before being displyer to the player  the cooleted coins
   })
 ```
 
-Lastly, is to display the score to the player. Since already i have created the score system for the coins it was a manner of add the variable name ( score) to a out display function. I did this by giving this function a const name of score which is the same variable name used in the cretedin the coin system that supports good coding practice. After which i used one of the two commands i created score.text = "score:" + score.value this is to tell the program (kaboom.) what to call upon in which essentially it is just running this line multiple times . Once the text appears on the player's screen it needs to be positioned , using the function pos(24,24) it allows me to move the text anywhere on the screen i chose to keep it in the corner of the screen this is to prevent the player from being distracted . when adding this coin function i had issue with the game registering the coin and adding it to the scoreboard later i discovered through research that i was required to set an initial value for the variable score.value , this was done this with code { value: 0 } , by having this line it meant that the game start the player will have 0 coin balance it is once they start collecting the coin it will increment and display it. Finally the two functions that were used to complete the coin system were fixed () which is used to keep the text in place instead of following the player around and secondly is scale (0.50) this function controlled the size of the text whilst in game . The aim was to have it big enough that it was readable whilst not too big that it obstructed the game view.
+Lastly, is to display the score to the player. Since already i have created the score system for the coins it was a manner of adding the variable name ( score) to a out display function. I did this by giving this function a const name of score which is the same variable name used in the cretedin the coin system that supports good coding practice. After which i used one of the two commands i created score.text = "score:" + score.value this is to tell the program (kaboom.) what to call upon in which essentially it is just running this line multiple times . Once the text appears on the player's screen it needs to be positioned , using the function pos(24,24) it allows me to move the text anywhere on the screen i chose to keep it in the corner of the screen this is to prevent the player from being distracted . when adding this coin function i had issue with the game registering the coin and adding it to the scoreboard later i discovered through research that i was required to set an initial value for the variable score.value , this was done this with code { value: 0 } , by having this line it meant that the game start the player will have 0 coin balance it is once they start collecting the coin it will increment and display it. Finally the two functions that were used to complete the coin system were fixed () which is used to keep the text in place instead of following the player around and secondly is scale (0.50) this function controlled the size of the text whilst in game . The aim was to have it big enough that it was readable whilst not too big that it obstructed the game view.
 
 ```
 
@@ -106,7 +108,7 @@ Lastly, is to display the score to the player. Since already i have created the 
 
 #### Outcome of camera
 
-Originally i used my knowledge that i obtain from setting up the character movement to create a scrolling camera in which that the game will follow the movement of the input instead of the player, despite it work in most direction it become quickly appears that it not follow the player if the player when up or down from a platform which resulted the game continuing but the camera was not following. This led to me researching a way in which I could get the camera to follow the player in all directions. I later discovered that the program i was using kaboom to code my game had function called comPos() which would the follow any object around by a camera i decide the insert the name of the player as well its current position of the player , player.pos , subsequently the position of the player would be the most current due to the use of the function player.Onupdate() enabling the game to find the coordinate location the player at all times when this was all put together the camera feature begin to function as expect this is also shown in test.
+character movement to create a scrolling camera in which the game will follow the movement of the input instead of the player, despite it working in most directions it quickly appears that it did not follow the player. If the player went up or down from a platform which in resulted in the game continues but the camera was not following the player. This led to me researching a way in which I could get the camera to follow the player in all directions. I later discovered that the program I was using kaboom to code my game had a function called comPos() which would follow any object around by a camera I decide the insert the name of the player as well it's the current position of the player, player.pos, subsequently the position of the player would be the most current due to the use of the function player.Onupdate() enables the game to find the coordinate location of the player at all times when this was all put together the camera feature begin to function as expected this is also shown in the test.
 
 ```
   player.onUpdate(() => {
