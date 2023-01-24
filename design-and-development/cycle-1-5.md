@@ -35,6 +35,8 @@ Another objective for this cycle is to add an acid bath. The acid bath uses the 
 ### Pseudocode
 
 ```
+// this is the function uses for the moving platfrom
+// with mp standing for moving platform
 function mp(s, , dir = ) {
 
   return {
@@ -62,6 +64,7 @@ function mp(s, , dir = ) {
 Since the premise of the moving platform is to have platforms to move from left to right and back I decided to save time by using the same code that was used for the enemy cycles with the only alteration by that the speed with it moves and the distance as well. If you were to compare the two components you find that the moving platform has a fast speed, set at 100, to help the player to beat the clock that otherwise the player could find that by not using the moving platform they could complete the level faster. An additional feature that the enemy does not have is a distance component to the moving platform, this would limit the area the platform can cover to prevent the moving platform going of the game screen. This enabled me to create the moving platform function ("mp" for the variable name).&#x20;
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>// mp = moving platfrom 
+</strong><strong>// this is the funciton used for the moving platform
 </strong><strong>function mp(speed = 100, dis = 10, dir = 1) {
 </strong>
   return {
@@ -91,15 +94,17 @@ Once the main alteration has been made to make it a moving platform function I p
 After the designs were created it was uploaded to kaboom and given an image address whilst I proceeded to give each component its own tag. Which would be to referred to throughout the cycle.
 
 ```
-loadPedit("platform3", "sprites/platform3.pedit");
-loadPedit("acid", "sprites/acid.pedit");
+loadPedit("mplatform", "sprites/mplatform.pedit");
+loadPedit("acidbath", "sprites/acidbath.pedit");
 ```
 
-This is the stage where both of the components take up their roles within the game. For the platform it was given that the variable name "j", as another letter for the platform was used up, and this enabled it to be easily differentiated from the other platform when it comes to adding it to the level. Once the component was given a variable name, the functions "area()" and "solid()" were given as mentioned in previous cycles. "area()" enables the platform to have a hitbox which allows the player to make contact with the platform whilst solid() enabled the player to stand on it without falling though. The last function that is needed to be talked about is the function called "mp()" after making the alteration to enemy code, this is mentioned above. In summary, it allows the platform to move from left to right and back when all incorporated together it has successfully worked, allowing the player to get from a point a to b when it is to far jump or double jump.
+This is the stage where both of the components take up their roles within the game. For the platform it was given that the variable name "j", as another letter for the platform was used up, and this enabled it to be easily differentiated from the other platform when it comes to adding it to the level. Once the component was given a variable name, the functions "area()" and "solid()" were given as mentioned in previous cycles. "area()" enables the platform to have a hitbox which allows the player to make contact with the platform whilst solid() enabled the player to stand on it without falling though. The last function that is needed to be talked about is the function called "mp()" after making the alteration to enemy code, this is mentioned above. In summary, it allows the platform to move from left to right and back. When all incorporated together it has successfully worked, allowing the player to get from a point a to b when it is to far jump or double jump.
 
 ```javascript
+// this is the coded for configuratingthe moving platform  
+// mplatform refeers to moving platform 
   "j": () => [
-    sprite("platform3"),
+    sprite("mplatform"),
     area(),
     solid(),
     mp(),
@@ -107,11 +112,12 @@ This is the stage where both of the components take up their roles within the ga
   ],
 ```
 
-As part of the success criteria it was mentioned to have different types of obstacle for the player to overcome. After seeing the potential of a moving platform, I decided to create an obstacle equivalent of that which led to the creation of the moving acid bath in which that if the player falls in or comes in contact with it, the player dies quickly. To be efficient I used the code I created for the moving platform (shown above) and proceeded to add to and alter the code. With two minor changed being that the variable has change from "j" to "a" (I found it appropriate for this as well as it not being used meaning that it was easy to identify what its role is). The second minor change being that I have added the acid bath in the danger category that is used for the obstacles in cycle 3 and the enemy in cycle 5. This managed to streamline the process, by using the tag "danger"  it allows the game to identify that when the player comes in contact with the acid bath the game should end thus allowing me to use the "player.Oncollide" to achieve this goal.&#x20;
+As part of the success criteria it was mentioned to have different types of obstacle for the player to overcome. After seeing the potential of a moving platform, I decided to create an obstacle equivalent of that which led to the creation of the moving acid bath in which that if the player falls in or comes in contact with it, the player dies quickly. To be efficient I used the code I created for the moving platform (shown above) and proceeded to add to and alter the code. With two minor changed being that the variable has change from "j" to "a" (I found it appropriate for this as well as it not being used meaning that it was easy to identify what its role is). The second minor change being that I have added the acid bath in the danger category that is used for the obstacles in cycle 3 and  in cycle 5. This managed to streamline the process, by using the tag "danger"  it allows the game to identify that when the player comes in contact with the acid bath the game should end thus allowing me to use the "player.Oncollide" to achieve this goal.&#x20;
 
 ```javascript
-  "a": () => [
-    sprite("acid"),
+ //
+   "a": () => [
+    sprite("acidbath"),
     area(),
     solid(),
     mp(),
