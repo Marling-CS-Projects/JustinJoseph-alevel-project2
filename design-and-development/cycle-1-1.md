@@ -71,12 +71,12 @@ loadSprite("coin", "sprites/coin.png");
 After the reference for the coin was created i proceeded to give the coin it's defining properties . I first assigned the coin the variable letter "c" this enabled me to add the coin to a map at any location my choosing. Then after I used the reference coin to add the function sprite("coin") this is to  make sure that when the player is in the game they see the image of coins . Like mentioned in previous cycles i use the functions area() to give the coins a hit box which enable the player to collect the coin for when the each other hit box collided and i used the function solid(),  to ensure that player does not go through the coin out would being able to collect it and it can be recognized by the game as component of the game. the last the functions i used to add the coin to the game was pos(x,y) and scale(), the function pos(0) was use to position the the coin in relation how far should coins sit above the ground or platform and the scale() function was used to ensure the size of the coin was not too large or too small . These function being extremely useful after running the code to ensure that the coin added correctly, before these function was added the coin would  be over size in proportion to the game as well as that the coins was not positioned correctly by the game as it tended to be placed in the ground as supposed to above it , to ensure the at correct value used in the pos() and scale() was reached,  i incremented the value of them  until the correct position and size was reached.&#x20;
 
 ```
-// this is the code that gives the coins in the game its properties.
-   "c": () => [
+  "c": () => [
     sprite("coin"),
     area(),
     solid(),
     origin("bot"),
+  //
     pos(0, 10),
     scale(0.75, 0.75),
     "coin"
@@ -85,20 +85,18 @@ After the reference for the coin was created i proceeded to give the coin it's d
 
 To complete the function before being displayed to the player  the collected coins has to bad added up and stored. this was done with with the variable called score.value as you can see when a player comes in contact with a coin the value that is stored in the variable is increment by 1 . Once this is done a second variable called score.text is used this is where what player will soon come to see. in which that the text "score" is add  right next to it will be the last variable score.value. subsequently this mean that the player will the text score and then on the right of the number of point / coins they have accumulated whilst playing the game this will be shown in text form .&#x20;
 
-<pre><code><strong>// this code enables the player to collect the coin.
-</strong><strong>// score.text will present the total collected coin on the game screen  
-</strong><strong>  player.onCollide("coin", (c) => {
-</strong>    destroy(c)
+```
+  player.onCollide("coin", (c) => {
+    destroy(c)
     score.value += 1
     score.text = "score:" + score.value
   })
-</code></pre>
+```
 
 Lastly, is to display the score to the player. Since already i have created the score system for the coins it was a manner of adding the variable name ( score) to a out display function. I did this by giving this function a const name of score which is the same variable name used in the cretedin the coin system that supports good coding practice. After which i used one of the two commands i created score.text = "score:" + score.value this is to tell the program (kaboom.) what to call upon in which essentially it is just running this line multiple times . Once the text appears on the player's screen it needs to be positioned , using the function pos(24,24) it allows me to move the text anywhere on the screen i chose to keep it in the corner of the screen this is to prevent the player from being distracted . when adding this coin function i had issue with the game registering the coin and adding it to the scoreboard later i discovered through research that i was required to set an initial value for the variable score.value , this was done this with code { value: 0 } , by having this line it meant that the game start the player will have 0 coin balance it is once they start collecting the coin it will increment and display it. Finally the two functions that were used to complete the coin system were fixed () which is used to keep the text in place instead of following the player around and secondly is scale (0.50) this function controlled the size of the text whilst in game . The aim was to have it big enough that it was readable whilst not too big that it obstructed the game view.
 
 ```
 
- // this code postion the score board in the game 
   const score = add([
     text("score: 0"),
     pos(24, 24),
@@ -113,8 +111,7 @@ Lastly, is to display the score to the player. Since already i have created the 
 character movement to create a scrolling camera in which the game will follow the movement of the input instead of the player, despite it working in most directions it quickly appears that it did not follow the player. If the player went up or down from a platform which in resulted in the game continues but the camera was not following the player. This led to me researching a way in which I could get the camera to follow the player in all directions. I later discovered that the program I was using kaboom to code my game had a function called comPos() which would follow any object around by a camera I decide the insert the name of the player as well it's the current position of the player, player.pos, subsequently the position of the player would be the most current due to the use of the function player.Onupdate() enables the game to find the coordinate location of the player at all times when this was all put together the camera feature begin to function as expected this is also shown in the test.
 
 ```
- // this code follows the player around in the game 
-   player.onUpdate(() => {
+  player.onUpdate(() => {
     camPos(player.pos);
   })
 ```

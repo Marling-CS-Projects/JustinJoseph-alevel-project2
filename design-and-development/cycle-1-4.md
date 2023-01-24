@@ -72,9 +72,9 @@ Once the enemy was added to the game it was needed for the enemy have a purpose 
 
 
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>// this is the functioned used by the emimes, that enables them to move left and right at a set speed 
-</strong><strong>function patrol(speed =75 ,dis= 16 , dir = 1) {
-</strong>
+```javascript
+function patrol(speed =75 ,dis= 16 , dir = 1) {
+
 	return {
 		id: "patrol",
 		require: [ "pos", "area", ],
@@ -91,11 +91,12 @@ Once the enemy was added to the game it was needed for the enemy have a purpose 
 		},
 	}
 }
-</code></pre>
+```
 
 With the new feature developed I proceeded to incorporate everything together in a variable function that can be called upon when needed. I used "e" as the function name, within that it contains the enemy sprite image that the player would see when player the game, after which I used the area() to give the enemy a hitbox - this became very useful as it is a way for the game to end itself when the player comes in contact with the enemy (this is done when both player and enemy hitboxes overlap), then after the scale function was used, this is because when the sprite enemy was tested in the game I found it to be too big for the game and its surroundings. By giving it a scale of 3.5 it was within the right proportions to the game. then the new function patrol() was added which allowed the enemy to move in the specified area by itself with a set boundary. Lastly, since the purpose of the enemy is to be an obstacle I used the danger tag and catergorised it as such. By using the categorisation it has made the coding process more efficient due to the fact anything that falls under the danger tag means that the game will end itself and the lose scene will appear if the player comes in contact with it.&#x20;
 
-<pre class="language-javascript"><code class="lang-javascript">// this is the code used to configure the ememies in the game 
+```javascript
+
   "e": () => [
     sprite("enemy"),
     area(),
@@ -105,11 +106,11 @@ With the new feature developed I proceeded to incorporate everything together in
     patrol(),
     "danger",
   ],
-<strong> 
-</strong>        player.onCollide("danger", () => {
+  
+        player.onCollide("danger", () => {
     go("lose")
   }
-</code></pre>
+```
 
 
 
