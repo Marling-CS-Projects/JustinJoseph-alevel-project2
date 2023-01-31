@@ -69,17 +69,20 @@ The first stage of completing this objective was to create a exit door and then 
 Once it was added to the game i also imported its file address and provided the portal with a tag
 
 ```
+// this is the image for the exit/ portol in the game 
 loadSprite("portal", "sprites/portal.png");
 ```
 
 For the exit to be useful it has to be add to the level map. The portal uses the same properties as other component of the game but with the only mention able difference being that it has been categories with "exit" this will be come useful later during the development phase for the exit.&#x20;
 
 ```javascript
+ // this is the code configuration for the exit / portal in the game 
   "@": () => [
     sprite("portal"),
     area(),
     solid(),
     origin("bot"),
+// the portal has been tag with exit this enables the fucntion of when player commes in contract with exit
     "exit"
   ],
 ```
@@ -87,7 +90,8 @@ For the exit to be useful it has to be add to the level map. The portal uses the
 Once the exit was added to the game I wrote a code stating that when the player comes in contact with the exit the game should go to the win scene this is to the indicate to the player that they have completed the level and that player has the option to leave or continue in the game.
 
 ```javascript
-  player.onCollide("exit", () => {
+ // this is the code for when the player has reached the final level and comes in contact with the portal 
+   player.onCollide("exit", () => {
     go("win")
   })
 ```
@@ -95,7 +99,10 @@ Once the exit was added to the game I wrote a code stating that when the player 
 For the final objective of this cycle was to provide the game with a win scene as well as a return to start screen. This is evident in the code below when the player has completed the level the player will be greeted by a win scene. whilst coding for this scene the i had to adjust the position of the " you have win" text which i achieved by using the command "pos(vec2(400, 200))," to move/ adjust the position of the text in the X and Y direction.&#x20;
 
 ```javascript
-    scene("you have win", (time) => {
+  // these are the different scene that are present in the game for the player to see and interract with  
+  
+  // this is the win scene, when the player has complete the game they will repsent with this scene 
+      scene("you have win", (time) => {
       add([
         text("win ", { size: 24 }),
         pos(vec2(400, 200)),
@@ -103,7 +110,7 @@ For the final objective of this cycle was to provide the game with a win scene a
         color(255, 255, 255),
       ]);
 
-
+// this is the scene text with in the win scene that allows the player to go back to the main manu 
       add([
         text("press enter to go back to the start menu ", {
         size: 24}),
@@ -112,7 +119,7 @@ For the final objective of this cycle was to provide the game with a win scene a
         color(255, 255, 255),
         text
       ]);
-
+// when the player press enter it will go back to the manu menu 
       onKeyRelease("enter", () => {
         go("start");
       })
@@ -121,7 +128,7 @@ For the final objective of this cycle was to provide the game with a win scene a
 
 ### Challenges
 
-there were no challenges to report in this cycle&#x20;
+
 
 there was a position issue with text ( press enter to go back to the start menu) , i resolved with this  by changing the value used in the function pos()
 

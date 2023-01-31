@@ -84,6 +84,7 @@
 As I have already created a successful first level I did not want to change the design of the second level too much this due to two reasons: with one being that it takes up too much valuable time that can be spent adding additional features as well as refining the game to improve it, and the second reason is I want the player to still be familiar with the levels and have to same objective which is to find and get to the exit. However it does not mean that there has been no alteration as it kept the same design as previous platforms have been added as well as taken away which would make the player find new creative way to get to the exit. In terms of adding platforms, and the addition of moving platforms as well as an acid bath which can instantly damage the player. This is all in   conjunction with the use of more coins for the player to collect through out the level. Finally, the change in the location of the portal to keep the player more engaged as the player would already know the location of the previous portal they have to spend time in order to complete the level. To save time for me to code the game and for the bower to execute the code, I have designed the  level in a way that I can use the variable and component of the previous level (talked about in Cycle 1 : Setup)&#x20;
 
 ```javascript
+ // this is the design for the second level in the game  
    '                                                                            ',
    '                                                                             ',
    '                  m              m                           ccc                 ',
@@ -125,10 +126,10 @@ As I have already created a successful first level I did not want to change the 
 
 To complete this cycle the player should be able to go from one level to another level seamlessly. This was achieved by use the variable called levelId in which each level was assigned an id ( a number ) .Once that was done i proceed to use a if statement in which that if the player collides with a portal the game will find the current level that player is on , by using the assigned levelID then increment the levelID by 1 and then take the player to the new level that has the matching levelID. If the player reaches the last level and goes through the portal the function go("win") was used to lead the player to the win scene, to signify that the game has finished and they have won .
 
-```javascript
-  scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 })	
-  player.onCollide("exit", () => {
-		if (levelId + 1 < LEVELS.length) {
+<pre class="language-javascript"><code class="lang-javascript"><strong> // this is the code that enables the game to take the player to the next level 
+</strong><strong>   scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 })	
+</strong>  player.onCollide("exit", () => {
+		if (levelId + 1 &#x3C; LEVELS.length) {
 			go("game", {
 				levelId: levelId + 1,
 				coins: coins,
@@ -137,7 +138,7 @@ To complete this cycle the player should be able to go from one level to another
 			go("win")
 		}
 	})
-```
+</code></pre>
 
 ### Challenges
 

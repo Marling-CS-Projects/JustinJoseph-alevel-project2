@@ -41,12 +41,9 @@ loadPedit("goro", "sprites/goro.pedit");
  // this is the images of the background of the game 
 loadSprite("background", "sprites/background.png");
 
-// background 
-  add([
-    sprite("background", {width: width(), height: height()})
-  ]);
 
-//thisis the map for the level that the player will play in 
+
+//this is the map for the level that the player will play in 
 const map = [
   '                       ',
   '                       ',
@@ -126,19 +123,18 @@ kaboom({
 
 ```
 
-After the game's dimensions and the background colour were created, I proceeded to create the essential assets ( also known as sprites) I would be using in the game; these mainly include the character , platform ground blocks for now. the designs of the asset was done in a retro as well as cartoons styles so the game does not become graphically inappropriate thus being able to stay in the claimed age range of pegi 12.
+After the game's dimensions and the background colour were created, I proceeded to create the essential assets ( also known as sprites) I would be using these  in the game; these mainly include the character , platform ground blocks for now. the designs of the asset was done in a retro as well as cartoons styles so the game does not become graphically inappropriate thus being able to stay in the claimed age range of pegi 12.
 
 ```javascript
 
 // these are the images used in the game that the player will see 
 loadPedit("ground", "sprites/ground.pedit");
+// this is the images for the character 
 loadPedit("goro", "sprites/goro.pedit");
+// image fro the game background
 loadSprite("background", "sprites/background.png");
+// image for the platform that the player will stand on
 loadPedit("platform", "sprites/platform.pedit");
-loadPedit("block", "sprites/block.pedit");
-loadPedit("platform1", "sprites/platform1.pedit");
-loadPedit("goro2", "sprites/goro2.pedit");
-loadPedit("platform3", "sprites/platform3.pedit
 ```
 
 Once I had completed creating the essential assets I need for the game for the early stage, I turned my attention to designing the level. For my convenience and to increase the productive/ efficiency the program in use to code my game (kaboom) allow programmers to assign variable name to the assets, this enabled me to assign variables for the game the game. For example, in the ground the "=" symbol, the platform was given "p" the spikes were given "s”.However, I decided not to give the main character a variable name this was because by adding the player as a separate asset to the game it will make it easier to manipulate the player. When designing for the level i created the level in way that it was large enough that the player got time to explore the game and over come the obstacles so that the player does not complete the level to quickly but and not overly large that the player will be frustrated with the game.
@@ -181,7 +177,7 @@ const map = [
   '============================================================================',
 ]
 
-
+// this is the configuration setting for the size for the level 
 const levelcfg = {
   width: 32,
   height: 40,
@@ -200,12 +196,6 @@ As mentioned above, the program I am using to create my game enables me to add c
     origin("bot"),
   ],
 
-  "l": () => [
-    sprite("block"),
-    area(),
-    solid(),
-    origin("bot"),
-  ],
 
 // this is the backgorund colour / images the will be used in the game 
   "b": () => [
@@ -280,7 +270,7 @@ For my final objective of this cycle was to give the player the ability to move 
     player.move(move_speed, 0)
     player.flipX(false)
   })
-// this is the forces the player will jump with 
+// this is the forces the player will jump with up and down 
   const Jump_force = 10
 // this is the code for double jump
   keyPress('space', () => {

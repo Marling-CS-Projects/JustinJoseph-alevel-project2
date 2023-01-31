@@ -53,19 +53,19 @@ The first tasks in order to complete this cycles was to draw a set of obstacles 
 
 ![](<../.gitbook/assets/image (12) (2).png>)
 
-&#x20;Once the design of the obstacle was create i upload the obstcle in the kaboom.js and give the each obstcles a tag  which i use to reffer back through out the development process .
+&#x20;Once the design of the obstacle was create i upload the obstacle in the kaboom.js and give the each obstacles a tag  which i use to refer back through out the development process .
 
-```
-loadPedit("spikes", "sprites/spikes.pedit");
-loadPedit("spikesdown", "sprites/spikesdown.pedit");
-```
+<pre><code><strong>// this is the image for the spike looking upwards
+</strong><strong>loadPedit("spikes", "sprites/spikes.pedit");
+</strong><strong>// this is the images for the spike facing downwards
+</strong>loadPedit("spikesdown", "sprites/spikesdown.pedit");
+</code></pre>
 
 From using my knowledge that l have gained from cycle 1 and 2 i decide to alter only certain aspects of the code that will give the obstacles its role this has enabled me to save a vast amount of time. The alteration i made was to the position of the obstacles to ensure that the obstacle sat in the correct place as well as creating a new category called "danger" this is for obstacles and any component of the game that can instant lead to the player staring the game again i would use this category as a reference though the development process.
 
 ```javascript
-
- 
-  
+// this is the configuration of the spikes in the games
+// pos is used to moves the placement of the spikes , the scales is used to size the spikes  
   "s": () => [
     sprite("spikes"),
     area(),
@@ -80,7 +80,8 @@ From using my knowledge that l have gained from cycle 1 and 2 i decide to alter 
 The last function that was needed to complete this cycle is when the player comes in contact with the obstacles which results in game over for the player. For this to be achieved l started off with use of the function .oncollide ("danger") this meant that any player who comes in contact with a object in game categorized as danger (an example of this would be mentioned above with spikes) would referred to the go("lose") this will end the game subsequently displaying the game over scene giving the player the option the start the game again.
 
 ```javascript
-
+// this is the code used when the player comes in contract with anything is that is dangerous
+// this will take the player to lose scene if the die 
   player.onCollide("danger", () => {
     go("lose")
   })
