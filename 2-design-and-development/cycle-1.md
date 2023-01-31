@@ -46,7 +46,7 @@ loadSprite("background", "sprites/background.png");
     sprite("background", {width: width(), height: height()})
   ]);
 
-//level
+//thisis the map for the level that the player will play in 
 const map = [
   '                       ',
   '                       ',
@@ -144,7 +144,7 @@ loadPedit("platform3", "sprites/platform3.pedit
 Once I had completed creating the essential assets I need for the game for the early stage, I turned my attention to designing the level. For my convenience and to increase the productive/ efficiency the program in use to code my game (kaboom) allow programmers to assign variable name to the assets, this enabled me to assign variables for the game the game. For example, in the ground the "=" symbol, the platform was given "p" the spikes were given "s”.However, I decided not to give the main character a variable name this was because by adding the player as a separate asset to the game it will make it easier to manipulate the player. When designing for the level i created the level in way that it was large enough that the player got time to explore the game and over come the obstacles so that the player does not complete the level to quickly but and not overly large that the player will be frustrated with the game.
 
 ```javascript
-// this is the level map for the game 
+// this is the level map for the game in which the player will play in 
 const map = [
   '                                                                              ',
   '         ppp              ppp                pp                         ppppp',
@@ -199,7 +199,6 @@ As mentioned above, the program I am using to create my game enables me to add c
     solid(),
     origin("bot"),
   ],
-
 
   "l": () => [
     sprite("block"),
@@ -281,9 +280,9 @@ For my final objective of this cycle was to give the player the ability to move 
     player.move(move_speed, 0)
     player.flipX(false)
   })
-// this is the forces the player will jumm with 
+// this is the forces the player will jump with 
   const Jump_force = 10
-
+// this is the code for double jump
   keyPress('space', () => {
     player.doubleJump()
   })
