@@ -21,7 +21,7 @@
 * [Cycle 3: Obstacles](design-and-development/cycle-1-2.md)
 * [Cycle 4: Stopwatch](design-and-development/cycle-1-3.md)
 * [Cycle 5: Enemy](design-and-development/cycle-1-4.md)
-* [Cycle 6: Moving Platform](design-and-development/cycle-1-5.md)
+* [Cycle 6: Moving Platforms](design-and-development/cycle-1-5.md)
 * [Cycle 7: Exit Door](design-and-development/cycle-1-6.md)
 * [Cycle 8: Adding Another Level](design-and-development/cycle-1-7.md)
 * [Cycle 9: Death and Falling](design-and-development/cycle-1-8.md)

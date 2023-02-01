@@ -1,4 +1,4 @@
-# Cycle 6: Moving Platform
+# Cycle 6: Moving Platforms
 
 ##
 
@@ -61,7 +61,7 @@ function mp(s, , dir = ) {
 
 ### Outcome
 
-Since the premise of the moving platform is to have platforms to move from left to right and back I decided to save time by using the same code that was used for the enemy cycles with the only alteration by that the speed with it moves and the distance as well. If you were to compare the two components you find that the moving platform has a fast speed, set at 100, to help the player to beat the clock that otherwise the player could find that by not using the moving platform they could complete the level faster. An additional feature that the enemy does not have is a distance component to the moving platform, this would limit the area the platform can cover to prevent the moving platform going of the game screen. This enabled me to create the moving platform function ("mp" for the variable name).&#x20;
+Since the premise of the moving platform is to have the  platforms to move from left to right and back I decided to save time by using the same code that was used for the enemy cycles with the only alteration by that the speed with it moves and the distance as well. If you were to compare the two components you discover that the moving platform has a faster speed, set at 100, to help the player to beat the clock that otherwise the player could find out that by not using the moving platform they could complete the level faster. An additional feature that the enemy does not have is a distance component to the moving platform, this would limit the area that the  platform can cover this to  prevent the moving platform going out side of the game screen. This enabled me to create the moving platform function ("mp" for the variable name).&#x20;
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>// mp = moving platfrom 
 </strong><strong>// this is the funciton used for the moving platform
@@ -85,7 +85,7 @@ Since the premise of the moving platform is to have platforms to move from left 
 }
 </code></pre>
 
-Once the main alteration has been made to make it a moving platform function I proceeded to draw what the component would look like. On the left  is a design to resemble an acid bath whilst on the right is the standard platform but made short, width-wise. The designs are made to be recognizable and keep in line with PEGI ratings of 12.&#x20;
+Once the main alteration has been made to make it a moving platform function I proceeded to draw what the components would look like. On the left  is a design to resemble an acid bath whilst on the right is the standard platform but made short. The designs are made to be recognizable and keep in line with PEGI ratings of 12.&#x20;
 
 ![](<../.gitbook/assets/image (15).png>) ![](<../.gitbook/assets/image (4) (2).png>)
 
@@ -94,11 +94,13 @@ Once the main alteration has been made to make it a moving platform function I p
 After the designs were created it was uploaded to kaboom and given an image address whilst I proceeded to give each component its own tag. Which would be to referred to throughout the cycle.
 
 ```
+// the image for the moving platform
 loadPedit("mplatform", "sprites/mplatform.pedit");
+// the image for the acid bath
 loadPedit("acidbath", "sprites/acidbath.pedit");
 ```
 
-This is the stage where both of the components take up their roles within the game. For the platform it was given that the variable name "j", as another letter for the platform was used up, and this enabled it to be easily differentiated from the other platform when it comes to adding it to the level. Once the component was given a variable name, the functions "area()" and "solid()" were given as mentioned in previous cycles. "area()" enables the platform to have a hitbox which allows the player to make contact with the platform whilst solid() enabled the player to stand on it without falling though. The last function that is needed to be talked about is the function called "mp()" after making the alteration to enemy code, this is mentioned above. In summary, it allows the platform to move from left to right and back. When all incorporated together it has successfully worked, allowing the player to get from a point a to b when it is to far jump or double jump.
+This is the stage where both of the components take up their roles within the game. For the platform it was given that the variable name "j", as another letter for the platform was used up, and this enabled it to be easily differentiated from the other platforms when it comes to adding it to the levels. Once the components was given a variable name, the functions "area()" and "solid()" were given as mentioned in previous cycles. "area()" enables the platform to have a hitbox which allows the player to make contact with the platform whilst solid() enabled the player to stand on it without falling though. The last function that is needed to be talked about is the function called "mp()" after making the alteration to enemy code, this is mentioned above. it allows the platform to move from left to right and back. When all incorporated together it has successfully worked, allowing the player to get from a point a to b when it is to far jump or double jump.
 
 ```javascript
 // this is the coded for configuratingthe moving platform  

@@ -47,13 +47,13 @@ The objective of this cycle is to add obstacles to the game, this is to provide 
 
 ### Outcome
 
-The first tasks in order to complete this cycles was to draw a set of obstacles that the player can identify as dangerous object thus encouraging them to stay clear this lead me to draw the design for a spikes. With the use of the simple design it enabled me to save time and move on to adding the obstacle into the game.
+The first tasks in order to complete this cycles was to draw a set of obstacles that the player can identify as a dangerous object thus encouraging them to stay clear. This lead me to draw the design for a spikes. With the use of the simple design it enabled me to save time and move on to adding the obstacle into the game.
 
 ![](<../.gitbook/assets/image (9) (3).png>)
 
 ![](<../.gitbook/assets/image (12) (2).png>)
 
-&#x20;Once the design of the obstacle was create i upload the obstacle in the kaboom.js and give the each obstacles a tag  which i use to refer back through out the development process .
+&#x20;Once the design of the obstacle was create i uploaded the obstacle in the kaboom.js and give the each obstacles a tag  which i use to refer back through out the development process .
 
 <pre><code><strong>// this is the image for the spike looking upwards
 </strong><strong>loadPedit("spikes", "sprites/spikes.pedit");
@@ -61,7 +61,7 @@ The first tasks in order to complete this cycles was to draw a set of obstacles 
 </strong>loadPedit("spikesdown", "sprites/spikesdown.pedit");
 </code></pre>
 
-From using my knowledge that l have gained from cycle 1 and 2 i decide to alter only certain aspects of the code that will give the obstacles its role this has enabled me to save a vast amount of time. The alteration i made was to the position of the obstacles to ensure that the obstacle sat in the correct place as well as creating a new category called "danger" this is for obstacles and any component of the game that can instant lead to the player staring the game again i would use this category as a reference though the development process.
+From using my knowledge that l have gained from cycle 1 and 2 i decide to alter only certain aspects of the code that will give the obstacles its role this has enabled me to save a vast amount of time. The alteration i have  made was to the position of the obstacles to ensure that the obstacle sat in the correct place as well as creating a new category called "danger" this is for obstacles and any component of the game that can instantly  lead to the player staring the game again. i would use this category as a reference though the development process.
 
 ```javascript
 // this is the configuration of the spikes in the games
