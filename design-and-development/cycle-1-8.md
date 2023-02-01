@@ -54,7 +54,7 @@ if player touches anything dangers'(
 The first objective of this cycles was to add a feature to the game in which that if the player fall out  of the game map or falls for too long the game should instantly end it self and give the player the option to start the game again. For this feature to work l used a If statement in which that the game will use the current position of the player in the Y coordinate direction `(player.pos.y)` and compare the value to a constant value of 2000. If the player falls below the constant value the game will end itself thus referring the player to end scene "`go("lose")`".
 
 ```javascript
-// falling death 
+// this is the code for the falling death featrue within the game  
  	player.onUpdate(() => {
 		if (player.pos.y >= 2000) {
 			go("lose")
@@ -68,16 +68,17 @@ If a player fails the game they are redirected to "lose scene" otherwise i found
 To do this l created the scene with the variable name  "lose" this is the variable name that I would use too, when the player dies from collision with obstacle or the enemy or falling death. After the scene was created I added the two bits of information needed first being the acknowledgement of death which was done with the code text("game over",  the line of the code { size: 24 }), is used as a sizing tool, by using size of 24 it enable the text to large making it easy for the player to read.&#x20;
 
 ```javascript
-  
- scene("lose", (time) => {
+ // this is the screen the player will see if the player dies within the game  
+  scene("lose", (time) => {
   add([
+  // the code below displays the game is over
     text("game over", { size: 24 }),
     pos(vec2(500, 350)),
     origin("center"),
     color(255, 255, 255),
     text
   ]);
-
+// the code below is used to give the player the option to go back to the main menu
   add([
     text("press enter to go back to the start screen ", { size: 24 }),
     pos(vec2(400, 200)),
@@ -92,7 +93,7 @@ To do this l created the scene with the variable name  "lose" this is the variab
 To enable the player to get main menu i have Incorporated a click button via the use of a mouse that will take the player back to the main menu this is done with the command  go("start") with the vaible name start referring the name of the scene .&#x20;
 
 ```javascript
-
+// By pressing enter the player will be taken back to the main menu 
   onKeyRelease("enter", () => {
     go("start");
   })

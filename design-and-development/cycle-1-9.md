@@ -63,11 +63,12 @@ scene(
 To start off my development cycle I proceeded to create a scene for my menu with a welcoming title and two options, to start the game or an option on how to play the game. Once I created the welcoming menu I went on to branching the options out such that if the player clicks start it take will take the player directly to the game and if the player clicks the other option the player is taken to another scene with instructions on how to the play the game (this is shown with the code below). To add simplicity to the menu all of the titles and options are done in large font to make it easy to read.
 
 ```javascript
+//this is the main manu code the player will see when running the game 
 scene("start", () => {
 
   
 
-
+// this is the code that allows the player to start the game 
   add([
     text("Click HERE to start!", { size: 24 }),
     pos(vec2(400, 200)),
@@ -75,8 +76,8 @@ scene("start", () => {
     area(),
     "Start"
   ]);
-
-
+  
+// this is the code that allows the player to see how to player the game 
   add([
     text("How to play HERE", { size: 24 }),
     pos(vec2(400, 300)),
@@ -95,21 +96,21 @@ scene("start", () => {
 
 With the use of the function "on Click()" it allowed the player to use the mouse to click on the option that will take them to the respective scene.&#x20;
 
-```
- onClick("Start01", () => {
+<pre><code>// by using the mouse to click on either of the options it will initiate the code that will take to the chossen scenes
+  onClick("Start01", () => {
     go("rules")
   })
-
-  onClick("Start", () => {
+<strong>// this leads to the game being started 
+</strong>  onClick("Start", () => {
     go("game")
   })
 
-```
+</code></pre>
 
 Once I had created the main menu, I proceeded to create a scene for the second option ("how to play the game"). Since I was limited to the size of the game frame I aimed to keep the objective of the game and the controls simple to understand (this is shown in the image below). Whilst testing the code to see any issues, I encountered issues with the size of the text that presented during the game being run as well as the text being misaligned. I resolved these issues by adding a sizing function ("size: 24 ") to the code that resized the text whilst for the misalignment issue I proceed to add a position function (''pos(vec2(200, 100)),") this enabled me to control where the text is positioning with x and y coordinates. Finally I added back to the exit button enabling the player to go back to the main menu form the how to play scene, clicking upon on the exit button was an improvement over the previous method of refreshing the page.
 
-```javascript
-  scene("rules", (time) => {
+<pre class="language-javascript"><code class="lang-javascript"> // this is the scene repsented to the player on how to play the game 
+   scene("rules", (time) => {
       add([
         text("Controls:", { size: 24 }),
         pos(vec2(200, 100)),
@@ -118,8 +119,9 @@ Once I had created the main menu, I proceeded to create a scene for the second o
         text
       ]);
 
-       add([
-        text(" A = Move Left \n D = Move Right \n   Spacebar = Jump/Double jump   ", { size: 24 }),
+// this code shows what is being wrtien in the screne as well as the funciton to move the text around 
+<strong>       add([
+</strong>        text(" A = Move Left \n D = Move Right \n   Spacebar = Jump/Double jump   ", { size: 24 }),
         pos(vec2(260, 200)),
         origin("center"),
         color(255, 255, 255),
@@ -134,7 +136,7 @@ Once I had created the main menu, I proceeded to create a scene for the second o
         text
         
       ]);
-
+// this code allows the player to exit the rules scene by click on the option 
       add([
        text("Press HERE to exit", { size: 24 }),
        pos(vec2(360, 550)),
@@ -150,7 +152,7 @@ Once I had created the main menu, I proceeded to create a scene for the second o
     })
     
     });
-```
+</code></pre>
 
 ## Description of challenges
 
